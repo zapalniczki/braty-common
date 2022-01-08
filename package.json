@@ -1,0 +1,9 @@
+{
+  "name": "braty-common",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "UNLICENSED",
+  "repository": "https://github.com/zapalniczki/braty-common",
+  "author": "Przemysław Rychlewicz",
+  "private": true
+}
