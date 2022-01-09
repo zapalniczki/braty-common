@@ -1,5 +1,5 @@
 const ROUTES = {
-  viewProduct: '/view_product' as const
+  viewProduct: '#/products' as const
 }
 
 export default ROUTES
