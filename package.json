@@ -18,5 +18,8 @@
     "hooks": {
       "pre-push": "yarn run patch"
     }
+  },
+  "dependencies": {
+    "zod": "^3.11.6"
   }
 }
