@@ -7,7 +7,8 @@ const brochureIcon = (0, zod_1.object)({
     label_pl: (0, zod_1.string)(),
     label_pl_unicode: (0, zod_1.array)((0, zod_1.number)()),
     pngPath: (0, zod_1.string)(),
-    name_pl: (0, zod_1.string)()
+    name_pl: (0, zod_1.string)(),
+    name_pl_unicode: (0, zod_1.array)((0, zod_1.number)())
 });
 const brochureLabel = (0, zod_1.object)({
     level: (0, zod_1.enum)(['LABEL']),

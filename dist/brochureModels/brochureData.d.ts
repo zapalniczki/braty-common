@@ -16,6 +16,7 @@ declare const brochureData: import("zod").ZodArray<import("zod").ZodObject<{
             label_pl_unicode: import("zod").ZodArray<import("zod").ZodNumber, "many">;
             pngPath: import("zod").ZodString;
             name_pl: import("zod").ZodString;
+            name_pl_unicode: import("zod").ZodArray<import("zod").ZodNumber, "many">;
         }, "strip", import("zod").ZodTypeAny, {
             id: string;
             level: "ICON";
@@ -23,6 +24,7 @@ declare const brochureData: import("zod").ZodArray<import("zod").ZodObject<{
             label_pl_unicode: number[];
             pngPath: string;
             name_pl: string;
+            name_pl_unicode: number[];
         }, {
             id: string;
             level: "ICON";
@@ -30,6 +32,7 @@ declare const brochureData: import("zod").ZodArray<import("zod").ZodObject<{
             label_pl_unicode: number[];
             pngPath: string;
             name_pl: string;
+            name_pl_unicode: number[];
         }>, "many">;
     }, "strip", import("zod").ZodTypeAny, {
         icons: {
@@ -39,6 +42,7 @@ declare const brochureData: import("zod").ZodArray<import("zod").ZodObject<{
             label_pl_unicode: number[];
             pngPath: string;
             name_pl: string;
+            name_pl_unicode: number[];
         }[];
         id: string;
         level: "LABEL";
@@ -52,6 +56,7 @@ declare const brochureData: import("zod").ZodArray<import("zod").ZodObject<{
             label_pl_unicode: number[];
             pngPath: string;
             name_pl: string;
+            name_pl_unicode: number[];
         }[];
         id: string;
         level: "LABEL";
@@ -67,6 +72,7 @@ declare const brochureData: import("zod").ZodArray<import("zod").ZodObject<{
             label_pl_unicode: number[];
             pngPath: string;
             name_pl: string;
+            name_pl_unicode: number[];
         }[];
         id: string;
         level: "LABEL";
@@ -86,6 +92,7 @@ declare const brochureData: import("zod").ZodArray<import("zod").ZodObject<{
             label_pl_unicode: number[];
             pngPath: string;
             name_pl: string;
+            name_pl_unicode: number[];
         }[];
         id: string;
         level: "LABEL";

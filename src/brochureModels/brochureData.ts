@@ -6,7 +6,8 @@ const brochureIcon = object({
   label_pl: string(),
   label_pl_unicode: array(number()),
   pngPath: string(),
-  name_pl: string()
+  name_pl: string(),
+  name_pl_unicode: array(number())
 })
 
 const brochureLabel = object({
