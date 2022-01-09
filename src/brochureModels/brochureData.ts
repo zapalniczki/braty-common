@@ -4,7 +4,7 @@ const brochureIcon = object({
   level: zenum(['ICON']),
   id: string().uuid(),
   label_pl: string(),
-  label_pl_uniconde: array(number()),
+  label_pl_unicode: array(number()),
   pngPath: string(),
   name_pl: string()
 })
@@ -13,7 +13,7 @@ const brochureLabel = object({
   level: zenum(['LABEL']),
   id: string().uuid(),
   label_pl: string(),
-  label_pl_uniconde: array(number()),
+  label_pl_unicode: array(number()),
   icons: array(brochureIcon)
 })
 
@@ -21,7 +21,7 @@ const brochureCollection = object({
   level: zenum(['COLLECTION']),
   id: string().uuid(),
   label_pl: string(),
-  label_pl_uniconde: array(number()),
+  label_pl_unicode: array(number()),
   labels: array(brochureLabel)
 })
 
