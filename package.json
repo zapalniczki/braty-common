@@ -1,7 +1,7 @@
 {
   "name": "braty-common",
   "version": "1.0.1",
-  "main": "index.js",
+  "main": "dist/index.js",
   "license": "UNLICENSED",
   "repository": "https://github.com/zapalniczki/braty-common",
   "private": true,
