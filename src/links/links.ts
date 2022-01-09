@@ -1,5 +1,5 @@
 import { WEBISTE_URL } from './index'
-import ROUTES from './routes'
+import ROUTES from './ROUTES'
 import { SEPARATORS } from '../constants'
 
 export const getViewProductLink = (productId: string) =>
