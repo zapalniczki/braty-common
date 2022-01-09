@@ -1,1 +1,1 @@
-export declare const getViewProductLink: (productId: string) => `https://braty.co#/products/${string}`;
+export declare const getViewProductLink: (productId: string) => `https://braty.co/#/products/${string}`;

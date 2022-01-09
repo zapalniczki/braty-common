@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const ROUTES = {
-    viewProduct: '#/products'
+    viewProduct: '/#/products'
 };
 exports.default = ROUTES;
