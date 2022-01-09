@@ -14,5 +14,9 @@
     "minor": "yarn version --new-version minor",
     "patch": "yarn version --new-version patch"
   },
-  "dependencies": {}
+  "husky": {
+    "hooks": {
+      "pre-push": "yarn patch"
+    }
+  }
 }
