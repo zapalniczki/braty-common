@@ -13,7 +13,9 @@ export type ImageSize = TypeOf<typeof imageSize>
 
 const image = tableBase.extend({
   src: string(),
-  size: imageSize
+  size: imageSize,
+  // TODO import from Product model
+  product_id: string().uuid()
 })
 
 export type Image = TypeOf<typeof image>
