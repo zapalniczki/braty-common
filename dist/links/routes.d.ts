@@ -1,4 +1,4 @@
 declare const ROUTES: {
-    viewProduct: "/viewProduct";
+    viewProduct: "/view_product";
 };
 export default ROUTES;
