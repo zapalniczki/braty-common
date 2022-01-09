@@ -3,3 +3,5 @@ export const multiplyBy2 = (num: number) => {
 
   return result
 }
+
+export * from './constants'
