@@ -9,6 +9,8 @@
     "typescript": "^4.5.4"
   },
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "minor": "yarn version --new-version minor",
+    "patch": "yarn version --new-version patch"
   }
 }
