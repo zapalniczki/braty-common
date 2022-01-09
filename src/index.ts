@@ -1,2 +1,4 @@
-export * from './constants'
-export * from './dbModels'
+import * as constants from './constants'
+import * as dbModels from './dbModels'
+
+export { constants, dbModels }
