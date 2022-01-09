@@ -3,12 +3,12 @@ declare const tableBase: import("zod").ZodObject<{
     id: import("zod").ZodString;
     updated_at: import("zod").ZodString;
 }, "strip", import("zod").ZodTypeAny, {
-    created_at: string;
     id: string;
+    created_at: string;
     updated_at: string;
 }, {
-    created_at: string;
     id: string;
+    created_at: string;
     updated_at: string;
 }>;
 export default tableBase;

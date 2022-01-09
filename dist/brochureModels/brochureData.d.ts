@@ -18,16 +18,16 @@ declare const brochureData: import("zod").ZodArray<import("zod").ZodObject<{
             name_pl: import("zod").ZodString;
             name_pl_unicode: import("zod").ZodArray<import("zod").ZodNumber, "many">;
         }, "strip", import("zod").ZodTypeAny, {
-            id: string;
             level: "ICON";
+            id: string;
             label_pl: string;
             label_pl_unicode: number[];
             pngPath: string;
             name_pl: string;
             name_pl_unicode: number[];
         }, {
-            id: string;
             level: "ICON";
+            id: string;
             label_pl: string;
             label_pl_unicode: number[];
             pngPath: string;
@@ -35,74 +35,74 @@ declare const brochureData: import("zod").ZodArray<import("zod").ZodObject<{
             name_pl_unicode: number[];
         }>, "many">;
     }, "strip", import("zod").ZodTypeAny, {
+        level: "LABEL";
+        id: string;
+        label_pl: string;
+        label_pl_unicode: number[];
         icons: {
-            id: string;
             level: "ICON";
+            id: string;
             label_pl: string;
             label_pl_unicode: number[];
             pngPath: string;
             name_pl: string;
             name_pl_unicode: number[];
         }[];
-        id: string;
-        level: "LABEL";
-        label_pl: string;
-        label_pl_unicode: number[];
     }, {
+        level: "LABEL";
+        id: string;
+        label_pl: string;
+        label_pl_unicode: number[];
         icons: {
-            id: string;
             level: "ICON";
+            id: string;
             label_pl: string;
             label_pl_unicode: number[];
             pngPath: string;
             name_pl: string;
             name_pl_unicode: number[];
         }[];
-        id: string;
-        level: "LABEL";
-        label_pl: string;
-        label_pl_unicode: number[];
     }>, "many">;
 }, "strip", import("zod").ZodTypeAny, {
+    level: "COLLECTION";
+    id: string;
+    label_pl: string;
+    label_pl_unicode: number[];
     labels: {
+        level: "LABEL";
+        id: string;
+        label_pl: string;
+        label_pl_unicode: number[];
         icons: {
-            id: string;
             level: "ICON";
+            id: string;
             label_pl: string;
             label_pl_unicode: number[];
             pngPath: string;
             name_pl: string;
             name_pl_unicode: number[];
         }[];
-        id: string;
-        level: "LABEL";
-        label_pl: string;
-        label_pl_unicode: number[];
     }[];
-    id: string;
-    level: "COLLECTION";
-    label_pl: string;
-    label_pl_unicode: number[];
 }, {
+    level: "COLLECTION";
+    id: string;
+    label_pl: string;
+    label_pl_unicode: number[];
     labels: {
+        level: "LABEL";
+        id: string;
+        label_pl: string;
+        label_pl_unicode: number[];
         icons: {
-            id: string;
             level: "ICON";
+            id: string;
             label_pl: string;
             label_pl_unicode: number[];
             pngPath: string;
             name_pl: string;
             name_pl_unicode: number[];
         }[];
-        id: string;
-        level: "LABEL";
-        label_pl: string;
-        label_pl_unicode: number[];
     }[];
-    id: string;
-    level: "COLLECTION";
-    label_pl: string;
-    label_pl_unicode: number[];
 }>, "many">;
 export declare type BrochureData = TypeOf<typeof brochureData>;
 export default brochureData;

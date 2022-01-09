@@ -10,15 +10,15 @@ declare const image: import("zod").ZodObject<import("zod").extendShape<{
     size: import("zod").ZodEnum<["TILE", "LARGE", "TILE_REVERSE", "THUMBNAIL", "BASKET", "LONG"]>;
     product_id: import("zod").ZodString;
 }>, "strip", import("zod").ZodTypeAny, {
-    created_at: string;
     id: string;
+    created_at: string;
     updated_at: string;
     src: string;
     size: "TILE" | "LARGE" | "TILE_REVERSE" | "THUMBNAIL" | "BASKET" | "LONG";
     product_id: string;
 }, {
-    created_at: string;
     id: string;
+    created_at: string;
     updated_at: string;
     src: string;
     size: "TILE" | "LARGE" | "TILE_REVERSE" | "THUMBNAIL" | "BASKET" | "LONG";
