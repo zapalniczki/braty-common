@@ -13,8 +13,8 @@ declare const DB_TABLES: {
     ORDER_ITEMS: "order_items";
     PARCELS: "parcels";
     PAYMENT_TYPE: "payment_types";
-    PRODUCTS: "products";
     USERS: "users";
+    PRODUCTS: "products";
     VOUCHERS: "vouchers";
 };
 export default DB_TABLES;
