@@ -9,9 +9,11 @@ var __createBinding = (this && this.__createBinding) || (Object.create ? (functi
 var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-__exportStar(require("./brochureModels"), exports);
-__exportStar(require("./constants"), exports);
-__exportStar(require("./dbModels"), exports);
-__exportStar(require("./links"), exports);
-__exportStar(require("./emailModels"), exports);
+exports.emailEvent = void 0;
+var emailEvent_1 = require("./emailEvent");
+Object.defineProperty(exports, "emailEvent", { enumerable: true, get: function () { return __importDefault(emailEvent_1).default; } });
+__exportStar(require("./emailEvent"), exports);
