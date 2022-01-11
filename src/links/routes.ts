@@ -1,6 +1,4 @@
 const ROUTES = {
-  viewProduct: '/#/products' as const,
-
   ADMIN_CALLBACKS: '/admin_callbacks' as const,
   ADMIN_DELIVERY_TYPES: '/admin_delivery_types' as const,
   ADMIN_ICONS: '/admin_icons' as const,
@@ -9,6 +7,7 @@ const ROUTES = {
   ADMIN_NEWSLETTER_USERS: '/admin_newsletter_users' as const,
   ADMIN_ORDERS: '/admin_orders' as const,
   ADMIN_PAYMENT_TYPES: '/admin_payment_types' as const,
+  ADMIN_MARKETING: '/admin_marketing' as const,
 
   CHECKOUT_DELIVERY: '/checkout/delivery' as const,
   CHECKOUT_DETAILS: '/checkout/details' as const,
