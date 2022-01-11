@@ -9,6 +9,7 @@ const DB_TABLES = {
     IMAGES: 'images',
     INVOICES: 'invoices',
     LABELS: 'labels',
+    MARKETING: 'marketing',
     MOLDS: 'molds',
     NEWSLETTER: 'newsletters',
     ORDER: 'orders',
