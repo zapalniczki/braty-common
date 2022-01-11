@@ -7,6 +7,7 @@ const DB_TABLES = {
   IMAGES: 'images' as const,
   INVOICES: 'invoices' as const,
   LABELS: 'labels' as const,
+  MARKETING: 'marketing' as const,
   MOLDS: 'molds' as const,
   NEWSLETTER: 'newsletters' as const,
   ORDER: 'orders' as const,
