@@ -27,7 +27,10 @@ const orderStatusChange = object({
   })
 })
 
-const emailEvent = union([newOrder, newsletterSignUp, orderStatusChange])
+const emailEvent = object({
+  to: user.shape.email,
+  type: union([newOrder, newsletterSignUp, orderStatusChange])
+})
 
 export type EmailEvent = TypeOf<typeof emailEvent>
 

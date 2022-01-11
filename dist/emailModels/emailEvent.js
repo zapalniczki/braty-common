@@ -25,5 +25,8 @@ const orderStatusChange = (0, zod_1.object)({
         order_status: dbModels_1.order.shape.status
     })
 });
-const emailEvent = (0, zod_1.union)([newOrder, newsletterSignUp, orderStatusChange]);
+const emailEvent = (0, zod_1.object)({
+    to: dbModels_1.user.shape.email,
+    type: (0, zod_1.union)([newOrder, newsletterSignUp, orderStatusChange])
+});
 exports.default = emailEvent;
