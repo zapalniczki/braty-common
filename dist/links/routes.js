@@ -23,6 +23,7 @@ const ROUTES = {
     HOW_TO_CREATE_ORDER: '/how_to_create_order',
     PRODUCTS: '/products',
     PRODUCTS_ID: '/products/:id',
+    ORDERS: '/orders',
     ORDERS_ID: '/orders/:id',
     CHRISTMAS_2021: '/christmas2021',
     SIGN_IN: '/sign_in',
