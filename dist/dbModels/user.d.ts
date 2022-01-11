@@ -19,8 +19,8 @@ declare const user: import("zod").ZodObject<import("zod").extendShape<{
     updated_at: string;
     email: string;
     phone: string;
-    shipping_id: string | null;
     is_test: boolean;
+    shipping_id: string | null;
     address_id: string;
     full_name: string;
     nip: string | null;
@@ -32,8 +32,8 @@ declare const user: import("zod").ZodObject<import("zod").extendShape<{
     updated_at: string;
     email: string;
     phone: string;
-    shipping_id: string | null;
     is_test: boolean;
+    shipping_id: string | null;
     address_id: string;
     full_name: string;
     nip: string | null;

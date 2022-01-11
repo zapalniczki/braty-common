@@ -7,6 +7,7 @@ declare const marketing: import("zod").ZodObject<import("zod").extendShape<{
     email: import("zod").ZodOptional<import("zod").ZodString>;
     phone: import("zod").ZodOptional<import("zod").ZodString>;
     notes: import("zod").ZodOptional<import("zod").ZodString>;
+    is_test: import("zod").ZodBoolean;
 }>, "strip", import("zod").ZodTypeAny, {
     email?: string | undefined;
     phone?: string | undefined;
@@ -14,6 +15,7 @@ declare const marketing: import("zod").ZodObject<import("zod").extendShape<{
     id: string;
     created_at: string;
     updated_at: string;
+    is_test: boolean;
 }, {
     email?: string | undefined;
     phone?: string | undefined;
@@ -21,6 +23,7 @@ declare const marketing: import("zod").ZodObject<import("zod").extendShape<{
     id: string;
     created_at: string;
     updated_at: string;
+    is_test: boolean;
 }>;
 export declare type Marketing = TypeOf<typeof marketing>;
 export default marketing;

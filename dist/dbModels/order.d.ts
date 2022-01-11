@@ -25,6 +25,7 @@ declare const order: import("zod").ZodObject<import("zod").extendShape<{
     id: string;
     created_at: string;
     updated_at: string;
+    is_test: boolean;
     discount: number;
     delivery_type: string;
     payment_type: string;
@@ -36,12 +37,12 @@ declare const order: import("zod").ZodObject<import("zod").extendShape<{
     user_id: string;
     voucher_id: string | null;
     parcel_id: string | null;
-    is_test: boolean;
 }, {
     status: "OPEN" | "CONFIRMED" | "PAYMENT_RECEIVED" | "PRODUCTION" | "AWAITING_FOR_PICKUP" | "IN_DELIVERY" | "COMPLETED" | "REJECTED";
     id: string;
     created_at: string;
     updated_at: string;
+    is_test: boolean;
     discount: number;
     delivery_type: string;
     payment_type: string;
@@ -53,7 +54,6 @@ declare const order: import("zod").ZodObject<import("zod").extendShape<{
     user_id: string;
     voucher_id: string | null;
     parcel_id: string | null;
-    is_test: boolean;
 }>;
 export declare type Order = TypeOf<typeof order>;
 export default order;
