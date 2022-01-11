@@ -14,7 +14,7 @@ const newOrder = object({
 const newsletterSignUp = object({
   key: zenum(['NEWSLETTER_SIGNUP']),
   content: object({
-    voucher: voucher.shape.id
+    voucher_id: voucher.shape.id
   })
 })
 

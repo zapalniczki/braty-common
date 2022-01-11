@@ -14,7 +14,7 @@ const newOrder = (0, zod_1.object)({
 const newsletterSignUp = (0, zod_1.object)({
     key: (0, zod_1.enum)(['NEWSLETTER_SIGNUP']),
     content: (0, zod_1.object)({
-        voucher: dbModels_1.voucher.shape.id
+        voucher_id: dbModels_1.voucher.shape.id
     })
 });
 const orderStatusChange = (0, zod_1.object)({

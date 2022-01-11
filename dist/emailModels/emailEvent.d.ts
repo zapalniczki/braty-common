@@ -36,21 +36,21 @@ declare const emailEvent: import("zod").ZodUnion<[import("zod").ZodObject<{
 }>, import("zod").ZodObject<{
     key: import("zod").ZodEnum<["NEWSLETTER_SIGNUP"]>;
     content: import("zod").ZodObject<{
-        voucher: import("zod").ZodString;
+        voucher_id: import("zod").ZodString;
     }, "strip", import("zod").ZodTypeAny, {
-        voucher: string;
+        voucher_id: string;
     }, {
-        voucher: string;
+        voucher_id: string;
     }>;
 }, "strip", import("zod").ZodTypeAny, {
     key: "NEWSLETTER_SIGNUP";
     content: {
-        voucher: string;
+        voucher_id: string;
     };
 }, {
     key: "NEWSLETTER_SIGNUP";
     content: {
-        voucher: string;
+        voucher_id: string;
     };
 }>, import("zod").ZodObject<{
     key: import("zod").ZodEnum<["ORDER_STATUS_CHANGE"]>;
