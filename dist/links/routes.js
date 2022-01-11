@@ -1,7 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const ROUTES = {
-    viewProduct: '/#/products',
     ADMIN_CALLBACKS: '/admin_callbacks',
     ADMIN_DELIVERY_TYPES: '/admin_delivery_types',
     ADMIN_ICONS: '/admin_icons',
@@ -10,6 +9,7 @@ const ROUTES = {
     ADMIN_NEWSLETTER_USERS: '/admin_newsletter_users',
     ADMIN_ORDERS: '/admin_orders',
     ADMIN_PAYMENT_TYPES: '/admin_payment_types',
+    ADMIN_MARKETING: '/admin_marketing',
     CHECKOUT_DELIVERY: '/checkout/delivery',
     CHECKOUT_DETAILS: '/checkout/details',
     CHECKOUT_PAYMENT: '/checkout/payment',
