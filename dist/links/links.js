@@ -7,5 +7,5 @@ exports.getViewProductLink = void 0;
 const index_1 = require("./index");
 const ROUTES_1 = __importDefault(require("./ROUTES"));
 const constants_1 = require("../constants");
-const getViewProductLink = (productId) => `${index_1.WEBISTE_URL}${ROUTES_1.default.viewProduct}${constants_1.SEPARATORS.PATH}${productId}`;
+const getViewProductLink = (productId) => `${index_1.WEBISTE_URL}${index_1.BROWSER_ROUTER_SUFFIX}${ROUTES_1.default.PRODUCTS}${constants_1.SEPARATORS.PATH}${productId}`;
 exports.getViewProductLink = getViewProductLink;
