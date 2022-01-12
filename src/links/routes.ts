@@ -24,11 +24,12 @@ const ROUTES = {
   PRODUCTS_ID: '/products/:id' as const,
   ORDERS: '/orders' as const,
   ORDERS_ID: '/orders/:id' as const,
-  CHRISTMAS_2021: '/christmas2021' as const,
   SIGN_IN: '/sign_in' as const,
   SIGNED_OUT: '/signed_out' as const,
   SIGN_UP: '/sign_up' as const,
   USER: '/user' as const,
+
+  CHRISTMAS_2021: '/christmas2021' as const,
   VALENTINES_DAY: '/valentines_day' as const
 }
 
