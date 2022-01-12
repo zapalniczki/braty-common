@@ -11,8 +11,8 @@ declare const ROUTES: {
     CHECKOUT_DELIVERY: "/checkout/delivery";
     CHECKOUT_DETAILS: "/checkout/details";
     CHECKOUT_PAYMENT: "/checkout/payment";
-    CART: "/cart";
     CHECKOUT_RESULT: "/checkout/result";
+    CART: "/cart";
     COMPANY_OFFER: "/company_offer";
     CONTACT: "/contact";
     DELIVERY_AND_PAYMENTS: "/delivery_and_payments";
