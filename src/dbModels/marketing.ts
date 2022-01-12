@@ -3,9 +3,10 @@ import tableBase from './tableBase'
 
 const marketing = tableBase.extend({
   email: string().nullable(),
-  phone: string().nullable(),
+  is_test: boolean(),
+  name: string().nullable(),
   notes: string().nullable(),
-  is_test: boolean()
+  phone: string().nullable()
 })
 
 export type Marketing = TypeOf<typeof marketing>
