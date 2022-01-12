@@ -1,5 +1,5 @@
 import { WEBISTE_URL, BROWSER_ROUTER_SUFFIX } from './index'
-import ROUTES from './ROUTES'
+import ROUTES from './routes'
 import { SEPARATORS } from '../constants'
 import { Product, Order } from '..'
 

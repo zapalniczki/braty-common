@@ -16,6 +16,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.ROUTES = exports.BROWSER_ROUTER_SUFFIX = exports.WEBISTE_URL = void 0;
 exports.WEBISTE_URL = 'https://braty.co';
 exports.BROWSER_ROUTER_SUFFIX = '/#';
-var ROUTES_1 = require("./ROUTES");
-Object.defineProperty(exports, "ROUTES", { enumerable: true, get: function () { return __importDefault(ROUTES_1).default; } });
+var routes_1 = require("./routes");
+Object.defineProperty(exports, "ROUTES", { enumerable: true, get: function () { return __importDefault(routes_1).default; } });
 __exportStar(require("./links"), exports);
