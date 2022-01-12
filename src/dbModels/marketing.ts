@@ -6,7 +6,8 @@ const marketing = tableBase.extend({
   is_test: boolean(),
   name: string().nullable(),
   notes: string().nullable(),
-  phone: string().nullable()
+  phone: string().nullable(),
+  plus_code: string().nullable()
 })
 
 export type Marketing = TypeOf<typeof marketing>
