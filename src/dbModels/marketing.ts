@@ -2,9 +2,9 @@ import { boolean, string, TypeOf } from 'zod'
 import tableBase from './tableBase'
 
 const marketing = tableBase.extend({
-  email: string().optional(),
-  phone: string().optional(),
-  notes: string().optional(),
+  email: string().nullable(),
+  phone: string().nullable(),
+  notes: string().nullable(),
   is_test: boolean()
 })
 
