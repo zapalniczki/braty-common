@@ -10,6 +10,7 @@ const marketing = tableBase_1.default.extend({
     is_test: (0, zod_1.boolean)(),
     name: (0, zod_1.string)().nullable(),
     notes: (0, zod_1.string)().nullable(),
-    phone: (0, zod_1.string)().nullable()
+    phone: (0, zod_1.string)().nullable(),
+    plus_code: (0, zod_1.string)().nullable()
 });
 exports.default = marketing;
