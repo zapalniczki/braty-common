@@ -23,11 +23,11 @@ declare const ROUTES: {
     PRODUCTS_ID: "/products/:id";
     ORDERS: "/orders";
     ORDERS_ID: "/orders/:id";
-    CHRISTMAS_2021: "/christmas2021";
     SIGN_IN: "/sign_in";
     SIGNED_OUT: "/signed_out";
     SIGN_UP: "/sign_up";
     USER: "/user";
+    CHRISTMAS_2021: "/christmas2021";
     VALENTINES_DAY: "/valentines_day";
 };
 export default ROUTES;
