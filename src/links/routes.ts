@@ -12,8 +12,9 @@ const ROUTES = {
   CHECKOUT_DELIVERY: '/checkout/delivery' as const,
   CHECKOUT_DETAILS: '/checkout/details' as const,
   CHECKOUT_PAYMENT: '/checkout/payment' as const,
-  CART: '/cart' as const,
   CHECKOUT_RESULT: '/checkout/result' as const,
+  CART: '/cart' as const,
+
   COMPANY_OFFER: '/company_offer' as const,
   CONTACT: '/contact' as const,
   DELIVERY_AND_PAYMENTS: '/delivery_and_payments' as const,
