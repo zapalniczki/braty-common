@@ -1,6 +1,6 @@
 {
   "name": "braty-common",
-  "version": "1.0.72",
+  "version": "1.0.73",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "license": "UNLICENSED",
@@ -14,7 +14,7 @@
     "minor": "yarn version --new-version minor",
     "patch": "yarn version --new-version patch",
     "release": "yarn run build & git add . & git commit -m \"Build\" & yarn run patch & git push",
-    "publish": "yarn run build & yarn run patch"
+    "publish": "yarn run build & yarn run patch & npm publish"
   },
   "husky": {
     "hooks": {
