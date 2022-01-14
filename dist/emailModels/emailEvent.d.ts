@@ -84,31 +84,26 @@ declare const emailEvent: import("zod").ZodObject<{
             order_status: "OPEN" | "CONFIRMED" | "PAYMENT_RECEIVED" | "PRODUCTION" | "AWAITING_FOR_PICKUP" | "IN_DELIVERY" | "COMPLETED" | "REJECTED";
         };
     }>, import("zod").ZodObject<{
-        key: import("zod").ZodEnum<["OFFER_MARKETING"]>;
+        key: import("zod").ZodEnum<["MARKETING_OFFER"]>;
         content: import("zod").ZodObject<{
-            email: import("zod").ZodString;
             name: import("zod").ZodString;
             language: import("zod").ZodEnum<["pl", "en"]>;
         }, "strip", import("zod").ZodTypeAny, {
-            email: string;
             name: string;
             language: "pl" | "en";
         }, {
-            email: string;
             name: string;
             language: "pl" | "en";
         }>;
     }, "strip", import("zod").ZodTypeAny, {
-        key: "OFFER_MARKETING";
+        key: "MARKETING_OFFER";
         content: {
-            email: string;
             name: string;
             language: "pl" | "en";
         };
     }, {
-        key: "OFFER_MARKETING";
+        key: "MARKETING_OFFER";
         content: {
-            email: string;
             name: string;
             language: "pl" | "en";
         };
@@ -135,9 +130,8 @@ declare const emailEvent: import("zod").ZodObject<{
             order_status: "OPEN" | "CONFIRMED" | "PAYMENT_RECEIVED" | "PRODUCTION" | "AWAITING_FOR_PICKUP" | "IN_DELIVERY" | "COMPLETED" | "REJECTED";
         };
     } | {
-        key: "OFFER_MARKETING";
+        key: "MARKETING_OFFER";
         content: {
-            email: string;
             name: string;
             language: "pl" | "en";
         };
@@ -165,9 +159,8 @@ declare const emailEvent: import("zod").ZodObject<{
             order_status: "OPEN" | "CONFIRMED" | "PAYMENT_RECEIVED" | "PRODUCTION" | "AWAITING_FOR_PICKUP" | "IN_DELIVERY" | "COMPLETED" | "REJECTED";
         };
     } | {
-        key: "OFFER_MARKETING";
+        key: "MARKETING_OFFER";
         content: {
-            email: string;
             name: string;
             language: "pl" | "en";
         };

@@ -26,16 +26,15 @@ var orderStatusChange = (0, zod_1.object)({
         order_status: dbModels_1.order.shape.status
     })
 });
-var offerMarketing = (0, zod_1.object)({
-    key: (0, zod_1.enum)(['OFFER_MARKETING']),
+var marketingOffer = (0, zod_1.object)({
+    key: (0, zod_1.enum)(['MARKETING_OFFER']),
     content: (0, zod_1.object)({
-        email: dbModels_1.user.shape.email,
         name: dbModels_1.user.shape.full_name,
         language: __1.language
     })
 });
 var emailEvent = (0, zod_1.object)({
     to: dbModels_1.user.shape.email,
-    type: (0, zod_1.union)([newOrder, newsletterSignUp, orderStatusChange, offerMarketing])
+    type: (0, zod_1.union)([newOrder, newsletterSignUp, orderStatusChange, marketingOffer])
 });
 exports.default = emailEvent;
