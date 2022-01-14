@@ -28,10 +28,9 @@ const orderStatusChange = object({
   })
 })
 
-const offerMarketing = object({
-  key: zenum(['OFFER_MARKETING']),
+const marketingOffer = object({
+  key: zenum(['MARKETING_OFFER']),
   content: object({
-    email: user.shape.email,
     name: user.shape.full_name,
     language: language
   })
@@ -39,7 +38,7 @@ const offerMarketing = object({
 
 const emailEvent = object({
   to: user.shape.email,
-  type: union([newOrder, newsletterSignUp, orderStatusChange, offerMarketing])
+  type: union([newOrder, newsletterSignUp, orderStatusChange, marketingOffer])
 })
 
 export type EmailEvent = TypeOf<typeof emailEvent>
