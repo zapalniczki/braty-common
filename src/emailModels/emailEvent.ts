@@ -1,4 +1,5 @@
 import { object, enum as zenum, boolean, TypeOf, union } from 'zod'
+import { language } from '..'
 import { order, user, voucher } from '../dbModels'
 
 const newOrder = object({
@@ -27,9 +28,18 @@ const orderStatusChange = object({
   })
 })
 
+const offerMarketing = object({
+  key: zenum(['OFFER_MARKETING']),
+  content: object({
+    email: user.shape.email,
+    name: user.shape.full_name,
+    language: language
+  })
+})
+
 const emailEvent = object({
   to: user.shape.email,
-  type: union([newOrder, newsletterSignUp, orderStatusChange])
+  type: union([newOrder, newsletterSignUp, orderStatusChange, offerMarketing])
 })
 
 export type EmailEvent = TypeOf<typeof emailEvent>
