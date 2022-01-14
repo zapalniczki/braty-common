@@ -1,4 +1,5 @@
 export * from './assets';
+export * from './appModels';
 export * from './brochureModels';
 export * from './constants';
 export * from './dbModels';

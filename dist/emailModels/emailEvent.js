@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var zod_1 = require("zod");
+var __1 = require("..");
 var dbModels_1 = require("../dbModels");
 var newOrder = (0, zod_1.object)({
     key: (0, zod_1.enum)(['NEW_ORDER']),
@@ -25,8 +26,16 @@ var orderStatusChange = (0, zod_1.object)({
         order_status: dbModels_1.order.shape.status
     })
 });
+var offerMarketing = (0, zod_1.object)({
+    key: (0, zod_1.enum)(['OFFER_MARKETING']),
+    content: (0, zod_1.object)({
+        email: dbModels_1.user.shape.email,
+        name: dbModels_1.user.shape.full_name,
+        language: __1.language
+    })
+});
 var emailEvent = (0, zod_1.object)({
     to: dbModels_1.user.shape.email,
-    type: (0, zod_1.union)([newOrder, newsletterSignUp, orderStatusChange])
+    type: (0, zod_1.union)([newOrder, newsletterSignUp, orderStatusChange, offerMarketing])
 });
 exports.default = emailEvent;
