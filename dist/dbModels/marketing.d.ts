@@ -10,6 +10,8 @@ declare const marketing: import("zod").ZodObject<import("zod").extendShape<{
     notes: import("zod").ZodNullable<import("zod").ZodString>;
     phone: import("zod").ZodNullable<import("zod").ZodString>;
     plus_code: import("zod").ZodNullable<import("zod").ZodString>;
+    send_brochure_agreement: import("zod").ZodBoolean;
+    sned_brochure_cyclic_agreement: import("zod").ZodBoolean;
 }>, "strip", import("zod").ZodTypeAny, {
     id: string;
     created_at: string;
@@ -20,6 +22,8 @@ declare const marketing: import("zod").ZodObject<import("zod").extendShape<{
     notes: string | null;
     phone: string | null;
     plus_code: string | null;
+    send_brochure_agreement: boolean;
+    sned_brochure_cyclic_agreement: boolean;
 }, {
     id: string;
     created_at: string;
@@ -30,6 +34,8 @@ declare const marketing: import("zod").ZodObject<import("zod").extendShape<{
     notes: string | null;
     phone: string | null;
     plus_code: string | null;
+    send_brochure_agreement: boolean;
+    sned_brochure_cyclic_agreement: boolean;
 }>;
 export declare type Marketing = TypeOf<typeof marketing>;
 export default marketing;
