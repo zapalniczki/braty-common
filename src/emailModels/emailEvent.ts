@@ -31,7 +31,7 @@ const orderStatusChange = object({
 const marketingOffer = object({
   key: zenum(['MARKETING_OFFER']),
   content: object({
-    name: user.shape.full_name,
+    name: user.shape.full_name.optional(),
     language: language
   })
 })
