@@ -9,7 +9,7 @@ const marketing = tableBase.extend({
   phone: string().nullable(),
   plus_code: string().nullable(),
   send_brochure_agreement: boolean(),
-  sned_brochure_cyclic_agreement: boolean()
+  send_brochure_cyclic_agreement: boolean()
 })
 
 export type Marketing = TypeOf<typeof marketing>
