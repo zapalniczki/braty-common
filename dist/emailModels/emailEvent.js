@@ -29,7 +29,7 @@ var orderStatusChange = (0, zod_1.object)({
 var marketingOffer = (0, zod_1.object)({
     key: (0, zod_1.enum)(['MARKETING_OFFER']),
     content: (0, zod_1.object)({
-        name: dbModels_1.user.shape.full_name,
+        name: dbModels_1.user.shape.full_name.optional(),
         language: __1.language
     })
 });

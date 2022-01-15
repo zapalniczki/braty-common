@@ -86,25 +86,25 @@ declare const emailEvent: import("zod").ZodObject<{
     }>, import("zod").ZodObject<{
         key: import("zod").ZodEnum<["MARKETING_OFFER"]>;
         content: import("zod").ZodObject<{
-            name: import("zod").ZodString;
+            name: import("zod").ZodOptional<import("zod").ZodString>;
             language: import("zod").ZodEnum<["pl", "en"]>;
         }, "strip", import("zod").ZodTypeAny, {
-            name: string;
+            name?: string | undefined;
             language: "pl" | "en";
         }, {
-            name: string;
+            name?: string | undefined;
             language: "pl" | "en";
         }>;
     }, "strip", import("zod").ZodTypeAny, {
         key: "MARKETING_OFFER";
         content: {
-            name: string;
+            name?: string | undefined;
             language: "pl" | "en";
         };
     }, {
         key: "MARKETING_OFFER";
         content: {
-            name: string;
+            name?: string | undefined;
             language: "pl" | "en";
         };
     }>]>;
@@ -132,7 +132,7 @@ declare const emailEvent: import("zod").ZodObject<{
     } | {
         key: "MARKETING_OFFER";
         content: {
-            name: string;
+            name?: string | undefined;
             language: "pl" | "en";
         };
     };
@@ -161,7 +161,7 @@ declare const emailEvent: import("zod").ZodObject<{
     } | {
         key: "MARKETING_OFFER";
         content: {
-            name: string;
+            name?: string | undefined;
             language: "pl" | "en";
         };
     };
