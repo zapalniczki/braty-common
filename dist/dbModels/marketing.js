@@ -13,6 +13,6 @@ var marketing = tableBase_1.default.extend({
     phone: (0, zod_1.string)().nullable(),
     plus_code: (0, zod_1.string)().nullable(),
     send_brochure_agreement: (0, zod_1.boolean)(),
-    sned_brochure_cyclic_agreement: (0, zod_1.boolean)()
+    send_brochure_cyclic_agreement: (0, zod_1.boolean)()
 });
 exports.default = marketing;
