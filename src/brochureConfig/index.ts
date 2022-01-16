@@ -1,5 +1,6 @@
-export const BROCHURE_TITLE = `Katalog produktów` as const
+export const BROCHURE_TITLE = 'Katalog produktów' as const
 export const BROCHURE_SUBTITLE = 'Zima 2021 | 22' as const
+export const BROCHURE_CAPTION = 'Zapoznaj się z aktualną ofertą' as const
 
 export const FEATURED_SUBTITLE = 'Oferta specjalna'
 export const REGULAR_SUBTITLE = 'Oferta standardowa'
