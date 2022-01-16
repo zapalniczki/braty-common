@@ -9,6 +9,6 @@ var collection = tableBase_1.default.extend({
     label_pl: (0, zod_1.string)(),
     label_en: (0, zod_1.string)(),
     visible: (0, zod_1.boolean)(),
-    featured: (0, zod_1.boolean)()
+    is_featured: (0, zod_1.boolean)()
 });
 exports.default = collection;
