@@ -1,8 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.PRODUCT_NAME_FOR_ICON_ONLY = exports.PRODUCT_ICON_ONLY_LABEL = exports.TILE_TITLE_PREFIX = exports.REGULAR_SUBTITLE = exports.FEATURED_SUBTITLE = exports.BROCHURE_SUBTITLE = exports.BROCHURE_TITLE = void 0;
-exports.BROCHURE_TITLE = "Katalog produkt\u00F3w";
+exports.PRODUCT_NAME_FOR_ICON_ONLY = exports.PRODUCT_ICON_ONLY_LABEL = exports.TILE_TITLE_PREFIX = exports.REGULAR_SUBTITLE = exports.FEATURED_SUBTITLE = exports.BROCHURE_CAPTION = exports.BROCHURE_SUBTITLE = exports.BROCHURE_TITLE = void 0;
+exports.BROCHURE_TITLE = 'Katalog produktów';
 exports.BROCHURE_SUBTITLE = 'Zima 2021 | 22';
+exports.BROCHURE_CAPTION = 'Zapoznaj się z aktualną ofertą';
 exports.FEATURED_SUBTITLE = 'Oferta specjalna';
 exports.REGULAR_SUBTITLE = 'Oferta standardowa';
 exports.TILE_TITLE_PREFIX = 'Zapalniczka ';
