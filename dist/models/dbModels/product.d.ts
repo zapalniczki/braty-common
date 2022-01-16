@@ -1,0 +1,50 @@
+import { TypeOf } from 'zod';
+declare const product: import("zod").ZodObject<import("zod").extendShape<{
+    created_at: import("zod").ZodString;
+    id: import("zod").ZodString;
+    updated_at: import("zod").ZodString;
+}, {
+    mold_id: import("zod").ZodString;
+    label_id: import("zod").ZodString;
+    icon_id: import("zod").ZodString;
+    description_pl: import("zod").ZodString;
+    description_en: import("zod").ZodString;
+    price: import("zod").ZodNumber;
+    collection_id: import("zod").ZodString;
+    bestseller: import("zod").ZodBoolean;
+    visible: import("zod").ZodBoolean;
+    featured: import("zod").ZodBoolean;
+    name: import("zod").ZodString;
+}>, "strip", import("zod").ZodTypeAny, {
+    created_at: string;
+    id: string;
+    updated_at: string;
+    mold_id: string;
+    label_id: string;
+    icon_id: string;
+    description_pl: string;
+    description_en: string;
+    price: number;
+    collection_id: string;
+    bestseller: boolean;
+    visible: boolean;
+    featured: boolean;
+    name: string;
+}, {
+    created_at: string;
+    id: string;
+    updated_at: string;
+    mold_id: string;
+    label_id: string;
+    icon_id: string;
+    description_pl: string;
+    description_en: string;
+    price: number;
+    collection_id: string;
+    bestseller: boolean;
+    visible: boolean;
+    featured: boolean;
+    name: string;
+}>;
+export declare type Product = TypeOf<typeof product>;
+export default product;
