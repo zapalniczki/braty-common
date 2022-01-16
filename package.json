@@ -1,8 +1,6 @@
 {
   "name": "braty-common",
   "version": "1.0.97",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
   "license": "UNLICENSED",
   "repository": "https://github.com/zapalniczki/braty-common",
   "devDependencies": {
@@ -13,13 +11,7 @@
     "build": "tsc",
     "minor": "yarn version --new-version minor",
     "patch": "yarn version --new-version patch",
-    "release": "yarn run build & git add . & git commit -m \"Build\" & yarn run patch & git push",
-    "alfa": "yarn run build & yarn run patch & npm publish --access public"
-  },
-  "husky": {
-    "hooks": {
-      "pre-push": "yarn run patch"
-    }
+    "release": "yarn run build & git add . & git commit -m \"Build\" & yarn run patch & git push"
   },
   "dependencies": {
     "zod": "^3.11.6"
