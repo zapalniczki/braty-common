@@ -7,6 +7,7 @@ declare const brochureIcon: import("zod").ZodObject<{
     pngPath: import("zod").ZodString;
     name_pl: import("zod").ZodString;
     name_pl_unicode: import("zod").ZodArray<import("zod").ZodNumber, "many">;
+    link: import("zod").ZodString;
 }, "strip", import("zod").ZodTypeAny, {
     level: "ICON";
     id: string;
@@ -15,6 +16,7 @@ declare const brochureIcon: import("zod").ZodObject<{
     pngPath: string;
     name_pl: string;
     name_pl_unicode: number[];
+    link: string;
 }, {
     level: "ICON";
     id: string;
@@ -23,6 +25,7 @@ declare const brochureIcon: import("zod").ZodObject<{
     pngPath: string;
     name_pl: string;
     name_pl_unicode: number[];
+    link: string;
 }>;
 export declare type BrochureIcon = TypeOf<typeof brochureIcon>;
 declare const brochureLabel: import("zod").ZodObject<{
@@ -38,6 +41,7 @@ declare const brochureLabel: import("zod").ZodObject<{
         pngPath: import("zod").ZodString;
         name_pl: import("zod").ZodString;
         name_pl_unicode: import("zod").ZodArray<import("zod").ZodNumber, "many">;
+        link: import("zod").ZodString;
     }, "strip", import("zod").ZodTypeAny, {
         level: "ICON";
         id: string;
@@ -46,6 +50,7 @@ declare const brochureLabel: import("zod").ZodObject<{
         pngPath: string;
         name_pl: string;
         name_pl_unicode: number[];
+        link: string;
     }, {
         level: "ICON";
         id: string;
@@ -54,6 +59,7 @@ declare const brochureLabel: import("zod").ZodObject<{
         pngPath: string;
         name_pl: string;
         name_pl_unicode: number[];
+        link: string;
     }>, "many">;
 }, "strip", import("zod").ZodTypeAny, {
     level: "LABEL";
@@ -68,6 +74,7 @@ declare const brochureLabel: import("zod").ZodObject<{
         pngPath: string;
         name_pl: string;
         name_pl_unicode: number[];
+        link: string;
     }[];
 }, {
     level: "LABEL";
@@ -82,12 +89,14 @@ declare const brochureLabel: import("zod").ZodObject<{
         pngPath: string;
         name_pl: string;
         name_pl_unicode: number[];
+        link: string;
     }[];
 }>;
 export declare type BrochureLabel = TypeOf<typeof brochureLabel>;
 declare const brochureCollection: import("zod").ZodObject<{
     level: import("zod").ZodEnum<["COLLECTION"]>;
     id: import("zod").ZodString;
+    is_featured: import("zod").ZodBoolean;
     label_pl: import("zod").ZodString;
     label_pl_unicode: import("zod").ZodArray<import("zod").ZodNumber, "many">;
     labels: import("zod").ZodArray<import("zod").ZodObject<{
@@ -103,6 +112,7 @@ declare const brochureCollection: import("zod").ZodObject<{
             pngPath: import("zod").ZodString;
             name_pl: import("zod").ZodString;
             name_pl_unicode: import("zod").ZodArray<import("zod").ZodNumber, "many">;
+            link: import("zod").ZodString;
         }, "strip", import("zod").ZodTypeAny, {
             level: "ICON";
             id: string;
@@ -111,6 +121,7 @@ declare const brochureCollection: import("zod").ZodObject<{
             pngPath: string;
             name_pl: string;
             name_pl_unicode: number[];
+            link: string;
         }, {
             level: "ICON";
             id: string;
@@ -119,6 +130,7 @@ declare const brochureCollection: import("zod").ZodObject<{
             pngPath: string;
             name_pl: string;
             name_pl_unicode: number[];
+            link: string;
         }>, "many">;
     }, "strip", import("zod").ZodTypeAny, {
         level: "LABEL";
@@ -133,6 +145,7 @@ declare const brochureCollection: import("zod").ZodObject<{
             pngPath: string;
             name_pl: string;
             name_pl_unicode: number[];
+            link: string;
         }[];
     }, {
         level: "LABEL";
@@ -147,6 +160,7 @@ declare const brochureCollection: import("zod").ZodObject<{
             pngPath: string;
             name_pl: string;
             name_pl_unicode: number[];
+            link: string;
         }[];
     }>, "many">;
 }, "strip", import("zod").ZodTypeAny, {
@@ -154,6 +168,7 @@ declare const brochureCollection: import("zod").ZodObject<{
     id: string;
     label_pl: string;
     label_pl_unicode: number[];
+    is_featured: boolean;
     labels: {
         level: "LABEL";
         id: string;
@@ -167,6 +182,7 @@ declare const brochureCollection: import("zod").ZodObject<{
             pngPath: string;
             name_pl: string;
             name_pl_unicode: number[];
+            link: string;
         }[];
     }[];
 }, {
@@ -174,6 +190,7 @@ declare const brochureCollection: import("zod").ZodObject<{
     id: string;
     label_pl: string;
     label_pl_unicode: number[];
+    is_featured: boolean;
     labels: {
         level: "LABEL";
         id: string;
@@ -187,6 +204,7 @@ declare const brochureCollection: import("zod").ZodObject<{
             pngPath: string;
             name_pl: string;
             name_pl_unicode: number[];
+            link: string;
         }[];
     }[];
 }>;
@@ -194,6 +212,7 @@ export declare type BrochureCollection = TypeOf<typeof brochureCollection>;
 declare const brochureData: import("zod").ZodArray<import("zod").ZodObject<{
     level: import("zod").ZodEnum<["COLLECTION"]>;
     id: import("zod").ZodString;
+    is_featured: import("zod").ZodBoolean;
     label_pl: import("zod").ZodString;
     label_pl_unicode: import("zod").ZodArray<import("zod").ZodNumber, "many">;
     labels: import("zod").ZodArray<import("zod").ZodObject<{
@@ -209,6 +228,7 @@ declare const brochureData: import("zod").ZodArray<import("zod").ZodObject<{
             pngPath: import("zod").ZodString;
             name_pl: import("zod").ZodString;
             name_pl_unicode: import("zod").ZodArray<import("zod").ZodNumber, "many">;
+            link: import("zod").ZodString;
         }, "strip", import("zod").ZodTypeAny, {
             level: "ICON";
             id: string;
@@ -217,6 +237,7 @@ declare const brochureData: import("zod").ZodArray<import("zod").ZodObject<{
             pngPath: string;
             name_pl: string;
             name_pl_unicode: number[];
+            link: string;
         }, {
             level: "ICON";
             id: string;
@@ -225,6 +246,7 @@ declare const brochureData: import("zod").ZodArray<import("zod").ZodObject<{
             pngPath: string;
             name_pl: string;
             name_pl_unicode: number[];
+            link: string;
         }>, "many">;
     }, "strip", import("zod").ZodTypeAny, {
         level: "LABEL";
@@ -239,6 +261,7 @@ declare const brochureData: import("zod").ZodArray<import("zod").ZodObject<{
             pngPath: string;
             name_pl: string;
             name_pl_unicode: number[];
+            link: string;
         }[];
     }, {
         level: "LABEL";
@@ -253,6 +276,7 @@ declare const brochureData: import("zod").ZodArray<import("zod").ZodObject<{
             pngPath: string;
             name_pl: string;
             name_pl_unicode: number[];
+            link: string;
         }[];
     }>, "many">;
 }, "strip", import("zod").ZodTypeAny, {
@@ -260,6 +284,7 @@ declare const brochureData: import("zod").ZodArray<import("zod").ZodObject<{
     id: string;
     label_pl: string;
     label_pl_unicode: number[];
+    is_featured: boolean;
     labels: {
         level: "LABEL";
         id: string;
@@ -273,6 +298,7 @@ declare const brochureData: import("zod").ZodArray<import("zod").ZodObject<{
             pngPath: string;
             name_pl: string;
             name_pl_unicode: number[];
+            link: string;
         }[];
     }[];
 }, {
@@ -280,6 +306,7 @@ declare const brochureData: import("zod").ZodArray<import("zod").ZodObject<{
     id: string;
     label_pl: string;
     label_pl_unicode: number[];
+    is_featured: boolean;
     labels: {
         level: "LABEL";
         id: string;
@@ -293,6 +320,7 @@ declare const brochureData: import("zod").ZodArray<import("zod").ZodObject<{
             pngPath: string;
             name_pl: string;
             name_pl_unicode: number[];
+            link: string;
         }[];
     }[];
 }>, "many">;

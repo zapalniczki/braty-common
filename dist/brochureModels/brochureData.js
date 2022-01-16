@@ -8,7 +8,8 @@ var brochureIcon = (0, zod_1.object)({
     label_pl_unicode: (0, zod_1.array)((0, zod_1.number)()),
     pngPath: (0, zod_1.string)(),
     name_pl: (0, zod_1.string)(),
-    name_pl_unicode: (0, zod_1.array)((0, zod_1.number)())
+    name_pl_unicode: (0, zod_1.array)((0, zod_1.number)()),
+    link: (0, zod_1.string)()
 });
 var brochureLabel = (0, zod_1.object)({
     level: (0, zod_1.enum)(['LABEL']),
@@ -20,6 +21,7 @@ var brochureLabel = (0, zod_1.object)({
 var brochureCollection = (0, zod_1.object)({
     level: (0, zod_1.enum)(['COLLECTION']),
     id: (0, zod_1.string)().uuid(),
+    is_featured: (0, zod_1.boolean)(),
     label_pl: (0, zod_1.string)(),
     label_pl_unicode: (0, zod_1.array)((0, zod_1.number)()),
     labels: (0, zod_1.array)(brochureLabel)

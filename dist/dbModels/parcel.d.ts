@@ -8,16 +8,16 @@ declare const parcel: import("zod").ZodObject<import("zod").extendShape<{
     link: import("zod").ZodString;
 }>, "strip", import("zod").ZodTypeAny, {
     id: string;
+    link: string;
     created_at: string;
     updated_at: string;
     ref: string;
-    link: string;
 }, {
     id: string;
+    link: string;
     created_at: string;
     updated_at: string;
     ref: string;
-    link: string;
 }>;
 export declare type Parcel = TypeOf<typeof parcel>;
 export default parcel;

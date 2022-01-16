@@ -11,19 +11,19 @@ declare const collection: import("zod").ZodObject<import("zod").extendShape<{
 }>, "strip", import("zod").ZodTypeAny, {
     id: string;
     label_pl: string;
+    is_featured: boolean;
     created_at: string;
     updated_at: string;
     label_en: string;
     visible: boolean;
-    is_featured: boolean;
 }, {
     id: string;
     label_pl: string;
+    is_featured: boolean;
     created_at: string;
     updated_at: string;
     label_en: string;
     visible: boolean;
-    is_featured: boolean;
 }>;
 export declare type Collection = TypeOf<typeof collection>;
 export default collection;
