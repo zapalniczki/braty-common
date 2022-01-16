@@ -1,6 +1,7 @@
 const EXTENSIONS = {
   WEBP: '.webp' as const,
-  PNG_: '.png' as const
+  PNG: '.png' as const,
+  PDF: '.pdf' as const
 }
 
 export default EXTENSIONS
