@@ -9,6 +9,7 @@ const brochureIcon = object({
   name_pl: string(),
   name_pl_unicode: array(number())
 })
+export type BrochureIcon = TypeOf<typeof brochureIcon>
 
 const brochureLabel = object({
   level: zenum(['LABEL']),
@@ -17,6 +18,7 @@ const brochureLabel = object({
   label_pl_unicode: array(number()),
   icons: array(brochureIcon)
 })
+export type BrochureLabel = TypeOf<typeof brochureLabel>
 
 const brochureCollection = object({
   level: zenum(['COLLECTION']),
@@ -25,9 +27,9 @@ const brochureCollection = object({
   label_pl_unicode: array(number()),
   labels: array(brochureLabel)
 })
+export type BrochureCollection = TypeOf<typeof brochureCollection>
 
 const brochureData = array(brochureCollection)
-
 export type BrochureData = TypeOf<typeof brochureData>
 
 export default brochureData
