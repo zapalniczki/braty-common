@@ -1,4 +1,12 @@
-import { TypeOf, number, array, object, enum as zenum, string } from 'zod'
+import {
+  TypeOf,
+  number,
+  array,
+  object,
+  enum as zenum,
+  string,
+  boolean
+} from 'zod'
 
 const brochureIcon = object({
   level: zenum(['ICON']),
@@ -7,7 +15,8 @@ const brochureIcon = object({
   label_pl_unicode: array(number()),
   pngPath: string(),
   name_pl: string(),
-  name_pl_unicode: array(number())
+  name_pl_unicode: array(number()),
+  link: string()
 })
 export type BrochureIcon = TypeOf<typeof brochureIcon>
 
@@ -23,6 +32,7 @@ export type BrochureLabel = TypeOf<typeof brochureLabel>
 const brochureCollection = object({
   level: zenum(['COLLECTION']),
   id: string().uuid(),
+  is_featured: boolean(),
   label_pl: string(),
   label_pl_unicode: array(number()),
   labels: array(brochureLabel)
