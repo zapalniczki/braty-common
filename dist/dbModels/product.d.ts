@@ -20,6 +20,7 @@ declare const product: import("zod").ZodObject<import("zod").extendShape<{
     created_at: string;
     updated_at: string;
     visible: boolean;
+    featured: boolean;
     price: number;
     name: string;
     label_id: string;
@@ -29,12 +30,12 @@ declare const product: import("zod").ZodObject<import("zod").extendShape<{
     description_en: string;
     collection_id: string;
     bestseller: boolean;
-    featured: boolean;
 }, {
     id: string;
     created_at: string;
     updated_at: string;
     visible: boolean;
+    featured: boolean;
     price: number;
     name: string;
     label_id: string;
@@ -44,7 +45,6 @@ declare const product: import("zod").ZodObject<import("zod").extendShape<{
     description_en: string;
     collection_id: string;
     bestseller: boolean;
-    featured: boolean;
 }>;
 export declare type Product = TypeOf<typeof product>;
 export default product;
