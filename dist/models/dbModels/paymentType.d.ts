@@ -17,8 +17,8 @@ declare const paymentType: import("zod").ZodObject<import("zod").extendShape<{
     price: number;
     frontend_icon_name: string;
     is_enabled: boolean;
-    time: string;
     label: string;
+    time: string;
     in_person: boolean;
 }, {
     created_at: string;
@@ -27,8 +27,8 @@ declare const paymentType: import("zod").ZodObject<import("zod").extendShape<{
     price: number;
     frontend_icon_name: string;
     is_enabled: boolean;
-    time: string;
     label: string;
+    time: string;
     in_person: boolean;
 }>;
 export declare type PaymentType = TypeOf<typeof paymentType>;
