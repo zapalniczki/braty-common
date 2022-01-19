@@ -1,9 +1,10 @@
 import international from './international'
+import iconName from './iconName'
 import tableBase from './tableBase'
 import { string, number, boolean, TypeOf } from 'zod'
 
 const deliveryType = tableBase.merge(international).extend({
-  frontend_icon_name: string(),
+  icon_name: iconName,
   is_enabled: boolean(),
   price: number(),
   requires_address: boolean(),

@@ -1,11 +1,13 @@
 import tableBase from './tableBase'
 import { boolean, number, string, TypeOf } from 'zod'
+import international from './international'
+import iconName from './iconName'
 
-const paymentType = tableBase.extend({
-  label: string(),
+const paymentType = tableBase.merge(international).extend({
   price: number(),
-  time: string(),
-  frontend_icon_name: string(),
+  description_pl: string(),
+  description_en: string(),
+  icon_name: iconName,
   is_enabled: boolean(),
   in_person: boolean()
 })
