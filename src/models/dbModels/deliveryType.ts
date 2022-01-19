@@ -7,7 +7,8 @@ const deliveryType = tableBase.merge(international).extend({
   is_enabled: boolean(),
   price: number(),
   requires_address: boolean(),
-  time: string(),
+  description_pl: string(),
+  description_en: string(),
   allows_cash_payment: boolean()
 })
 
