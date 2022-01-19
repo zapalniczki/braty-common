@@ -23,6 +23,7 @@ export { default as collection } from './collection';
 export { default as deliveryType } from './deliveryType';
 export { default as icon } from './icon';
 export { default as image } from './image';
+export { default as international } from './international';
 export { default as invoice } from './invoice';
 export { default as label } from './label';
 export { default as marketing } from './marketing';

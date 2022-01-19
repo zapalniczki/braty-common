@@ -1,11 +1,12 @@
 import { TypeOf } from 'zod';
-declare const icon: import("zod").ZodObject<import("zod").extendShape<{
+declare const icon: import("zod").ZodObject<import("zod").extendShape<import("zod").extendShape<{
     created_at: import("zod").ZodString;
     id: import("zod").ZodString;
     updated_at: import("zod").ZodString;
 }, {
     label_pl: import("zod").ZodString;
     label_en: import("zod").ZodString;
+}>, {
     visible: import("zod").ZodBoolean;
 }>, "strip", import("zod").ZodTypeAny, {
     created_at: string;

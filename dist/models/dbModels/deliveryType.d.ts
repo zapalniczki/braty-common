@@ -1,12 +1,14 @@
 import { TypeOf } from 'zod';
-declare const deliveryType: import("zod").ZodObject<import("zod").extendShape<{
+declare const deliveryType: import("zod").ZodObject<import("zod").extendShape<import("zod").extendShape<{
     created_at: import("zod").ZodString;
     id: import("zod").ZodString;
     updated_at: import("zod").ZodString;
 }, {
+    label_pl: import("zod").ZodString;
+    label_en: import("zod").ZodString;
+}>, {
     frontend_icon_name: import("zod").ZodString;
     is_enabled: import("zod").ZodBoolean;
-    label: import("zod").ZodString;
     price: import("zod").ZodNumber;
     requires_address: import("zod").ZodBoolean;
     time: import("zod").ZodString;
@@ -16,9 +18,10 @@ declare const deliveryType: import("zod").ZodObject<import("zod").extendShape<{
     id: string;
     updated_at: string;
     price: number;
+    label_pl: string;
+    label_en: string;
     frontend_icon_name: string;
     is_enabled: boolean;
-    label: string;
     requires_address: boolean;
     time: string;
     allows_cash_payment: boolean;
@@ -27,9 +30,10 @@ declare const deliveryType: import("zod").ZodObject<import("zod").extendShape<{
     id: string;
     updated_at: string;
     price: number;
+    label_pl: string;
+    label_en: string;
     frontend_icon_name: string;
     is_enabled: boolean;
-    label: string;
     requires_address: boolean;
     time: string;
     allows_cash_payment: boolean;

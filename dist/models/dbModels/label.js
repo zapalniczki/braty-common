@@ -4,9 +4,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var tableBase_1 = __importDefault(require("./tableBase"));
-var zod_1 = require("zod");
-var label = tableBase_1.default.extend({
-    label_pl: (0, zod_1.string)(),
-    label_en: (0, zod_1.string)()
-});
+var international_1 = __importDefault(require("./international"));
+var label = tableBase_1.default.merge(international_1.default);
 exports.default = label;
