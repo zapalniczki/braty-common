@@ -1,10 +1,8 @@
 import tableBase from './tableBase'
 import { string, TypeOf } from 'zod'
+import international from './international'
 
-const label = tableBase.extend({
-  label_pl: string(),
-  label_en: string()
-})
+const label = tableBase.merge(international)
 
 export type Label = TypeOf<typeof label>
 

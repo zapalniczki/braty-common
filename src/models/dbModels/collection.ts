@@ -1,9 +1,8 @@
 import tableBase from './tableBase'
+import international from './international'
 import { boolean, string, TypeOf } from 'zod'
 
-const collection = tableBase.extend({
-  label_pl: string(),
-  label_en: string(),
+const collection = tableBase.merge(international).extend({
   visible: boolean(),
   is_featured: boolean()
 })
