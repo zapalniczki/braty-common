@@ -5,6 +5,7 @@ import { order, user, voucher } from '../dbModels'
 const newOrder = object({
   key: zenum(['NEW_ORDER']),
   content: object({
+    language,
     is_long: boolean().optional(),
     name: user.shape.full_name,
     order_id: order.shape.id,
@@ -22,6 +23,7 @@ const newsletterSignUp = object({
 const orderStatusChange = object({
   key: zenum(['ORDER_STATUS_CHANGE']),
   content: object({
+    language,
     name: user.shape.full_name,
     order_id: order.shape.id,
     order_status: order.shape.status
@@ -32,7 +34,7 @@ const marketingOffer = object({
   key: zenum(['MARKETING_OFFER']),
   content: object({
     name: user.shape.full_name.optional(),
-    language: language
+    language
   })
 })
 
