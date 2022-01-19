@@ -6,6 +6,7 @@ var dbModels_1 = require("../dbModels");
 var newOrder = (0, zod_1.object)({
     key: (0, zod_1.enum)(['NEW_ORDER']),
     content: (0, zod_1.object)({
+        language: __1.language,
         is_long: (0, zod_1.boolean)().optional(),
         name: dbModels_1.user.shape.full_name,
         order_id: dbModels_1.order.shape.id,
@@ -21,6 +22,7 @@ var newsletterSignUp = (0, zod_1.object)({
 var orderStatusChange = (0, zod_1.object)({
     key: (0, zod_1.enum)(['ORDER_STATUS_CHANGE']),
     content: (0, zod_1.object)({
+        language: __1.language,
         name: dbModels_1.user.shape.full_name,
         order_id: dbModels_1.order.shape.id,
         order_status: dbModels_1.order.shape.status

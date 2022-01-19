@@ -4,6 +4,7 @@ declare const emailEvent: import("zod").ZodObject<{
     type: import("zod").ZodUnion<[import("zod").ZodObject<{
         key: import("zod").ZodEnum<["NEW_ORDER"]>;
         content: import("zod").ZodObject<{
+            language: import("zod").ZodEnum<["pl", "en"]>;
             is_long: import("zod").ZodOptional<import("zod").ZodBoolean>;
             name: import("zod").ZodString;
             order_id: import("zod").ZodString;
@@ -13,11 +14,13 @@ declare const emailEvent: import("zod").ZodObject<{
             name: string;
             order_id: string;
             phone: string;
+            language: "pl" | "en";
         }, {
             is_long?: boolean | undefined;
             name: string;
             order_id: string;
             phone: string;
+            language: "pl" | "en";
         }>;
     }, "strip", import("zod").ZodTypeAny, {
         key: "NEW_ORDER";
@@ -26,6 +29,7 @@ declare const emailEvent: import("zod").ZodObject<{
             name: string;
             order_id: string;
             phone: string;
+            language: "pl" | "en";
         };
     }, {
         key: "NEW_ORDER";
@@ -34,6 +38,7 @@ declare const emailEvent: import("zod").ZodObject<{
             name: string;
             order_id: string;
             phone: string;
+            language: "pl" | "en";
         };
     }>, import("zod").ZodObject<{
         key: import("zod").ZodEnum<["NEWSLETTER_SIGNUP"]>;
@@ -57,16 +62,19 @@ declare const emailEvent: import("zod").ZodObject<{
     }>, import("zod").ZodObject<{
         key: import("zod").ZodEnum<["ORDER_STATUS_CHANGE"]>;
         content: import("zod").ZodObject<{
+            language: import("zod").ZodEnum<["pl", "en"]>;
             name: import("zod").ZodString;
             order_id: import("zod").ZodString;
             order_status: import("zod").ZodEnum<["OPEN", "CONFIRMED", "PAYMENT_RECEIVED", "PRODUCTION", "AWAITING_FOR_PICKUP", "IN_DELIVERY", "COMPLETED", "REJECTED"]>;
         }, "strip", import("zod").ZodTypeAny, {
             name: string;
             order_id: string;
+            language: "pl" | "en";
             order_status: "OPEN" | "CONFIRMED" | "PAYMENT_RECEIVED" | "PRODUCTION" | "AWAITING_FOR_PICKUP" | "IN_DELIVERY" | "COMPLETED" | "REJECTED";
         }, {
             name: string;
             order_id: string;
+            language: "pl" | "en";
             order_status: "OPEN" | "CONFIRMED" | "PAYMENT_RECEIVED" | "PRODUCTION" | "AWAITING_FOR_PICKUP" | "IN_DELIVERY" | "COMPLETED" | "REJECTED";
         }>;
     }, "strip", import("zod").ZodTypeAny, {
@@ -74,6 +82,7 @@ declare const emailEvent: import("zod").ZodObject<{
         content: {
             name: string;
             order_id: string;
+            language: "pl" | "en";
             order_status: "OPEN" | "CONFIRMED" | "PAYMENT_RECEIVED" | "PRODUCTION" | "AWAITING_FOR_PICKUP" | "IN_DELIVERY" | "COMPLETED" | "REJECTED";
         };
     }, {
@@ -81,6 +90,7 @@ declare const emailEvent: import("zod").ZodObject<{
         content: {
             name: string;
             order_id: string;
+            language: "pl" | "en";
             order_status: "OPEN" | "CONFIRMED" | "PAYMENT_RECEIVED" | "PRODUCTION" | "AWAITING_FOR_PICKUP" | "IN_DELIVERY" | "COMPLETED" | "REJECTED";
         };
     }>, import("zod").ZodObject<{
@@ -116,6 +126,7 @@ declare const emailEvent: import("zod").ZodObject<{
             name: string;
             order_id: string;
             phone: string;
+            language: "pl" | "en";
         };
     } | {
         key: "NEWSLETTER_SIGNUP";
@@ -127,6 +138,7 @@ declare const emailEvent: import("zod").ZodObject<{
         content: {
             name: string;
             order_id: string;
+            language: "pl" | "en";
             order_status: "OPEN" | "CONFIRMED" | "PAYMENT_RECEIVED" | "PRODUCTION" | "AWAITING_FOR_PICKUP" | "IN_DELIVERY" | "COMPLETED" | "REJECTED";
         };
     } | {
@@ -145,6 +157,7 @@ declare const emailEvent: import("zod").ZodObject<{
             name: string;
             order_id: string;
             phone: string;
+            language: "pl" | "en";
         };
     } | {
         key: "NEWSLETTER_SIGNUP";
@@ -156,6 +169,7 @@ declare const emailEvent: import("zod").ZodObject<{
         content: {
             name: string;
             order_id: string;
+            language: "pl" | "en";
             order_status: "OPEN" | "CONFIRMED" | "PAYMENT_RECEIVED" | "PRODUCTION" | "AWAITING_FOR_PICKUP" | "IN_DELIVERY" | "COMPLETED" | "REJECTED";
         };
     } | {
