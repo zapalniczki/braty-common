@@ -16,6 +16,7 @@
     "release": "yarn run build & git add . & git commit -m \"Build\" & yarn run patch & git push"
   },
   "dependencies": {
+    "firebase": "^9.6.3",
     "zod": "^3.11.6"
   },
   "files": [
