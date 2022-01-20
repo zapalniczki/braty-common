@@ -4,3 +4,4 @@ export * from './constants';
 export * from './info';
 export * from './links';
 export * from './models';
+export * from './remoteConfig';
