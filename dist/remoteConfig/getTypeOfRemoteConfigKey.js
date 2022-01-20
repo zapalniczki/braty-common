@@ -1,8 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var __1 = require("..");
+var helpers_1 = require("../helpers");
 var getTypeOfRemoteConfigKey = function (query) {
-    var entries = getObjectEntries(__1.remoteConfig._getCached().shape);
+    var entries = (0, helpers_1.getObjectEntries)(__1.remoteConfig._getCached().shape);
     var remoteConfigKeysWithTypes = entries.map(function (_a) {
         var key = _a[0], value = _a[1];
         return ({
@@ -25,9 +26,3 @@ var getTypeOfRemoteConfigKey = function (query) {
     return thisKey.type;
 };
 exports.default = getTypeOfRemoteConfigKey;
-var getObjectEntries = function (obj) {
-    var ownProps = Object.keys(obj), i = ownProps.length, resArray = new Array(i);
-    while (i--)
-        resArray[i] = [ownProps[i], obj[ownProps[i]]];
-    return resArray;
-};
