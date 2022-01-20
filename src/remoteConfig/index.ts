@@ -1,1 +1,1 @@
-import { default as getTypeOfRemoteConfigKey } from './getTypeOfRemoteConfigKey'
+export { default as getTypeOfRemoteConfigKey } from './getTypeOfRemoteConfigKey'
