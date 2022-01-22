@@ -16,6 +16,7 @@ var product = tableBase_1.default.extend({
     bestseller: (0, zod_1.boolean)(),
     visible: (0, zod_1.boolean)(),
     featured: (0, zod_1.boolean)(),
-    name: (0, zod_1.string)()
+    name_pl: (0, zod_1.string)(),
+    name_en: (0, zod_1.string)()
 });
 exports.default = product;

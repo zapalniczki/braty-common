@@ -16,9 +16,9 @@ declare const marketing: import("zod").ZodObject<import("zod").extendShape<{
     created_at: string;
     id: string;
     updated_at: string;
-    name: string | null;
     is_test: boolean;
     email: string | null;
+    name: string | null;
     notes: string | null;
     phone: string | null;
     plus_code: string | null;
@@ -28,9 +28,9 @@ declare const marketing: import("zod").ZodObject<import("zod").extendShape<{
     created_at: string;
     id: string;
     updated_at: string;
-    name: string | null;
     is_test: boolean;
     email: string | null;
+    name: string | null;
     notes: string | null;
     phone: string | null;
     plus_code: string | null;
