@@ -8,3 +8,5 @@ export const REGULAR_SUBTITLE = 'Oferta standardowa'
 export const TILE_TITLE_PREFIX = 'Zapalniczka ' as const
 export const PRODUCT_ICON_ONLY_LABEL = '-' as const
 export const PRODUCT_NAME_FOR_ICON_ONLY = 'Zapalniczki tylko z ikonami' as const
+
+export const TOC_TITLE = 'Spis treści' as const
