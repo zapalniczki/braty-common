@@ -6,3 +6,4 @@ export declare const REGULAR_SUBTITLE = "Oferta standardowa";
 export declare const TILE_TITLE_PREFIX: "Zapalniczka ";
 export declare const PRODUCT_ICON_ONLY_LABEL: "-";
 export declare const PRODUCT_NAME_FOR_ICON_ONLY: "Zapalniczki tylko z ikonami";
+export declare const TOC_TITLE: "Spis treści";
