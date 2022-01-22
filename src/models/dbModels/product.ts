@@ -12,7 +12,8 @@ const product = tableBase.extend({
   bestseller: boolean(),
   visible: boolean(),
   featured: boolean(),
-  name: string()
+  name_pl: string(),
+  name_en: string()
 })
 
 export type Product = TypeOf<typeof product>
