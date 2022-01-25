@@ -28,11 +28,15 @@ const brochureLabel = label.extend({
 })
 export type BrochureLabel = TypeOf<typeof brochureLabel>
 
-const brochureCollection = collection.extend({
-  level: zenum(['COLLECTION']),
-  label_pl_unicode: array(number()),
-  labels: array(brochureLabel)
-})
+const brochureCollection = collection
+  .pick({
+    is_featured: true
+  })
+  .extend({
+    level: zenum(['COLLECTION']),
+    label: array(number()),
+    labels: array(brochureLabel)
+  })
 export type BrochureCollection = TypeOf<typeof brochureCollection>
 
 const brochureData = array(brochureCollection)
