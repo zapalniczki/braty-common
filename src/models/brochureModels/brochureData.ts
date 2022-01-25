@@ -8,40 +8,28 @@ import {
   boolean
 } from 'zod'
 import icon from '../dbModels/icon'
+import collection from '../dbModels/collection'
+import label from '../dbModels/label'
 
-const brochureIcon = icon
-  .pick({
-    id: true,
-    label_pl: true,
-    label_en: true,
-    created_at: true,
-    updated_at: true,
-    visible: true
-  })
-  .extend({
-    level: zenum(['ICON']),
-    label_pl_unicode: array(number()),
-    pngPath: string(),
-    name_pl: string(),
-    name_pl_unicode: array(number()),
-    link: string()
-  })
+const brochureIcon = icon.extend({
+  level: zenum(['ICON']),
+  label_pl_unicode: array(number()),
+  pngPath: string(),
+  name_pl: string(),
+  name_pl_unicode: array(number()),
+  link: string()
+})
 export type BrochureIcon = TypeOf<typeof brochureIcon>
 
-const brochureLabel = object({
+const brochureLabel = label.extend({
   level: zenum(['LABEL']),
-  id: string().uuid(),
-  label_pl: string(),
   label_pl_unicode: array(number()),
   icons: array(brochureIcon)
 })
 export type BrochureLabel = TypeOf<typeof brochureLabel>
 
-const brochureCollection = object({
+const brochureCollection = collection.extend({
   level: zenum(['COLLECTION']),
-  id: string().uuid(),
-  is_featured: boolean(),
-  label_pl: string(),
   label_pl_unicode: array(number()),
   labels: array(brochureLabel)
 })
