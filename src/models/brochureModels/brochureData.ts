@@ -7,7 +7,7 @@ import {
   string,
   boolean
 } from 'zod'
-import { icon } from '..'
+import icon from '../dbModels/icon'
 
 const brochureIcon = icon
   .pick({
