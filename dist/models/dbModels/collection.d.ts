@@ -15,16 +15,16 @@ declare const collection: import("zod").ZodObject<import("zod").extendShape<impo
     updated_at: string;
     visible: boolean;
     label_pl: string;
-    is_featured: boolean;
     label_en: string;
+    is_featured: boolean;
 }, {
     created_at: string;
     id: string;
     updated_at: string;
     visible: boolean;
     label_pl: string;
-    is_featured: boolean;
     label_en: string;
+    is_featured: boolean;
 }>;
 export declare type Collection = TypeOf<typeof collection>;
 export default collection;

@@ -1,10 +1,18 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var zod_1 = require("zod");
-var brochureIcon = (0, zod_1.object)({
+var __1 = require("..");
+var brochureIcon = __1.icon
+    .pick({
+    id: true,
+    label_pl: true,
+    label_en: true,
+    created_at: true,
+    updated_at: true,
+    visible: true
+})
+    .extend({
     level: (0, zod_1.enum)(['ICON']),
-    id: (0, zod_1.string)().uuid(),
-    label_pl: (0, zod_1.string)(),
     label_pl_unicode: (0, zod_1.array)((0, zod_1.number)()),
     pngPath: (0, zod_1.string)(),
     name_pl: (0, zod_1.string)(),
