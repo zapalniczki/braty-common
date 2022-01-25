@@ -1,15 +1,8 @@
-import {
-  TypeOf,
-  number,
-  array,
-  object,
-  enum as zenum,
-  string,
-  boolean
-} from 'zod'
-import icon from '../dbModels/icon'
+import { array, enum as zenum, number, object, string, TypeOf } from 'zod'
 import collection from '../dbModels/collection'
-import label from '../dbModels/label'
+import icon from '../dbModels/icon'
+
+const label = array(number())
 
 const brochureIcon = icon.extend({
   level: zenum(['ICON']),
@@ -21,9 +14,9 @@ const brochureIcon = icon.extend({
 })
 export type BrochureIcon = TypeOf<typeof brochureIcon>
 
-const brochureLabel = label.extend({
+const brochureLabel = object({
   level: zenum(['LABEL']),
-  label_pl_unicode: array(number()),
+  label,
   icons: array(brochureIcon)
 })
 export type BrochureLabel = TypeOf<typeof brochureLabel>
@@ -34,7 +27,7 @@ const brochureCollection = collection
   })
   .extend({
     level: zenum(['COLLECTION']),
-    label: array(number()),
+    label,
     labels: array(brochureLabel)
   })
 export type BrochureCollection = TypeOf<typeof brochureCollection>
