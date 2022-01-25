@@ -7,17 +7,25 @@ import {
   string,
   boolean
 } from 'zod'
+import { icon } from '..'
 
-const brochureIcon = object({
-  level: zenum(['ICON']),
-  id: string().uuid(),
-  label_pl: string(),
-  label_pl_unicode: array(number()),
-  pngPath: string(),
-  name_pl: string(),
-  name_pl_unicode: array(number()),
-  link: string()
-})
+const brochureIcon = icon
+  .pick({
+    id: true,
+    label_pl: true,
+    label_en: true,
+    created_at: true,
+    updated_at: true,
+    visible: true
+  })
+  .extend({
+    level: zenum(['ICON']),
+    label_pl_unicode: array(number()),
+    pngPath: string(),
+    name_pl: string(),
+    name_pl_unicode: array(number()),
+    link: string()
+  })
 export type BrochureIcon = TypeOf<typeof brochureIcon>
 
 const brochureLabel = object({
