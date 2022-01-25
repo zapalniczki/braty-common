@@ -43,16 +43,9 @@ declare const brochureIcon: import("zod").ZodObject<import("zod").extendShape<im
     name_pl_unicode: number[];
 }>;
 export declare type BrochureIcon = TypeOf<typeof brochureIcon>;
-declare const brochureLabel: import("zod").ZodObject<import("zod").extendShape<import("zod").extendShape<{
-    created_at: import("zod").ZodString;
-    id: import("zod").ZodString;
-    updated_at: import("zod").ZodString;
-}, {
-    label_pl: import("zod").ZodString;
-    label_en: import("zod").ZodString;
-}>, {
+declare const brochureLabel: import("zod").ZodObject<{
     level: import("zod").ZodEnum<["LABEL"]>;
-    label_pl_unicode: import("zod").ZodArray<import("zod").ZodNumber, "many">;
+    label: import("zod").ZodArray<import("zod").ZodNumber, "many">;
     icons: import("zod").ZodArray<import("zod").ZodObject<import("zod").extendShape<import("zod").extendShape<import("zod").extendShape<{
         created_at: import("zod").ZodString;
         id: import("zod").ZodString;
@@ -96,7 +89,7 @@ declare const brochureLabel: import("zod").ZodObject<import("zod").extendShape<i
         pngPath: string;
         name_pl_unicode: number[];
     }>, "many">;
-}>, "strip", import("zod").ZodTypeAny, {
+}, "strip", import("zod").ZodTypeAny, {
     icons: {
         created_at: string;
         id: string;
@@ -111,13 +104,8 @@ declare const brochureLabel: import("zod").ZodObject<import("zod").extendShape<i
         pngPath: string;
         name_pl_unicode: number[];
     }[];
-    created_at: string;
-    id: string;
-    updated_at: string;
-    label_pl: string;
-    label_en: string;
     level: "LABEL";
-    label_pl_unicode: number[];
+    label: number[];
 }, {
     icons: {
         created_at: string;
@@ -133,13 +121,8 @@ declare const brochureLabel: import("zod").ZodObject<import("zod").extendShape<i
         pngPath: string;
         name_pl_unicode: number[];
     }[];
-    created_at: string;
-    id: string;
-    updated_at: string;
-    label_pl: string;
-    label_en: string;
     level: "LABEL";
-    label_pl_unicode: number[];
+    label: number[];
 }>;
 export declare type BrochureLabel = TypeOf<typeof brochureLabel>;
 declare const brochureCollection: import("zod").ZodObject<import("zod").extendShape<{
@@ -147,16 +130,9 @@ declare const brochureCollection: import("zod").ZodObject<import("zod").extendSh
 }, {
     level: import("zod").ZodEnum<["COLLECTION"]>;
     label: import("zod").ZodArray<import("zod").ZodNumber, "many">;
-    labels: import("zod").ZodArray<import("zod").ZodObject<import("zod").extendShape<import("zod").extendShape<{
-        created_at: import("zod").ZodString;
-        id: import("zod").ZodString;
-        updated_at: import("zod").ZodString;
-    }, {
-        label_pl: import("zod").ZodString;
-        label_en: import("zod").ZodString;
-    }>, {
+    labels: import("zod").ZodArray<import("zod").ZodObject<{
         level: import("zod").ZodEnum<["LABEL"]>;
-        label_pl_unicode: import("zod").ZodArray<import("zod").ZodNumber, "many">;
+        label: import("zod").ZodArray<import("zod").ZodNumber, "many">;
         icons: import("zod").ZodArray<import("zod").ZodObject<import("zod").extendShape<import("zod").extendShape<import("zod").extendShape<{
             created_at: import("zod").ZodString;
             id: import("zod").ZodString;
@@ -200,7 +176,7 @@ declare const brochureCollection: import("zod").ZodObject<import("zod").extendSh
             pngPath: string;
             name_pl_unicode: number[];
         }>, "many">;
-    }>, "strip", import("zod").ZodTypeAny, {
+    }, "strip", import("zod").ZodTypeAny, {
         icons: {
             created_at: string;
             id: string;
@@ -215,13 +191,8 @@ declare const brochureCollection: import("zod").ZodObject<import("zod").extendSh
             pngPath: string;
             name_pl_unicode: number[];
         }[];
-        created_at: string;
-        id: string;
-        updated_at: string;
-        label_pl: string;
-        label_en: string;
         level: "LABEL";
-        label_pl_unicode: number[];
+        label: number[];
     }, {
         icons: {
             created_at: string;
@@ -237,13 +208,8 @@ declare const brochureCollection: import("zod").ZodObject<import("zod").extendSh
             pngPath: string;
             name_pl_unicode: number[];
         }[];
-        created_at: string;
-        id: string;
-        updated_at: string;
-        label_pl: string;
-        label_en: string;
         level: "LABEL";
-        label_pl_unicode: number[];
+        label: number[];
     }>, "many">;
 }>, "strip", import("zod").ZodTypeAny, {
     labels: {
@@ -261,13 +227,8 @@ declare const brochureCollection: import("zod").ZodObject<import("zod").extendSh
             pngPath: string;
             name_pl_unicode: number[];
         }[];
-        created_at: string;
-        id: string;
-        updated_at: string;
-        label_pl: string;
-        label_en: string;
         level: "LABEL";
-        label_pl_unicode: number[];
+        label: number[];
     }[];
     is_featured: boolean;
     level: "COLLECTION";
@@ -288,13 +249,8 @@ declare const brochureCollection: import("zod").ZodObject<import("zod").extendSh
             pngPath: string;
             name_pl_unicode: number[];
         }[];
-        created_at: string;
-        id: string;
-        updated_at: string;
-        label_pl: string;
-        label_en: string;
         level: "LABEL";
-        label_pl_unicode: number[];
+        label: number[];
     }[];
     is_featured: boolean;
     level: "COLLECTION";
@@ -306,16 +262,9 @@ declare const brochureData: import("zod").ZodArray<import("zod").ZodObject<impor
 }, {
     level: import("zod").ZodEnum<["COLLECTION"]>;
     label: import("zod").ZodArray<import("zod").ZodNumber, "many">;
-    labels: import("zod").ZodArray<import("zod").ZodObject<import("zod").extendShape<import("zod").extendShape<{
-        created_at: import("zod").ZodString;
-        id: import("zod").ZodString;
-        updated_at: import("zod").ZodString;
-    }, {
-        label_pl: import("zod").ZodString;
-        label_en: import("zod").ZodString;
-    }>, {
+    labels: import("zod").ZodArray<import("zod").ZodObject<{
         level: import("zod").ZodEnum<["LABEL"]>;
-        label_pl_unicode: import("zod").ZodArray<import("zod").ZodNumber, "many">;
+        label: import("zod").ZodArray<import("zod").ZodNumber, "many">;
         icons: import("zod").ZodArray<import("zod").ZodObject<import("zod").extendShape<import("zod").extendShape<import("zod").extendShape<{
             created_at: import("zod").ZodString;
             id: import("zod").ZodString;
@@ -359,7 +308,7 @@ declare const brochureData: import("zod").ZodArray<import("zod").ZodObject<impor
             pngPath: string;
             name_pl_unicode: number[];
         }>, "many">;
-    }>, "strip", import("zod").ZodTypeAny, {
+    }, "strip", import("zod").ZodTypeAny, {
         icons: {
             created_at: string;
             id: string;
@@ -374,13 +323,8 @@ declare const brochureData: import("zod").ZodArray<import("zod").ZodObject<impor
             pngPath: string;
             name_pl_unicode: number[];
         }[];
-        created_at: string;
-        id: string;
-        updated_at: string;
-        label_pl: string;
-        label_en: string;
         level: "LABEL";
-        label_pl_unicode: number[];
+        label: number[];
     }, {
         icons: {
             created_at: string;
@@ -396,13 +340,8 @@ declare const brochureData: import("zod").ZodArray<import("zod").ZodObject<impor
             pngPath: string;
             name_pl_unicode: number[];
         }[];
-        created_at: string;
-        id: string;
-        updated_at: string;
-        label_pl: string;
-        label_en: string;
         level: "LABEL";
-        label_pl_unicode: number[];
+        label: number[];
     }>, "many">;
 }>, "strip", import("zod").ZodTypeAny, {
     labels: {
@@ -420,13 +359,8 @@ declare const brochureData: import("zod").ZodArray<import("zod").ZodObject<impor
             pngPath: string;
             name_pl_unicode: number[];
         }[];
-        created_at: string;
-        id: string;
-        updated_at: string;
-        label_pl: string;
-        label_en: string;
         level: "LABEL";
-        label_pl_unicode: number[];
+        label: number[];
     }[];
     is_featured: boolean;
     level: "COLLECTION";
@@ -447,13 +381,8 @@ declare const brochureData: import("zod").ZodArray<import("zod").ZodObject<impor
             pngPath: string;
             name_pl_unicode: number[];
         }[];
-        created_at: string;
-        id: string;
-        updated_at: string;
-        label_pl: string;
-        label_en: string;
         level: "LABEL";
-        label_pl_unicode: number[];
+        label: number[];
     }[];
     is_featured: boolean;
     level: "COLLECTION";

@@ -4,9 +4,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var zod_1 = require("zod");
-var icon_1 = __importDefault(require("../dbModels/icon"));
 var collection_1 = __importDefault(require("../dbModels/collection"));
-var label_1 = __importDefault(require("../dbModels/label"));
+var icon_1 = __importDefault(require("../dbModels/icon"));
+var label = (0, zod_1.array)((0, zod_1.number)());
 var brochureIcon = icon_1.default.extend({
     level: (0, zod_1.enum)(['ICON']),
     label_pl_unicode: (0, zod_1.array)((0, zod_1.number)()),
@@ -15,9 +15,9 @@ var brochureIcon = icon_1.default.extend({
     name_pl_unicode: (0, zod_1.array)((0, zod_1.number)()),
     link: (0, zod_1.string)()
 });
-var brochureLabel = label_1.default.extend({
+var brochureLabel = (0, zod_1.object)({
     level: (0, zod_1.enum)(['LABEL']),
-    label_pl_unicode: (0, zod_1.array)((0, zod_1.number)()),
+    label: label,
     icons: (0, zod_1.array)(brochureIcon)
 });
 var brochureCollection = collection_1.default
@@ -26,7 +26,7 @@ var brochureCollection = collection_1.default
 })
     .extend({
     level: (0, zod_1.enum)(['COLLECTION']),
-    label: (0, zod_1.array)((0, zod_1.number)()),
+    label: label,
     labels: (0, zod_1.array)(brochureLabel)
 });
 var brochureData = (0, zod_1.array)(brochureCollection);
