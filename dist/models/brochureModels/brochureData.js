@@ -20,9 +20,13 @@ var brochureLabel = label_1.default.extend({
     label_pl_unicode: (0, zod_1.array)((0, zod_1.number)()),
     icons: (0, zod_1.array)(brochureIcon)
 });
-var brochureCollection = collection_1.default.extend({
+var brochureCollection = collection_1.default
+    .pick({
+    is_featured: true
+})
+    .extend({
     level: (0, zod_1.enum)(['COLLECTION']),
-    label_pl_unicode: (0, zod_1.array)((0, zod_1.number)()),
+    label: (0, zod_1.array)((0, zod_1.number)()),
     labels: (0, zod_1.array)(brochureLabel)
 });
 var brochureData = (0, zod_1.array)(brochureCollection);

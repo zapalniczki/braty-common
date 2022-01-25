@@ -142,19 +142,11 @@ declare const brochureLabel: import("zod").ZodObject<import("zod").extendShape<i
     label_pl_unicode: number[];
 }>;
 export declare type BrochureLabel = TypeOf<typeof brochureLabel>;
-declare const brochureCollection: import("zod").ZodObject<import("zod").extendShape<import("zod").extendShape<import("zod").extendShape<{
-    created_at: import("zod").ZodString;
-    id: import("zod").ZodString;
-    updated_at: import("zod").ZodString;
-}, {
-    label_pl: import("zod").ZodString;
-    label_en: import("zod").ZodString;
-}>, {
-    visible: import("zod").ZodBoolean;
+declare const brochureCollection: import("zod").ZodObject<import("zod").extendShape<{
     is_featured: import("zod").ZodBoolean;
-}>, {
+}, {
     level: import("zod").ZodEnum<["COLLECTION"]>;
-    label_pl_unicode: import("zod").ZodArray<import("zod").ZodNumber, "many">;
+    label: import("zod").ZodArray<import("zod").ZodNumber, "many">;
     labels: import("zod").ZodArray<import("zod").ZodObject<import("zod").extendShape<import("zod").extendShape<{
         created_at: import("zod").ZodString;
         id: import("zod").ZodString;
@@ -277,15 +269,9 @@ declare const brochureCollection: import("zod").ZodObject<import("zod").extendSh
         level: "LABEL";
         label_pl_unicode: number[];
     }[];
-    created_at: string;
-    id: string;
-    updated_at: string;
-    visible: boolean;
-    label_pl: string;
-    label_en: string;
     is_featured: boolean;
     level: "COLLECTION";
-    label_pl_unicode: number[];
+    label: number[];
 }, {
     labels: {
         icons: {
@@ -310,30 +296,16 @@ declare const brochureCollection: import("zod").ZodObject<import("zod").extendSh
         level: "LABEL";
         label_pl_unicode: number[];
     }[];
-    created_at: string;
-    id: string;
-    updated_at: string;
-    visible: boolean;
-    label_pl: string;
-    label_en: string;
     is_featured: boolean;
     level: "COLLECTION";
-    label_pl_unicode: number[];
+    label: number[];
 }>;
 export declare type BrochureCollection = TypeOf<typeof brochureCollection>;
-declare const brochureData: import("zod").ZodArray<import("zod").ZodObject<import("zod").extendShape<import("zod").extendShape<import("zod").extendShape<{
-    created_at: import("zod").ZodString;
-    id: import("zod").ZodString;
-    updated_at: import("zod").ZodString;
-}, {
-    label_pl: import("zod").ZodString;
-    label_en: import("zod").ZodString;
-}>, {
-    visible: import("zod").ZodBoolean;
+declare const brochureData: import("zod").ZodArray<import("zod").ZodObject<import("zod").extendShape<{
     is_featured: import("zod").ZodBoolean;
-}>, {
+}, {
     level: import("zod").ZodEnum<["COLLECTION"]>;
-    label_pl_unicode: import("zod").ZodArray<import("zod").ZodNumber, "many">;
+    label: import("zod").ZodArray<import("zod").ZodNumber, "many">;
     labels: import("zod").ZodArray<import("zod").ZodObject<import("zod").extendShape<import("zod").extendShape<{
         created_at: import("zod").ZodString;
         id: import("zod").ZodString;
@@ -456,15 +428,9 @@ declare const brochureData: import("zod").ZodArray<import("zod").ZodObject<impor
         level: "LABEL";
         label_pl_unicode: number[];
     }[];
-    created_at: string;
-    id: string;
-    updated_at: string;
-    visible: boolean;
-    label_pl: string;
-    label_en: string;
     is_featured: boolean;
     level: "COLLECTION";
-    label_pl_unicode: number[];
+    label: number[];
 }, {
     labels: {
         icons: {
@@ -489,15 +455,9 @@ declare const brochureData: import("zod").ZodArray<import("zod").ZodObject<impor
         level: "LABEL";
         label_pl_unicode: number[];
     }[];
-    created_at: string;
-    id: string;
-    updated_at: string;
-    visible: boolean;
-    label_pl: string;
-    label_en: string;
     is_featured: boolean;
     level: "COLLECTION";
-    label_pl_unicode: number[];
+    label: number[];
 }>, "many">;
 export declare type BrochureData = TypeOf<typeof brochureData>;
 export default brochureData;
