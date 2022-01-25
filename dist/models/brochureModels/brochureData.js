@@ -5,14 +5,12 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var zod_1 = require("zod");
 var collection_1 = __importDefault(require("../dbModels/collection"));
-var icon_1 = __importDefault(require("../dbModels/icon"));
 var label = (0, zod_1.array)((0, zod_1.number)());
-var brochureIcon = icon_1.default.extend({
+var brochureIcon = (0, zod_1.object)({
     level: (0, zod_1.enum)(['ICON']),
-    label_pl_unicode: (0, zod_1.array)((0, zod_1.number)()),
+    label: label,
     pngPath: (0, zod_1.string)(),
-    name_pl: (0, zod_1.string)(),
-    name_pl_unicode: (0, zod_1.array)((0, zod_1.number)()),
+    name: label,
     link: (0, zod_1.string)()
 });
 var brochureLabel = (0, zod_1.object)({

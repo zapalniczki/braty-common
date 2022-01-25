@@ -1,125 +1,63 @@
 import { TypeOf } from 'zod';
-declare const brochureIcon: import("zod").ZodObject<import("zod").extendShape<import("zod").extendShape<import("zod").extendShape<{
-    created_at: import("zod").ZodString;
-    id: import("zod").ZodString;
-    updated_at: import("zod").ZodString;
-}, {
-    label_pl: import("zod").ZodString;
-    label_en: import("zod").ZodString;
-}>, {
-    visible: import("zod").ZodBoolean;
-}>, {
+declare const brochureIcon: import("zod").ZodObject<{
     level: import("zod").ZodEnum<["ICON"]>;
-    label_pl_unicode: import("zod").ZodArray<import("zod").ZodNumber, "many">;
+    label: import("zod").ZodArray<import("zod").ZodNumber, "many">;
     pngPath: import("zod").ZodString;
-    name_pl: import("zod").ZodString;
-    name_pl_unicode: import("zod").ZodArray<import("zod").ZodNumber, "many">;
+    name: import("zod").ZodArray<import("zod").ZodNumber, "many">;
     link: import("zod").ZodString;
-}>, "strip", import("zod").ZodTypeAny, {
-    created_at: string;
-    id: string;
-    updated_at: string;
-    visible: boolean;
-    name_pl: string;
+}, "strip", import("zod").ZodTypeAny, {
     link: string;
-    label_pl: string;
-    label_en: string;
     level: "ICON";
-    label_pl_unicode: number[];
+    label: number[];
     pngPath: string;
-    name_pl_unicode: number[];
+    name: number[];
 }, {
-    created_at: string;
-    id: string;
-    updated_at: string;
-    visible: boolean;
-    name_pl: string;
     link: string;
-    label_pl: string;
-    label_en: string;
     level: "ICON";
-    label_pl_unicode: number[];
+    label: number[];
     pngPath: string;
-    name_pl_unicode: number[];
+    name: number[];
 }>;
 export declare type BrochureIcon = TypeOf<typeof brochureIcon>;
 declare const brochureLabel: import("zod").ZodObject<{
     level: import("zod").ZodEnum<["LABEL"]>;
     label: import("zod").ZodArray<import("zod").ZodNumber, "many">;
-    icons: import("zod").ZodArray<import("zod").ZodObject<import("zod").extendShape<import("zod").extendShape<import("zod").extendShape<{
-        created_at: import("zod").ZodString;
-        id: import("zod").ZodString;
-        updated_at: import("zod").ZodString;
-    }, {
-        label_pl: import("zod").ZodString;
-        label_en: import("zod").ZodString;
-    }>, {
-        visible: import("zod").ZodBoolean;
-    }>, {
+    icons: import("zod").ZodArray<import("zod").ZodObject<{
         level: import("zod").ZodEnum<["ICON"]>;
-        label_pl_unicode: import("zod").ZodArray<import("zod").ZodNumber, "many">;
+        label: import("zod").ZodArray<import("zod").ZodNumber, "many">;
         pngPath: import("zod").ZodString;
-        name_pl: import("zod").ZodString;
-        name_pl_unicode: import("zod").ZodArray<import("zod").ZodNumber, "many">;
+        name: import("zod").ZodArray<import("zod").ZodNumber, "many">;
         link: import("zod").ZodString;
-    }>, "strip", import("zod").ZodTypeAny, {
-        created_at: string;
-        id: string;
-        updated_at: string;
-        visible: boolean;
-        name_pl: string;
+    }, "strip", import("zod").ZodTypeAny, {
         link: string;
-        label_pl: string;
-        label_en: string;
         level: "ICON";
-        label_pl_unicode: number[];
+        label: number[];
         pngPath: string;
-        name_pl_unicode: number[];
+        name: number[];
     }, {
-        created_at: string;
-        id: string;
-        updated_at: string;
-        visible: boolean;
-        name_pl: string;
         link: string;
-        label_pl: string;
-        label_en: string;
         level: "ICON";
-        label_pl_unicode: number[];
+        label: number[];
         pngPath: string;
-        name_pl_unicode: number[];
+        name: number[];
     }>, "many">;
 }, "strip", import("zod").ZodTypeAny, {
     icons: {
-        created_at: string;
-        id: string;
-        updated_at: string;
-        visible: boolean;
-        name_pl: string;
         link: string;
-        label_pl: string;
-        label_en: string;
         level: "ICON";
-        label_pl_unicode: number[];
+        label: number[];
         pngPath: string;
-        name_pl_unicode: number[];
+        name: number[];
     }[];
     level: "LABEL";
     label: number[];
 }, {
     icons: {
-        created_at: string;
-        id: string;
-        updated_at: string;
-        visible: boolean;
-        name_pl: string;
         link: string;
-        label_pl: string;
-        label_en: string;
         level: "ICON";
-        label_pl_unicode: number[];
+        label: number[];
         pngPath: string;
-        name_pl_unicode: number[];
+        name: number[];
     }[];
     level: "LABEL";
     label: number[];
@@ -133,80 +71,42 @@ declare const brochureCollection: import("zod").ZodObject<import("zod").extendSh
     labels: import("zod").ZodArray<import("zod").ZodObject<{
         level: import("zod").ZodEnum<["LABEL"]>;
         label: import("zod").ZodArray<import("zod").ZodNumber, "many">;
-        icons: import("zod").ZodArray<import("zod").ZodObject<import("zod").extendShape<import("zod").extendShape<import("zod").extendShape<{
-            created_at: import("zod").ZodString;
-            id: import("zod").ZodString;
-            updated_at: import("zod").ZodString;
-        }, {
-            label_pl: import("zod").ZodString;
-            label_en: import("zod").ZodString;
-        }>, {
-            visible: import("zod").ZodBoolean;
-        }>, {
+        icons: import("zod").ZodArray<import("zod").ZodObject<{
             level: import("zod").ZodEnum<["ICON"]>;
-            label_pl_unicode: import("zod").ZodArray<import("zod").ZodNumber, "many">;
+            label: import("zod").ZodArray<import("zod").ZodNumber, "many">;
             pngPath: import("zod").ZodString;
-            name_pl: import("zod").ZodString;
-            name_pl_unicode: import("zod").ZodArray<import("zod").ZodNumber, "many">;
+            name: import("zod").ZodArray<import("zod").ZodNumber, "many">;
             link: import("zod").ZodString;
-        }>, "strip", import("zod").ZodTypeAny, {
-            created_at: string;
-            id: string;
-            updated_at: string;
-            visible: boolean;
-            name_pl: string;
+        }, "strip", import("zod").ZodTypeAny, {
             link: string;
-            label_pl: string;
-            label_en: string;
             level: "ICON";
-            label_pl_unicode: number[];
+            label: number[];
             pngPath: string;
-            name_pl_unicode: number[];
+            name: number[];
         }, {
-            created_at: string;
-            id: string;
-            updated_at: string;
-            visible: boolean;
-            name_pl: string;
             link: string;
-            label_pl: string;
-            label_en: string;
             level: "ICON";
-            label_pl_unicode: number[];
+            label: number[];
             pngPath: string;
-            name_pl_unicode: number[];
+            name: number[];
         }>, "many">;
     }, "strip", import("zod").ZodTypeAny, {
         icons: {
-            created_at: string;
-            id: string;
-            updated_at: string;
-            visible: boolean;
-            name_pl: string;
             link: string;
-            label_pl: string;
-            label_en: string;
             level: "ICON";
-            label_pl_unicode: number[];
+            label: number[];
             pngPath: string;
-            name_pl_unicode: number[];
+            name: number[];
         }[];
         level: "LABEL";
         label: number[];
     }, {
         icons: {
-            created_at: string;
-            id: string;
-            updated_at: string;
-            visible: boolean;
-            name_pl: string;
             link: string;
-            label_pl: string;
-            label_en: string;
             level: "ICON";
-            label_pl_unicode: number[];
+            label: number[];
             pngPath: string;
-            name_pl_unicode: number[];
+            name: number[];
         }[];
         level: "LABEL";
         label: number[];
@@ -214,18 +114,11 @@ declare const brochureCollection: import("zod").ZodObject<import("zod").extendSh
 }>, "strip", import("zod").ZodTypeAny, {
     labels: {
         icons: {
-            created_at: string;
-            id: string;
-            updated_at: string;
-            visible: boolean;
-            name_pl: string;
             link: string;
-            label_pl: string;
-            label_en: string;
             level: "ICON";
-            label_pl_unicode: number[];
+            label: number[];
             pngPath: string;
-            name_pl_unicode: number[];
+            name: number[];
         }[];
         level: "LABEL";
         label: number[];
@@ -236,18 +129,11 @@ declare const brochureCollection: import("zod").ZodObject<import("zod").extendSh
 }, {
     labels: {
         icons: {
-            created_at: string;
-            id: string;
-            updated_at: string;
-            visible: boolean;
-            name_pl: string;
             link: string;
-            label_pl: string;
-            label_en: string;
             level: "ICON";
-            label_pl_unicode: number[];
+            label: number[];
             pngPath: string;
-            name_pl_unicode: number[];
+            name: number[];
         }[];
         level: "LABEL";
         label: number[];
@@ -265,80 +151,42 @@ declare const brochureData: import("zod").ZodArray<import("zod").ZodObject<impor
     labels: import("zod").ZodArray<import("zod").ZodObject<{
         level: import("zod").ZodEnum<["LABEL"]>;
         label: import("zod").ZodArray<import("zod").ZodNumber, "many">;
-        icons: import("zod").ZodArray<import("zod").ZodObject<import("zod").extendShape<import("zod").extendShape<import("zod").extendShape<{
-            created_at: import("zod").ZodString;
-            id: import("zod").ZodString;
-            updated_at: import("zod").ZodString;
-        }, {
-            label_pl: import("zod").ZodString;
-            label_en: import("zod").ZodString;
-        }>, {
-            visible: import("zod").ZodBoolean;
-        }>, {
+        icons: import("zod").ZodArray<import("zod").ZodObject<{
             level: import("zod").ZodEnum<["ICON"]>;
-            label_pl_unicode: import("zod").ZodArray<import("zod").ZodNumber, "many">;
+            label: import("zod").ZodArray<import("zod").ZodNumber, "many">;
             pngPath: import("zod").ZodString;
-            name_pl: import("zod").ZodString;
-            name_pl_unicode: import("zod").ZodArray<import("zod").ZodNumber, "many">;
+            name: import("zod").ZodArray<import("zod").ZodNumber, "many">;
             link: import("zod").ZodString;
-        }>, "strip", import("zod").ZodTypeAny, {
-            created_at: string;
-            id: string;
-            updated_at: string;
-            visible: boolean;
-            name_pl: string;
+        }, "strip", import("zod").ZodTypeAny, {
             link: string;
-            label_pl: string;
-            label_en: string;
             level: "ICON";
-            label_pl_unicode: number[];
+            label: number[];
             pngPath: string;
-            name_pl_unicode: number[];
+            name: number[];
         }, {
-            created_at: string;
-            id: string;
-            updated_at: string;
-            visible: boolean;
-            name_pl: string;
             link: string;
-            label_pl: string;
-            label_en: string;
             level: "ICON";
-            label_pl_unicode: number[];
+            label: number[];
             pngPath: string;
-            name_pl_unicode: number[];
+            name: number[];
         }>, "many">;
     }, "strip", import("zod").ZodTypeAny, {
         icons: {
-            created_at: string;
-            id: string;
-            updated_at: string;
-            visible: boolean;
-            name_pl: string;
             link: string;
-            label_pl: string;
-            label_en: string;
             level: "ICON";
-            label_pl_unicode: number[];
+            label: number[];
             pngPath: string;
-            name_pl_unicode: number[];
+            name: number[];
         }[];
         level: "LABEL";
         label: number[];
     }, {
         icons: {
-            created_at: string;
-            id: string;
-            updated_at: string;
-            visible: boolean;
-            name_pl: string;
             link: string;
-            label_pl: string;
-            label_en: string;
             level: "ICON";
-            label_pl_unicode: number[];
+            label: number[];
             pngPath: string;
-            name_pl_unicode: number[];
+            name: number[];
         }[];
         level: "LABEL";
         label: number[];
@@ -346,18 +194,11 @@ declare const brochureData: import("zod").ZodArray<import("zod").ZodObject<impor
 }>, "strip", import("zod").ZodTypeAny, {
     labels: {
         icons: {
-            created_at: string;
-            id: string;
-            updated_at: string;
-            visible: boolean;
-            name_pl: string;
             link: string;
-            label_pl: string;
-            label_en: string;
             level: "ICON";
-            label_pl_unicode: number[];
+            label: number[];
             pngPath: string;
-            name_pl_unicode: number[];
+            name: number[];
         }[];
         level: "LABEL";
         label: number[];
@@ -368,18 +209,11 @@ declare const brochureData: import("zod").ZodArray<import("zod").ZodObject<impor
 }, {
     labels: {
         icons: {
-            created_at: string;
-            id: string;
-            updated_at: string;
-            visible: boolean;
-            name_pl: string;
             link: string;
-            label_pl: string;
-            label_en: string;
             level: "ICON";
-            label_pl_unicode: number[];
+            label: number[];
             pngPath: string;
-            name_pl_unicode: number[];
+            name: number[];
         }[];
         level: "LABEL";
         label: number[];
