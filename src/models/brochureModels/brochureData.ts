@@ -1,20 +1,23 @@
 import { array, enum as zenum, number, object, string, TypeOf } from 'zod'
 import collection from '../dbModels/collection'
 
-const label = array(number())
+const unicode = array(number())
 
 const brochureIcon = object({
   level: zenum(['ICON']),
-  label,
+  label: string(),
+  label_unicode: unicode,
   pngPath: string(),
-  name: label,
+  name: string(),
+  name_unicode: unicode,
   link: string()
 })
 export type BrochureIcon = TypeOf<typeof brochureIcon>
 
 const brochureLabel = object({
   level: zenum(['LABEL']),
-  label,
+  label: string(),
+  label_unicode: unicode,
   icons: array(brochureIcon)
 })
 export type BrochureLabel = TypeOf<typeof brochureLabel>
@@ -25,7 +28,8 @@ const brochureCollection = collection
   })
   .extend({
     level: zenum(['COLLECTION']),
-    label,
+    label: string(),
+    label_unicode: unicode,
     labels: array(brochureLabel)
   })
 export type BrochureCollection = TypeOf<typeof brochureCollection>
