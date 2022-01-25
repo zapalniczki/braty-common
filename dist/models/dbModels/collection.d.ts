@@ -10,20 +10,20 @@ declare const collection: import("zod").ZodObject<import("zod").extendShape<impo
     visible: import("zod").ZodBoolean;
     is_featured: import("zod").ZodBoolean;
 }>, "strip", import("zod").ZodTypeAny, {
+    label_pl: string;
+    label_en: string;
     created_at: string;
     id: string;
     updated_at: string;
     visible: boolean;
-    label_pl: string;
-    label_en: string;
     is_featured: boolean;
 }, {
+    label_pl: string;
+    label_en: string;
     created_at: string;
     id: string;
     updated_at: string;
     visible: boolean;
-    label_pl: string;
-    label_en: string;
     is_featured: boolean;
 }>;
 export declare type Collection = TypeOf<typeof collection>;

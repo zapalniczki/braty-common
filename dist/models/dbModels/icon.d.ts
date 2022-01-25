@@ -9,19 +9,19 @@ declare const icon: import("zod").ZodObject<import("zod").extendShape<import("zo
 }>, {
     visible: import("zod").ZodBoolean;
 }>, "strip", import("zod").ZodTypeAny, {
+    label_pl: string;
+    label_en: string;
     created_at: string;
     id: string;
     updated_at: string;
     visible: boolean;
-    label_pl: string;
-    label_en: string;
 }, {
+    label_pl: string;
+    label_en: string;
     created_at: string;
     id: string;
     updated_at: string;
     visible: boolean;
-    label_pl: string;
-    label_en: string;
 }>;
 export declare type Icon = TypeOf<typeof icon>;
 export default icon;

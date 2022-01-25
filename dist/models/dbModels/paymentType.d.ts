@@ -14,26 +14,26 @@ declare const paymentType: import("zod").ZodObject<import("zod").extendShape<imp
     is_enabled: import("zod").ZodBoolean;
     in_person: import("zod").ZodBoolean;
 }>, "strip", import("zod").ZodTypeAny, {
+    description_pl: string;
+    description_en: string;
+    label_pl: string;
+    label_en: string;
     created_at: string;
     id: string;
     updated_at: string;
-    description_pl: string;
-    description_en: string;
     price: number;
-    label_pl: string;
-    label_en: string;
     icon_name: "question" | "exchange-alt" | "truck" | "box-open";
     is_enabled: boolean;
     in_person: boolean;
 }, {
+    description_pl: string;
+    description_en: string;
+    label_pl: string;
+    label_en: string;
     created_at: string;
     id: string;
     updated_at: string;
-    description_pl: string;
-    description_en: string;
     price: number;
-    label_pl: string;
-    label_en: string;
     icon_name: "question" | "exchange-alt" | "truck" | "box-open";
     is_enabled: boolean;
     in_person: boolean;
