@@ -1,15 +1,13 @@
 import { array, enum as zenum, number, object, string, TypeOf } from 'zod'
 import collection from '../dbModels/collection'
-import icon from '../dbModels/icon'
 
 const label = array(number())
 
-const brochureIcon = icon.extend({
+const brochureIcon = object({
   level: zenum(['ICON']),
-  label_pl_unicode: array(number()),
+  label,
   pngPath: string(),
-  name_pl: string(),
-  name_pl_unicode: array(number()),
+  name: label,
   link: string()
 })
 export type BrochureIcon = TypeOf<typeof brochureIcon>
