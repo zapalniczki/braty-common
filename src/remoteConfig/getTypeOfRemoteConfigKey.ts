@@ -8,8 +8,6 @@ const getTypeOfRemoteConfigKey = (query: string) => {
     type: value._def.typeName
   }))
 
-  //   const thisKey = remoteConfigKeysWithTypes.find((key) => key.key === query)
-
   let thisKey
   for (let index = 0; index < remoteConfigKeysWithTypes.length; index++) {
     const currentKey = remoteConfigKeysWithTypes[index]

@@ -1,11 +1,4 @@
-import {
-  string,
-  boolean,
-  number,
-  object,
-  TypeOf,
-  ZodFirstPartyTypeKind
-} from 'zod'
+import { string, boolean, number, object, TypeOf } from 'zod'
 
 const remoteConfig = object({
   _404: boolean(),
@@ -30,6 +23,7 @@ const remoteConfig = object({
   deliveryAndPayments: boolean(),
   documents: boolean(),
   home: boolean(),
+  europe: boolean(),
   howToCreateOrder: boolean(),
   order: boolean(),
   products: boolean(),
