@@ -11,7 +11,6 @@ var getTypeOfRemoteConfigKey = function (query) {
             type: value._def.typeName
         });
     });
-    //   const thisKey = remoteConfigKeysWithTypes.find((key) => key.key === query)
     var thisKey;
     for (var index = 0; index < remoteConfigKeysWithTypes.length; index++) {
         var currentKey = remoteConfigKeysWithTypes[index];

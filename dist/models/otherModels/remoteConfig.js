@@ -24,6 +24,7 @@ var remoteConfig = (0, zod_1.object)({
     deliveryAndPayments: (0, zod_1.boolean)(),
     documents: (0, zod_1.boolean)(),
     home: (0, zod_1.boolean)(),
+    europe: (0, zod_1.boolean)(),
     howToCreateOrder: (0, zod_1.boolean)(),
     order: (0, zod_1.boolean)(),
     products: (0, zod_1.boolean)(),

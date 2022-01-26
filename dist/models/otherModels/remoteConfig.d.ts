@@ -22,6 +22,7 @@ declare const remoteConfig: import("zod").ZodObject<{
     deliveryAndPayments: import("zod").ZodBoolean;
     documents: import("zod").ZodBoolean;
     home: import("zod").ZodBoolean;
+    europe: import("zod").ZodBoolean;
     howToCreateOrder: import("zod").ZodBoolean;
     order: import("zod").ZodBoolean;
     products: import("zod").ZodBoolean;
@@ -70,6 +71,7 @@ declare const remoteConfig: import("zod").ZodObject<{
     deliveryAndPayments: boolean;
     documents: boolean;
     home: boolean;
+    europe: boolean;
     howToCreateOrder: boolean;
     order: boolean;
     signIn: boolean;
@@ -116,6 +118,7 @@ declare const remoteConfig: import("zod").ZodObject<{
     deliveryAndPayments: boolean;
     documents: boolean;
     home: boolean;
+    europe: boolean;
     howToCreateOrder: boolean;
     order: boolean;
     signIn: boolean;
