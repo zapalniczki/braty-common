@@ -29,6 +29,7 @@ var ROUTES = {
     SIGNED_OUT: '/signed_out',
     SIGN_UP: '/sign_up',
     USER: '/user',
+    EUROPE: '/europe',
     CHRISTMAS_2021: '/christmas2021',
     VALENTINES_DAY: '/valentines_day'
 };
