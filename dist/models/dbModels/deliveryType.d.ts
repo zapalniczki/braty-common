@@ -13,9 +13,8 @@ declare const deliveryType: import("zod").ZodObject<import("zod").extendShape<im
     requires_address: import("zod").ZodBoolean;
     description_pl: import("zod").ZodString;
     description_en: import("zod").ZodString;
-    allows_cash_payment: import("zod").ZodBoolean;
-    abroad: import("zod").ZodBoolean;
-    domestic: import("zod").ZodBoolean;
+    cash_payment: import("zod").ZodNullable<import("zod").ZodBoolean>;
+    domestic: import("zod").ZodNullable<import("zod").ZodBoolean>;
 }>, "strip", import("zod").ZodTypeAny, {
     description_pl: string;
     description_en: string;
@@ -28,9 +27,8 @@ declare const deliveryType: import("zod").ZodObject<import("zod").extendShape<im
     icon_name: "question" | "exchange-alt" | "truck" | "box-open";
     is_enabled: boolean;
     requires_address: boolean;
-    allows_cash_payment: boolean;
-    abroad: boolean;
-    domestic: boolean;
+    cash_payment: boolean | null;
+    domestic: boolean | null;
 }, {
     description_pl: string;
     description_en: string;
@@ -43,9 +41,8 @@ declare const deliveryType: import("zod").ZodObject<import("zod").extendShape<im
     icon_name: "question" | "exchange-alt" | "truck" | "box-open";
     is_enabled: boolean;
     requires_address: boolean;
-    allows_cash_payment: boolean;
-    abroad: boolean;
-    domestic: boolean;
+    cash_payment: boolean | null;
+    domestic: boolean | null;
 }>;
 export declare type DeliveryType = TypeOf<typeof deliveryType>;
 export default deliveryType;

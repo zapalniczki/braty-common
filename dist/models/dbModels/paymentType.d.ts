@@ -26,8 +26,8 @@ declare const paymentType: import("zod").ZodObject<import("zod").extendShape<imp
     price: number;
     icon_name: "question" | "exchange-alt" | "truck" | "box-open";
     is_enabled: boolean;
-    abroad: boolean;
     domestic: boolean;
+    abroad: boolean;
     in_person: boolean;
 }, {
     description_pl: string;
@@ -40,8 +40,8 @@ declare const paymentType: import("zod").ZodObject<import("zod").extendShape<imp
     price: number;
     icon_name: "question" | "exchange-alt" | "truck" | "box-open";
     is_enabled: boolean;
-    abroad: boolean;
     domestic: boolean;
+    abroad: boolean;
     in_person: boolean;
 }>;
 export declare type PaymentType = TypeOf<typeof paymentType>;
