@@ -2,10 +2,10 @@ import { boolean, string, TypeOf, enum as zenum } from 'zod'
 import tableBase from './tableBase'
 
 export const marketingStatus = zenum([
-  'REJECTED',
   'TODO',
+  'UNANSWERED',
   'INTERESTED',
-  'UNANSWERED'
+  'REJECTED'
 ])
 
 export type MarketingStatus = TypeOf<typeof marketingStatus>
