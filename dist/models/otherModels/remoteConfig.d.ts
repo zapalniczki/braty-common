@@ -38,8 +38,10 @@ declare const remoteConfig: import("zod").ZodObject<{
     homeFeaturedOrder: import("zod").ZodNumber;
     homeCatalogueOrder: import("zod").ZodNumber;
     homeBestsellersOrder: import("zod").ZodNumber;
-    catalogue_cover: import("zod").ZodString;
-    catalogue_link: import("zod").ZodString;
+    catalogue_cover_pl: import("zod").ZodString;
+    catalogue_link_pl: import("zod").ZodString;
+    catalogue_cover_en: import("zod").ZodString;
+    catalogue_link_en: import("zod").ZodString;
     snow: import("zod").ZodBoolean;
     i18n: import("zod").ZodBoolean;
     vouchers: import("zod").ZodBoolean;
@@ -83,8 +85,10 @@ declare const remoteConfig: import("zod").ZodObject<{
     homeFeaturedOrder: number;
     homeCatalogueOrder: number;
     homeBestsellersOrder: number;
-    catalogue_cover: string;
-    catalogue_link: string;
+    catalogue_cover_pl: string;
+    catalogue_link_pl: string;
+    catalogue_cover_en: string;
+    catalogue_link_en: string;
     snow: boolean;
     i18n: boolean;
 }, {
@@ -127,8 +131,10 @@ declare const remoteConfig: import("zod").ZodObject<{
     homeFeaturedOrder: number;
     homeCatalogueOrder: number;
     homeBestsellersOrder: number;
-    catalogue_cover: string;
-    catalogue_link: string;
+    catalogue_cover_pl: string;
+    catalogue_link_pl: string;
+    catalogue_cover_en: string;
+    catalogue_link_en: string;
     snow: boolean;
     i18n: boolean;
 }>;

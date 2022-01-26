@@ -42,8 +42,10 @@ var remoteConfig = (0, zod_1.object)({
     homeCatalogueOrder: (0, zod_1.number)(),
     homeBestsellersOrder: (0, zod_1.number)(),
     // DATA
-    catalogue_cover: (0, zod_1.string)(),
-    catalogue_link: (0, zod_1.string)(),
+    catalogue_cover_pl: (0, zod_1.string)(),
+    catalogue_link_pl: (0, zod_1.string)(),
+    catalogue_cover_en: (0, zod_1.string)(),
+    catalogue_link_en: (0, zod_1.string)(),
     // REST
     snow: (0, zod_1.boolean)(),
     i18n: (0, zod_1.boolean)(),
