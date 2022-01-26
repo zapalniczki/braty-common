@@ -1,5 +1,5 @@
 import { TypeOf } from 'zod';
-export declare const marketingStatus: import("zod").ZodEnum<["REJECTED", "TODO", "INTERESTED", "UNANSWERED"]>;
+export declare const marketingStatus: import("zod").ZodEnum<["TODO", "UNANSWERED", "INTERESTED", "REJECTED"]>;
 export declare type MarketingStatus = TypeOf<typeof marketingStatus>;
 declare const marketing: import("zod").ZodObject<import("zod").extendShape<{
     created_at: import("zod").ZodString;
@@ -14,12 +14,12 @@ declare const marketing: import("zod").ZodObject<import("zod").extendShape<{
     plus_code: import("zod").ZodNullable<import("zod").ZodString>;
     send_brochure_agreement: import("zod").ZodBoolean;
     send_brochure_cyclic_agreement: import("zod").ZodBoolean;
-    status: import("zod").ZodEnum<["REJECTED", "TODO", "INTERESTED", "UNANSWERED"]>;
+    status: import("zod").ZodEnum<["TODO", "UNANSWERED", "INTERESTED", "REJECTED"]>;
 }>, "strip", import("zod").ZodTypeAny, {
     created_at: string;
     id: string;
     updated_at: string;
-    status: "REJECTED" | "TODO" | "INTERESTED" | "UNANSWERED";
+    status: "REJECTED" | "TODO" | "UNANSWERED" | "INTERESTED";
     is_test: boolean;
     name: string | null;
     email: string | null;
@@ -32,7 +32,7 @@ declare const marketing: import("zod").ZodObject<import("zod").extendShape<{
     created_at: string;
     id: string;
     updated_at: string;
-    status: "REJECTED" | "TODO" | "INTERESTED" | "UNANSWERED";
+    status: "REJECTED" | "TODO" | "UNANSWERED" | "INTERESTED";
     is_test: boolean;
     name: string | null;
     email: string | null;

@@ -7,10 +7,10 @@ exports.marketingStatus = void 0;
 var zod_1 = require("zod");
 var tableBase_1 = __importDefault(require("./tableBase"));
 exports.marketingStatus = (0, zod_1.enum)([
-    'REJECTED',
     'TODO',
+    'UNANSWERED',
     'INTERESTED',
-    'UNANSWERED'
+    'REJECTED'
 ]);
 var marketing = tableBase_1.default.extend({
     email: (0, zod_1.string)().nullable(),
