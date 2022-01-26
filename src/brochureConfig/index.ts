@@ -2,7 +2,7 @@ import { Language } from '..'
 
 export const BROCHURE_TITLE: Record<Language, string> = {
   pl: 'Katalog produktów' as const,
-  en: 'Product Catalogue' as const
+  en: 'Products Catalogue' as const
 }
 
 export const BROCHURE_SUBTITLE: Record<Language, string> = {
