@@ -48,8 +48,10 @@ const remoteConfig = object({
   homeCatalogueOrder: number(),
   homeBestsellersOrder: number(),
   // DATA
-  catalogue_cover: string(),
-  catalogue_link: string(),
+  catalogue_pl_cover: string(),
+  catalogue_pl_link: string(),
+  catalogue_en_cover: string(),
+  catalogue_en_link: string(),
   // REST
   snow: boolean(),
   i18n: boolean(),
