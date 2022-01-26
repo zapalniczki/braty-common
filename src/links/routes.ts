@@ -30,6 +30,7 @@ const ROUTES = {
   SIGN_UP: '/sign_up' as const,
   USER: '/user' as const,
 
+  EUROPE: '/europe' as const,
   CHRISTMAS_2021: '/christmas2021' as const,
   VALENTINES_DAY: '/valentines_day' as const
 }
