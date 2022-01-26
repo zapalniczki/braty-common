@@ -11,7 +11,8 @@ const deliveryType = tableBase.merge(international).extend({
   description_pl: string(),
   description_en: string(),
   allows_cash_payment: boolean(),
-  abroad: boolean().nullable()
+  abroad: boolean(),
+  domestic: boolean()
 })
 
 export type DeliveryType = TypeOf<typeof deliveryType>
