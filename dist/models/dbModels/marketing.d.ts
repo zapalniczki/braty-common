@@ -1,4 +1,6 @@
 import { TypeOf } from 'zod';
+export declare const marketingStatus: import("zod").ZodEnum<["REJECTED", "TODO", "INTERESTED", "UNANSWERED"]>;
+export declare type MarketingStatus = TypeOf<typeof marketingStatus>;
 declare const marketing: import("zod").ZodObject<import("zod").extendShape<{
     created_at: import("zod").ZodString;
     id: import("zod").ZodString;
