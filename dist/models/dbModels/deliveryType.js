@@ -15,6 +15,7 @@ var deliveryType = tableBase_1.default.merge(international_1.default).extend({
     description_pl: (0, zod_1.string)(),
     description_en: (0, zod_1.string)(),
     cash_payment: (0, zod_1.boolean)().nullable(),
-    domestic: (0, zod_1.boolean)().nullable()
+    domestic: (0, zod_1.boolean)(),
+    abroad: (0, zod_1.boolean)()
 });
 exports.default = deliveryType;
