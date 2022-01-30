@@ -4,6 +4,7 @@ var EXTENSIONS = {
     WEBP: '.webp',
     PNG: '.png',
     PDF: '.pdf',
-    PSD: '.psd'
+    PSD: '.psd',
+    CDR: '.cdr'
 };
 exports.default = EXTENSIONS;

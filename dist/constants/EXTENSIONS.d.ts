@@ -3,5 +3,6 @@ declare const EXTENSIONS: {
     PNG: ".png";
     PDF: ".pdf";
     PSD: ".psd";
+    CDR: ".cdr";
 };
 export default EXTENSIONS;
