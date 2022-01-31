@@ -2,8 +2,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var __1 = require("..");
 function parseFilename(filename) {
-    var parts = filename.split(__1.SEPARATORS.FILENAME);
-    var extension = filename.split(__1.SEPARATORS.DOT)[1];
+    var _a = filename.split(__1.SEPARATORS.DOT), rest = _a[0], extension = _a[1];
+    var parts = rest.split(__1.SEPARATORS.FILENAME);
     var keys = [];
     for (var index = 0; index < parts.length; index++) {
         var part = parts[index];
