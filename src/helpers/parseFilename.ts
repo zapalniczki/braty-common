@@ -1,4 +1,4 @@
-import { SEPARATORS } from '..'
+import { ImageSize, SEPARATORS } from '..'
 
 function parseFilename(filename: string) {
   const [rest, extension] = filename.split(SEPARATORS.DOT)
@@ -19,7 +19,7 @@ function parseFilename(filename: string) {
   let collection
   let icon
   let label
-  let size
+  let size: ImageSize | undefined
 
   for (let index = 0; index < keys.length; index++) {
     const key = keys[index]
@@ -31,7 +31,7 @@ function parseFilename(filename: string) {
     } else if (key.key === 'icon') {
       icon = key.value
     } else if (key.key === 'size') {
-      size = key.value
+      size = key.value as ImageSize
     }
   }
 
