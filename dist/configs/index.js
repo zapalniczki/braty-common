@@ -10,6 +10,8 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.BRATY_BASE_PATH = void 0;
 __exportStar(require("./catalogue"), exports);
 __exportStar(require("./photos"), exports);
 __exportStar(require("./storage"), exports);
+exports.BRATY_BASE_PATH = 'C:/Users/Przemek Rychlewicz/BRATY';
