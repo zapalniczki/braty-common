@@ -3,7 +3,8 @@ const SEPARATORS = {
   FILENAME: '&' as const,
   FILENAME_PAIR: '=' as const,
   PRODUCT_NAME: ', ' as const,
-  SPACE: ' ' as const
+  SPACE: ' ' as const,
+  HARD_SPACE: '_' as const
 }
 
 export default SEPARATORS
