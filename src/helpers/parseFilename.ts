@@ -30,6 +30,8 @@ function parseFilename(filename: string) {
       label = key.value
     } else if (key.key === 'icon') {
       icon = key.value
+    } else if (key.key === 'size') {
+      size = key.value
     }
   }
 
