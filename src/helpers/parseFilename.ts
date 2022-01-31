@@ -2,9 +2,9 @@ import { SEPARATORS } from '..'
 
 function parseFilename(filename: string) {
   const parts = filename.split(SEPARATORS.FILENAME)
+  const extension = filename.split(SEPARATORS.DOT)[1]
 
   const keys = []
-
   for (let index = 0; index < parts.length; index++) {
     const part = parts[index]
     const partParts = part.split(SEPARATORS.FILENAME_PAIR)
@@ -37,7 +37,8 @@ function parseFilename(filename: string) {
     collection,
     icon,
     label,
-    size
+    size,
+    extension
   }
 }
 
