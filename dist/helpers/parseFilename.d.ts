@@ -3,5 +3,6 @@ declare function parseFilename(filename: string): {
     icon: string | undefined;
     label: string | undefined;
     size: undefined;
+    extension: string;
 };
 export default parseFilename;

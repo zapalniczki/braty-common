@@ -5,5 +5,6 @@ declare const SEPARATORS: {
     PRODUCT_NAME: ", ";
     SPACE: " ";
     HARD_SPACE: "_";
+    DOT: ".";
 };
 export default SEPARATORS;

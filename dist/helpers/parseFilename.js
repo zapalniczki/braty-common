@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var __1 = require("..");
 function parseFilename(filename) {
     var parts = filename.split(__1.SEPARATORS.FILENAME);
+    var extension = filename.split(__1.SEPARATORS.DOT)[1];
     var keys = [];
     for (var index = 0; index < parts.length; index++) {
         var part = parts[index];
@@ -33,7 +34,8 @@ function parseFilename(filename) {
         collection: collection,
         icon: icon,
         label: label,
-        size: size
+        size: size,
+        extension: extension
     };
 }
 exports.default = parseFilename;
