@@ -29,6 +29,9 @@ function parseFilename(filename) {
         else if (key.key === 'icon') {
             icon = key.value;
         }
+        else if (key.key === 'size') {
+            size = key.value;
+        }
     }
     return {
         collection: collection,
