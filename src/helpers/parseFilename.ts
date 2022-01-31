@@ -1,8 +1,8 @@
 import { SEPARATORS } from '..'
 
 function parseFilename(filename: string) {
-  const parts = filename.split(SEPARATORS.FILENAME)
-  const extension = filename.split(SEPARATORS.DOT)[1]
+  const [rest, extension] = filename.split(SEPARATORS.DOT)
+  const parts = rest.split(SEPARATORS.FILENAME)
 
   const keys = []
   for (let index = 0; index < parts.length; index++) {
