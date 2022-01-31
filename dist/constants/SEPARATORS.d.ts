@@ -1,6 +1,6 @@
 declare const SEPARATORS: {
     PATH: "/";
-    FILE_NAME: "+";
+    FILENAME: "&";
     PRODUCT_NAME: ", ";
     SPACE: " ";
 };
