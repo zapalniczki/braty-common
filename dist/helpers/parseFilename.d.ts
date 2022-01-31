@@ -1,8 +1,10 @@
-declare function parseFilename(filename: string): {
-    collection: string | undefined;
-    icon: string | undefined;
-    label: string | undefined;
-    size: string | undefined;
-    extension: string;
+import { ImageSize } from '..';
+declare function parseFilename(filename: string): Return;
+declare type Return = {
+    collection?: string;
+    icon?: string;
+    label?: string;
+    size?: ImageSize;
+    extension?: string;
 };
 export default parseFilename;
