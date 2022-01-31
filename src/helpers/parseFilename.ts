@@ -41,7 +41,15 @@ function parseFilename(filename: string) {
     label,
     size,
     extension
-  }
+  } as Return
+}
+
+type Return = {
+  collection?: string
+  icon?: string
+  label?: string
+  size?: ImageSize
+  extension?: string
 }
 
 export default parseFilename
