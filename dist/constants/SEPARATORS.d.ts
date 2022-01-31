@@ -4,5 +4,6 @@ declare const SEPARATORS: {
     FILENAME_PAIR: "=";
     PRODUCT_NAME: ", ";
     SPACE: " ";
+    HARD_SPACE: "_";
 };
 export default SEPARATORS;

@@ -5,6 +5,7 @@ var SEPARATORS = {
     FILENAME: '&',
     FILENAME_PAIR: '=',
     PRODUCT_NAME: ', ',
-    SPACE: ' '
+    SPACE: ' ',
+    HARD_SPACE: '_'
 };
 exports.default = SEPARATORS;
