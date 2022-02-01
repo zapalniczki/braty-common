@@ -5,7 +5,8 @@ exports.COREL_PATHS = {
     CONFIG_PATH: '/src/config.ts',
     CONSTANTS_PATH: '/src/constants.ts',
     ICONS: '/icons',
-    OUTPUT: '/output'
+    OUTPUT: '/output',
+    TYPES: '/types'
 };
 exports.COREL_MARGINS_BETWEEN_ICON_AND_TEXT = {
     SMALL: 0.05,

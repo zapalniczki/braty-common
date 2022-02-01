@@ -3,6 +3,7 @@ export declare const COREL_PATHS: {
     CONSTANTS_PATH: "/src/constants.ts";
     ICONS: "/icons";
     OUTPUT: "/output";
+    TYPES: "/types";
 };
 export declare const COREL_MARGINS_BETWEEN_ICON_AND_TEXT: {
     SMALL: number;
