@@ -9,6 +9,7 @@ declare const collection: import("zod").ZodObject<import("zod").extendShape<impo
 }>, {
     visible: import("zod").ZodBoolean;
     is_featured: import("zod").ZodBoolean;
+    key: import("zod").ZodString;
 }>, "strip", import("zod").ZodTypeAny, {
     label_pl: string;
     label_en: string;
@@ -17,6 +18,7 @@ declare const collection: import("zod").ZodObject<import("zod").extendShape<impo
     updated_at: string;
     visible: boolean;
     is_featured: boolean;
+    key: string;
 }, {
     label_pl: string;
     label_en: string;
@@ -25,6 +27,7 @@ declare const collection: import("zod").ZodObject<import("zod").extendShape<impo
     updated_at: string;
     visible: boolean;
     is_featured: boolean;
+    key: string;
 }>;
 export declare type Collection = TypeOf<typeof collection>;
 export default collection;

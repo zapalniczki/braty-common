@@ -8,6 +8,7 @@ var international_1 = __importDefault(require("./international"));
 var zod_1 = require("zod");
 var collection = tableBase_1.default.merge(international_1.default).extend({
     visible: (0, zod_1.boolean)(),
-    is_featured: (0, zod_1.boolean)()
+    is_featured: (0, zod_1.boolean)(),
+    key: (0, zod_1.string)()
 });
 exports.default = collection;
