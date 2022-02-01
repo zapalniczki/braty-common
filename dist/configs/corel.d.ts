@@ -18,4 +18,3 @@ export declare type CorelIcon = 'HEART' | 'BOAT';
 export declare type Unicode = number[];
 export declare type CorelFontFamily = 'Kaushan Script' | 'Batang';
 export declare type CorelFont = 'STANDARD';
-export declare const FONTS: Record<CorelFont, CorelFontFamily>;
