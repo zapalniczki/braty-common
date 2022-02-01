@@ -1,9 +1,10 @@
 export const COREL_PATHS = {
-  CONFIG_PATH: '/src/config.ts' as const,
-  CONSTANTS_PATH: '/src/constants.ts' as const,
+  CONFIG: '/src/config.ts' as const,
+  CONSTANTS: '/src/constants.ts' as const,
   ICONS: '/icons' as const,
   OUTPUT: '/output' as const,
-  TYPES: '/types' as const
+  TYPES: '/types' as const,
+  INDEX: '/src/index.ts' as const
 }
 
 export const COREL_MARGINS_BETWEEN_ICON_AND_TEXT = {
