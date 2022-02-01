@@ -1,4 +1,4 @@
-import { enum as zenum } from 'zod'
+import { enum as zenum, TypeOf } from 'zod'
 
 const iconKey = zenum([
   'PKiN',
@@ -17,5 +17,7 @@ const iconKey = zenum([
   'BOAT2',
   'HEART'
 ])
+
+export type IconKey = TypeOf<typeof iconKey>
 
 export default iconKey
