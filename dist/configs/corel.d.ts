@@ -1,9 +1,10 @@
 export declare const COREL_PATHS: {
-    CONFIG_PATH: "/src/config.ts";
-    CONSTANTS_PATH: "/src/constants.ts";
+    CONFIG: "/src/config.ts";
+    CONSTANTS: "/src/constants.ts";
     ICONS: "/icons";
     OUTPUT: "/output";
     TYPES: "/types";
+    INDEX: "/src/index.ts";
 };
 export declare const COREL_MARGINS_BETWEEN_ICON_AND_TEXT: {
     SMALL: number;

@@ -2,11 +2,12 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.COREL_ICON_LAYER_INITIAL_NAME = exports.COREL_LABEL_PREFIX = exports.COREL_ICON_LAYER_NAME = exports.COREL_TEXT_LAYER_NAME = exports.COREL_FONTS = exports.COREL_MARGINS_BETWEEN_ICON_AND_TEXT = exports.COREL_PATHS = void 0;
 exports.COREL_PATHS = {
-    CONFIG_PATH: '/src/config.ts',
-    CONSTANTS_PATH: '/src/constants.ts',
+    CONFIG: '/src/config.ts',
+    CONSTANTS: '/src/constants.ts',
     ICONS: '/icons',
     OUTPUT: '/output',
-    TYPES: '/types'
+    TYPES: '/types',
+    INDEX: '/src/index.ts'
 };
 exports.COREL_MARGINS_BETWEEN_ICON_AND_TEXT = {
     SMALL: 0.05,
