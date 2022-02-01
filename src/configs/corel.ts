@@ -29,7 +29,3 @@ export type Unicode = number[]
 export type CorelFontFamily = 'Kaushan Script' | 'Batang'
 
 export type CorelFont = 'STANDARD'
-
-export const FONTS: Record<CorelFont, CorelFontFamily> = {
-  STANDARD: 'Kaushan Script'
-}
