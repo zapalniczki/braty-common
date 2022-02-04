@@ -16,13 +16,13 @@ export const CATALOGUE_CAPTION: Record<Language, string> = {
 }
 
 export const CATALOGUE_FEATURED_SUBTITLE: Record<Language, string> = {
-  pl: 'Oferta specjalna',
-  en: 'Featured products'
+  pl: 'Oferta specjalna' as const,
+  en: 'Featured products' as const
 }
 
 export const CATALOGUE_REGULAR_SUBTITLE: Record<Language, string> = {
-  pl: 'Oferta standardowa',
-  en: 'Regular products'
+  pl: 'Oferta standardowa' as const,
+  en: 'Regular products' as const
 }
 
 export const CATALOGUE_TILE_TITLE_PREFIX: Record<Language, string> = {

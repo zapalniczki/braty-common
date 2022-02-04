@@ -1,6 +1,6 @@
 const LINKS_PREFIXES = {
-  TEL: 'tel:' as const,
-  MAIL: 'mailto:' as const
+  MAIL: 'mailto:' as const,
+  TEL: 'tel:' as const
 }
 
 export default LINKS_PREFIXES
