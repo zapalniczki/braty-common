@@ -1,12 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var SEPARATORS = {
-    PATH: '/',
+    DOT: '.',
     FILENAME: '&',
     FILENAME_PAIR: '=',
-    PRODUCT_NAME: ', ',
-    SPACE: ' ',
     HARD_SPACE: '_',
-    DOT: '.'
+    PATH: '/',
+    PRODUCT_NAME: ', ',
+    SPACE: ' '
 };
 exports.default = SEPARATORS;

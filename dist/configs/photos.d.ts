@@ -1,6 +1,6 @@
 export declare const PHOTOS_PATHS: {
-    OUTPUT: "/output";
+    ASSETS: "./assets";
     MOLDS: "/molds";
     MOLDS_BANK: "./moldsBank";
-    ASSETS: "./assets";
+    OUTPUT: "/output";
 };

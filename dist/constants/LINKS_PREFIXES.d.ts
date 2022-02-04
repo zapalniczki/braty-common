@@ -1,5 +1,5 @@
 declare const LINKS_PREFIXES: {
-    TEL: "tel:";
     MAIL: "mailto:";
+    TEL: "tel:";
 };
 export default LINKS_PREFIXES;

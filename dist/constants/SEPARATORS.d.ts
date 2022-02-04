@@ -1,10 +1,10 @@
 declare const SEPARATORS: {
-    PATH: "/";
+    DOT: ".";
     FILENAME: "&";
     FILENAME_PAIR: "=";
+    HARD_SPACE: "_";
+    PATH: "/";
     PRODUCT_NAME: ", ";
     SPACE: " ";
-    HARD_SPACE: "_";
-    DOT: ".";
 };
 export default SEPARATORS;

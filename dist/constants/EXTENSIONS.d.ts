@@ -1,8 +1,8 @@
 declare const EXTENSIONS: {
-    WEBP: ".webp";
-    PNG: ".png";
-    PDF: ".pdf";
-    PSD: ".psd";
     CDR: ".cdr";
+    PDF: ".pdf";
+    PNG: ".png";
+    PSD: ".psd";
+    WEBP: ".webp";
 };
 export default EXTENSIONS;

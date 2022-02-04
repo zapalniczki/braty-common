@@ -1,8 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var SCRIPTS = {
-    PHOTOS: 'braty-photos',
     CATALOGUE: 'braty-catalogue',
-    COREL: 'braty-corel'
+    COMMON: 'braty-common',
+    COREL: 'braty-corel',
+    MOLDS: 'braty-molds',
+    PHOTOS: 'braty-photos',
+    STORAGE: 'braty-storage'
 };
 exports.default = SCRIPTS;

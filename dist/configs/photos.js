@@ -2,8 +2,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.PHOTOS_PATHS = void 0;
 exports.PHOTOS_PATHS = {
-    OUTPUT: '/output',
+    ASSETS: './assets',
     MOLDS: '/molds',
     MOLDS_BANK: './moldsBank',
-    ASSETS: './assets'
+    OUTPUT: '/output'
 };
