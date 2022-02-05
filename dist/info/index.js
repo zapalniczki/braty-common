@@ -1,9 +1,13 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.BRATY_NAME = exports.BRATY_ADDRESS_3 = exports.BRATY_ADDRESS_2 = exports.BRATY_ADDRESS_1 = exports.BRATY_EMAIL = exports.BRATY_PHONE = void 0;
+exports.BRATY_BANK_ACCOUNT = exports.BRATY_BANK_NAME = exports.BRATY_BIC = exports.BRATY_IBAN = exports.BRATY_NAME = exports.BRATY_ADDRESS_3 = exports.BRATY_ADDRESS_2 = exports.BRATY_ADDRESS_1 = exports.BRATY_EMAIL = exports.BRATY_PHONE = void 0;
 exports.BRATY_PHONE = '+48 792 531 179';
 exports.BRATY_EMAIL = 'kontakt@braty.co';
 exports.BRATY_ADDRESS_1 = 'Braty Przemysław Rychlewicz';
 exports.BRATY_ADDRESS_2 = 'ul. Bora-Komorowskiego 12/1';
 exports.BRATY_ADDRESS_3 = '80-366 Gdańsk';
 exports.BRATY_NAME = 'braty.co';
+exports.BRATY_IBAN = 'PL31 1140 2004 0000 3402 8090 0648';
+exports.BRATY_BIC = 'BREXPLPWMBK';
+exports.BRATY_BANK_NAME = 'mBank S.A.';
+exports.BRATY_BANK_ACCOUNT = '31 1140 2004 0000 3402 8090 0648';
