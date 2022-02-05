@@ -27,6 +27,6 @@ export type CorelIcon = 'HEART' | 'BOAT'
 
 export type Unicode = number[]
 
-export type CorelFontFamily = 'Kaushan Script' | 'Batang'
+export type CorelFontFamily = 'Kaushan Script' | 'Batang' | 'Radicalis'
 
-export type CorelFont = 'STANDARD'
+export type CorelFont = 'STANDARD' | 'HANDWRITE'
