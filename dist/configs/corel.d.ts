@@ -17,5 +17,5 @@ export declare const COREL_LABEL_PREFIX: "I";
 export declare const COREL_ICON_LAYER_INITIAL_NAME: "Warstwa 1";
 export declare type CorelIcon = 'HEART' | 'BOAT';
 export declare type Unicode = number[];
-export declare type CorelFontFamily = 'Kaushan Script' | 'Batang';
-export declare type CorelFont = 'STANDARD';
+export declare type CorelFontFamily = 'Kaushan Script' | 'Batang' | 'Radicalis';
+export declare type CorelFont = 'STANDARD' | 'HANDWRITE';
