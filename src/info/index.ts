@@ -4,7 +4,7 @@ export const BRATY_EMAIL = 'kontakt@braty.co' as const
 
 export const BRATY_ADDRESS_1 = 'Braty Przemysław Rychlewicz' as const
 export const BRATY_ADDRESS_2 = 'ul. Bora-Komorowskiego 12/1' as const
-export const BRATY_ADDRESS_3 = '80-366 Gdańsk' as const
+export const BRATY_ADDRESS_3 = '80-366 Gdańsk, POLAND' as const
 
 export const BRATY_NAME = 'braty.co' as const
 
