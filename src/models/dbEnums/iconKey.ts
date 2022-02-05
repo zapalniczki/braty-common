@@ -14,7 +14,7 @@ const iconKey = zenum([
   'CHRISTMAS_TREE',
   'SHIP',
   'WARSAW_MERMAID',
-  'BOAT2',
+  'BOAT',
   'HEART'
 ])
 
