@@ -13,7 +13,8 @@ export const COREL_MARGINS_BETWEEN_ICON_AND_TEXT = {
 }
 
 export const COREL_FONTS: Record<CorelFont, CorelFontFamily> = {
-  STANDARD: 'Kaushan Script' as const
+  STANDARD: 'Kaushan Script' as const,
+  HANDWRITE: 'Radicalis' as const
 }
 
 export const COREL_TEXT_LAYER_NAME = 'text_layer' as const
