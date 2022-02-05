@@ -14,7 +14,8 @@ exports.COREL_MARGINS_BETWEEN_ICON_AND_TEXT = {
     LARGE: 0.15
 };
 exports.COREL_FONTS = {
-    STANDARD: 'Kaushan Script'
+    STANDARD: 'Kaushan Script',
+    HANDWRITE: 'Radicalis'
 };
 exports.COREL_TEXT_LAYER_NAME = 'text_layer';
 exports.COREL_ICON_LAYER_NAME = 'icon_layer';
