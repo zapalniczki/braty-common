@@ -15,7 +15,7 @@ var iconKey = (0, zod_1.enum)([
     'CHRISTMAS_TREE',
     'SHIP',
     'WARSAW_MERMAID',
-    'BOAT2',
+    'BOAT',
     'HEART'
 ]);
 exports.default = iconKey;
