@@ -13,6 +13,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.BRATY_BASE_PATH = void 0;
 __exportStar(require("./catalogue"), exports);
 __exportStar(require("./corel"), exports);
+__exportStar(require("./database"), exports);
 __exportStar(require("./photos"), exports);
 __exportStar(require("./storage"), exports);
 exports.BRATY_BASE_PATH = 'C:/Users/Przemek Rychlewicz/BRATY';
