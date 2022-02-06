@@ -3,7 +3,7 @@ export const LOG_COLORS = {
   RED: '\x1b[31m%s\x1b[0m' as const
 }
 
-export const STORAGE_PATHS = {
+export const PHOTOS_UPLOAD_PATHS = {
   output: './output' as const,
   molds: './molds' as const
 }

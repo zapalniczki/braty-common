@@ -8,7 +8,7 @@ const OUTPUT_PRODUCTS_FILE_PATH = `${OUTPUT_BASE_PATH}/src/index.ts` as const
 const OUTPUT_CONSTANTS_FILE_PATH =
   `${OUTPUT_BASE_PATH}/src/constants.ts` as const
 
-export const DATABASE_PATHS = {
+export const CATALOGUE_PREPARE_PATHS = {
   OUTPUT_BASE_PATH,
   OUTPUT_IMAGES_FOLDER,
   OUTPUT_PRODUCTS_FILE_PATH,
