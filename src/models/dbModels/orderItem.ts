@@ -1,11 +1,11 @@
 import { boolean, number, string, TypeOf } from 'zod'
 import tableBase from './tableBase'
+import price from './price'
 
-const orderItem = tableBase.extend({
+const orderItem = tableBase.merge(price).extend({
   order_id: string().uuid(),
   product_id: string().uuid(),
   quantity: number(),
-  price: number(),
   is_test: boolean()
 })
 
