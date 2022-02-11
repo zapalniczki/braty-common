@@ -1,15 +1,17 @@
 import { TypeOf } from 'zod';
-declare const product: import("zod").ZodObject<import("zod").extendShape<{
+declare const product: import("zod").ZodObject<import("zod").extendShape<import("zod").extendShape<{
     created_at: import("zod").ZodString;
     id: import("zod").ZodString;
     updated_at: import("zod").ZodString;
 }, {
+    price_pl: import("zod").ZodNumber;
+    price_en: import("zod").ZodNumber;
+}>, {
     mold_id: import("zod").ZodString;
     label_id: import("zod").ZodString;
     icon_id: import("zod").ZodString;
     description_pl: import("zod").ZodString;
     description_en: import("zod").ZodString;
-    price: import("zod").ZodNumber;
     collection_id: import("zod").ZodString;
     bestseller: import("zod").ZodBoolean;
     visible: import("zod").ZodBoolean;
@@ -24,10 +26,11 @@ declare const product: import("zod").ZodObject<import("zod").extendShape<{
     created_at: string;
     id: string;
     updated_at: string;
+    price_pl: number;
+    price_en: number;
     mold_id: string;
     label_id: string;
     icon_id: string;
-    price: number;
     collection_id: string;
     bestseller: boolean;
     visible: boolean;
@@ -40,10 +43,11 @@ declare const product: import("zod").ZodObject<import("zod").extendShape<{
     created_at: string;
     id: string;
     updated_at: string;
+    price_pl: number;
+    price_en: number;
     mold_id: string;
     label_id: string;
     icon_id: string;
-    price: number;
     collection_id: string;
     bestseller: boolean;
     visible: boolean;
