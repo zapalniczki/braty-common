@@ -1,4 +1,5 @@
-import { BRATY_NAME, Language } from '..'
+import { BRATY_BASE_PATH } from '.'
+import { BRATY_NAME, EXTENSIONS, language, Language, SEPARATORS } from '..'
 
 export const CATALOGUE_TITLE: Record<Language, string> = {
   pl: 'Katalog produktów' as const,
@@ -52,4 +53,17 @@ export const getCatalogueOutputFilename = (language: Language) => {
   const outputFileName = `${BRATY_NAME} ${title} ${subtitle} ${language}`
 
   return outputFileName
+}
+
+export const getCatalogueOutputPath = (language: Language) => {
+  const outputFileName = getCatalogueOutputFilename(language)
+
+  const outputPath =
+    BRATY_BASE_PATH +
+    CATALOGUE_PATHS.OUTPUT +
+    SEPARATORS.PATH +
+    outputFileName +
+    EXTENSIONS.PDF
+
+  return outputPath
 }
