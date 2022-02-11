@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getCatalogueOutputFilename = exports.CATALOGUE_PATHS = exports.CATALOGUE_TOC_TITLE = exports.CATALOGUE_PRODUCT_NAME_FOR_ICON_ONLY = exports.CATALOGUE_PRODUCT_ICON_ONLY_LABEL = exports.CATALOGUE_TILE_TITLE_PREFIX = exports.CATALOGUE_REGULAR_SUBTITLE = exports.CATALOGUE_FEATURED_SUBTITLE = exports.CATALOGUE_CAPTION = exports.CATALOGUE_SUBTITLE = exports.CATALOGUE_TITLE = void 0;
+exports.getCatalogueOutputPath = exports.getCatalogueOutputFilename = exports.CATALOGUE_PATHS = exports.CATALOGUE_TOC_TITLE = exports.CATALOGUE_PRODUCT_NAME_FOR_ICON_ONLY = exports.CATALOGUE_PRODUCT_ICON_ONLY_LABEL = exports.CATALOGUE_TILE_TITLE_PREFIX = exports.CATALOGUE_REGULAR_SUBTITLE = exports.CATALOGUE_FEATURED_SUBTITLE = exports.CATALOGUE_CAPTION = exports.CATALOGUE_SUBTITLE = exports.CATALOGUE_TITLE = void 0;
+var _1 = require(".");
 var __1 = require("..");
 exports.CATALOGUE_TITLE = {
     pl: 'Katalog produktów',
@@ -45,3 +46,13 @@ var getCatalogueOutputFilename = function (language) {
     return outputFileName;
 };
 exports.getCatalogueOutputFilename = getCatalogueOutputFilename;
+var getCatalogueOutputPath = function (language) {
+    var outputFileName = (0, exports.getCatalogueOutputFilename)(language);
+    var outputPath = _1.BRATY_BASE_PATH +
+        exports.CATALOGUE_PATHS.OUTPUT +
+        __1.SEPARATORS.PATH +
+        outputFileName +
+        __1.EXTENSIONS.PDF;
+    return outputPath;
+};
+exports.getCatalogueOutputPath = getCatalogueOutputPath;

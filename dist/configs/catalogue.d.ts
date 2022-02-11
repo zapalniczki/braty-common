@@ -15,3 +15,4 @@ export declare const CATALOGUE_PATHS: {
     OUTPUT: string;
 };
 export declare const getCatalogueOutputFilename: (language: Language) => string;
+export declare const getCatalogueOutputPath: (language: Language) => string;
