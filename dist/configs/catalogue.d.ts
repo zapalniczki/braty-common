@@ -14,3 +14,4 @@ export declare const CATALOGUE_TOC_TITLE: {
 export declare const CATALOGUE_PATHS: {
     OUTPUT: string;
 };
+export declare const getCatalogueOutputFilename: (language: Language) => string;

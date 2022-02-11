@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.CATALOGUE_PATHS = exports.CATALOGUE_TOC_TITLE = exports.CATALOGUE_PRODUCT_NAME_FOR_ICON_ONLY = exports.CATALOGUE_PRODUCT_ICON_ONLY_LABEL = exports.CATALOGUE_TILE_TITLE_PREFIX = exports.CATALOGUE_REGULAR_SUBTITLE = exports.CATALOGUE_FEATURED_SUBTITLE = exports.CATALOGUE_CAPTION = exports.CATALOGUE_SUBTITLE = exports.CATALOGUE_TITLE = void 0;
+exports.getCatalogueOutputFilename = exports.CATALOGUE_PATHS = exports.CATALOGUE_TOC_TITLE = exports.CATALOGUE_PRODUCT_NAME_FOR_ICON_ONLY = exports.CATALOGUE_PRODUCT_ICON_ONLY_LABEL = exports.CATALOGUE_TILE_TITLE_PREFIX = exports.CATALOGUE_REGULAR_SUBTITLE = exports.CATALOGUE_FEATURED_SUBTITLE = exports.CATALOGUE_CAPTION = exports.CATALOGUE_SUBTITLE = exports.CATALOGUE_TITLE = void 0;
+var __1 = require("..");
 exports.CATALOGUE_TITLE = {
     pl: 'Katalog produktów',
     en: 'Products Catalogue'
@@ -37,3 +38,10 @@ exports.CATALOGUE_TOC_TITLE = {
 exports.CATALOGUE_PATHS = {
     OUTPUT: '/output'
 };
+var getCatalogueOutputFilename = function (language) {
+    var title = exports.CATALOGUE_TITLE[language];
+    var subtitle = exports.CATALOGUE_SUBTITLE[language].replace(' | ', ' ');
+    var outputFileName = "".concat(__1.BRATY_NAME, " ").concat(title, " ").concat(subtitle, " ").concat(language);
+    return outputFileName;
+};
+exports.getCatalogueOutputFilename = getCatalogueOutputFilename;
