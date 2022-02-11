@@ -1,8 +1,8 @@
-import international from './international'
+import { boolean, string, TypeOf } from 'zod'
 import iconName from './iconName'
+import international from './international'
+import price from './price'
 import tableBase from './tableBase'
-import { string, number, boolean, TypeOf } from 'zod'
-import { price } from '.'
 
 const deliveryType = tableBase.merge(international).merge(price).extend({
   icon_name: iconName,
