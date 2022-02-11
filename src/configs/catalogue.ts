@@ -41,3 +41,7 @@ export const CATALOGUE_TOC_TITLE = {
   pl: 'Spis treści' as const,
   en: 'Table of Contents' as const
 }
+
+export const CATALOGUE_PATHS = {
+  OUTPUT: '/output'
+}
