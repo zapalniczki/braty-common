@@ -1,8 +1,8 @@
-import { object, string, TypeOf } from 'zod'
+import { number, object, TypeOf } from 'zod'
 
 const price = object({
-  price_pl: string(),
-  price_en: string()
+  price_pl: number(),
+  price_en: number()
 })
 
 export type Price = TypeOf<typeof price>
