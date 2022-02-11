@@ -49,6 +49,7 @@ exports.getCatalogueOutputFilename = getCatalogueOutputFilename;
 var getCatalogueOutputPath = function (language) {
     var outputFileName = (0, exports.getCatalogueOutputFilename)(language);
     var outputPath = _1.BRATY_BASE_PATH +
+        __1.SCRIPTS.CATALOGUE +
         exports.CATALOGUE_PATHS.OUTPUT +
         __1.SEPARATORS.PATH +
         outputFileName +
