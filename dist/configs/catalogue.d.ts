@@ -11,3 +11,6 @@ export declare const CATALOGUE_TOC_TITLE: {
     pl: "Spis treści";
     en: "Table of Contents";
 };
+export declare const CATALOGUE_PATHS: {
+    OUTPUT: string;
+};
