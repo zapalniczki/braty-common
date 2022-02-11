@@ -1,6 +1,6 @@
 {
   "name": "braty-common",
-  "version": "1.0.191",
+  "version": "1.0.192",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "license": "UNLICENSED",
