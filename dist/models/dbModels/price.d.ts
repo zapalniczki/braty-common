@@ -1,13 +1,13 @@
 import { TypeOf } from 'zod';
 declare const price: import("zod").ZodObject<{
-    price_pl: import("zod").ZodString;
-    price_en: import("zod").ZodString;
+    price_pl: import("zod").ZodNumber;
+    price_en: import("zod").ZodNumber;
 }, "strip", import("zod").ZodTypeAny, {
-    price_pl: string;
-    price_en: string;
+    price_pl: number;
+    price_en: number;
 }, {
-    price_pl: string;
-    price_en: string;
+    price_pl: number;
+    price_en: number;
 }>;
 export declare type Price = TypeOf<typeof price>;
 export default price;

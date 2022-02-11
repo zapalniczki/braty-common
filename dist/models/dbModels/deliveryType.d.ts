@@ -7,8 +7,8 @@ declare const deliveryType: import("zod").ZodObject<import("zod").extendShape<im
     label_pl: import("zod").ZodString;
     label_en: import("zod").ZodString;
 }>, {
-    price_pl: import("zod").ZodString;
-    price_en: import("zod").ZodString;
+    price_pl: import("zod").ZodNumber;
+    price_en: import("zod").ZodNumber;
 }>, {
     icon_name: import("zod").ZodEnum<["question", "exchange-alt", "question", "truck", "box-open"]>;
     is_enabled: import("zod").ZodBoolean;
@@ -26,8 +26,8 @@ declare const deliveryType: import("zod").ZodObject<import("zod").extendShape<im
     created_at: string;
     id: string;
     updated_at: string;
-    price_pl: string;
-    price_en: string;
+    price_pl: number;
+    price_en: number;
     icon_name: "question" | "exchange-alt" | "truck" | "box-open";
     is_enabled: boolean;
     requires_address: boolean;
@@ -42,8 +42,8 @@ declare const deliveryType: import("zod").ZodObject<import("zod").extendShape<im
     created_at: string;
     id: string;
     updated_at: string;
-    price_pl: string;
-    price_en: string;
+    price_pl: number;
+    price_en: number;
     icon_name: "question" | "exchange-alt" | "truck" | "box-open";
     is_enabled: boolean;
     requires_address: boolean;
