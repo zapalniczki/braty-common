@@ -67,6 +67,7 @@ export const getCatalogueOutputPath = (language: Language) => {
 
   const outputPath =
     BRATY_BASE_PATH +
+    SEPARATORS.PATH +
     SCRIPTS.CATALOGUE +
     CATALOGUE_PATHS.OUTPUT +
     SEPARATORS.PATH +
