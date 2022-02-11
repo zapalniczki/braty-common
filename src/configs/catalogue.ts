@@ -1,4 +1,4 @@
-import { Language } from '..'
+import { BRATY_NAME, Language } from '..'
 
 export const CATALOGUE_TITLE: Record<Language, string> = {
   pl: 'Katalog produktów' as const,
@@ -44,4 +44,12 @@ export const CATALOGUE_TOC_TITLE = {
 
 export const CATALOGUE_PATHS = {
   OUTPUT: '/output'
+}
+
+export const getCatalogueOutputFilename = (language: Language) => {
+  const title = CATALOGUE_TITLE[language]
+  const subtitle = CATALOGUE_SUBTITLE[language].replace(' | ', ' ')
+  const outputFileName = `${BRATY_NAME} ${title} ${subtitle} ${language}`
+
+  return outputFileName
 }
