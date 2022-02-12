@@ -11,7 +11,8 @@ declare const order: import("zod").ZodObject<import("zod").extendShape<{
     payment_type: import("zod").ZodString;
     shipping_id: import("zod").ZodNullable<import("zod").ZodString>;
     status: import("zod").ZodEnum<["OPEN", "CONFIRMED", "PAYMENT_RECEIVED", "PRODUCTION", "AWAITING_FOR_PICKUP", "IN_DELIVERY", "COMPLETED", "REJECTED"]>;
-    total: import("zod").ZodNumber;
+    total_pl: import("zod").ZodNumber;
+    total_en: import("zod").ZodNumber;
     products_price_pl: import("zod").ZodNumber;
     products_price_en: import("zod").ZodNumber;
     delivery_price_pl: import("zod").ZodNumber;
@@ -32,7 +33,8 @@ declare const order: import("zod").ZodObject<import("zod").extendShape<{
     delivery_type: string;
     payment_type: string;
     shipping_id: string | null;
-    total: number;
+    total_pl: number;
+    total_en: number;
     products_price_pl: number;
     products_price_en: number;
     delivery_price_pl: number;
@@ -53,7 +55,8 @@ declare const order: import("zod").ZodObject<import("zod").extendShape<{
     delivery_type: string;
     payment_type: string;
     shipping_id: string | null;
-    total: number;
+    total_pl: number;
+    total_en: number;
     products_price_pl: number;
     products_price_en: number;
     delivery_price_pl: number;
