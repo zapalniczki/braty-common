@@ -4,21 +4,24 @@ declare const voucher: import("zod").ZodObject<import("zod").extendShape<{
     id: import("zod").ZodString;
     updated_at: import("zod").ZodString;
 }, {
-    discount: import("zod").ZodNumber;
+    discount_pl: import("zod").ZodNumber;
+    discount_en: import("zod").ZodNumber;
     is_fixed: import("zod").ZodBoolean;
     is_used: import("zod").ZodBoolean;
 }>, "strip", import("zod").ZodTypeAny, {
     created_at: string;
     id: string;
     updated_at: string;
-    discount: number;
+    discount_pl: number;
+    discount_en: number;
     is_fixed: boolean;
     is_used: boolean;
 }, {
     created_at: string;
     id: string;
     updated_at: string;
-    discount: number;
+    discount_pl: number;
+    discount_en: number;
     is_fixed: boolean;
     is_used: boolean;
 }>;

@@ -6,7 +6,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var tableBase_1 = __importDefault(require("./tableBase"));
 var zod_1 = require("zod");
 var voucher = tableBase_1.default.extend({
-    discount: (0, zod_1.number)(),
+    discount_pl: (0, zod_1.number)(),
+    discount_en: (0, zod_1.number)(),
     is_fixed: (0, zod_1.boolean)(),
     is_used: (0, zod_1.boolean)()
 });
