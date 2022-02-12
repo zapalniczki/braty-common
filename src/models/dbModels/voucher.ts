@@ -2,7 +2,8 @@ import tableBase from './tableBase'
 import { number, TypeOf, boolean } from 'zod'
 
 const voucher = tableBase.extend({
-  discount: number(),
+  discount_pl: number(),
+  discount_en: number(),
   is_fixed: boolean(),
   is_used: boolean()
 })
