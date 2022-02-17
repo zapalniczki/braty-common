@@ -13,7 +13,10 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.remoteConfig = void 0;
+exports.remoteConfig = exports.language = void 0;
+__exportStar(require("./language"), exports);
 __exportStar(require("./remoteConfig"), exports);
+var language_1 = require("./language");
+Object.defineProperty(exports, "language", { enumerable: true, get: function () { return __importDefault(language_1).default; } });
 var remoteConfig_1 = require("./remoteConfig");
 Object.defineProperty(exports, "remoteConfig", { enumerable: true, get: function () { return __importDefault(remoteConfig_1).default; } });
