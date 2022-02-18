@@ -18,7 +18,6 @@ const marketing = tableBase.extend({
   phone: string().nullable(),
   plus_code: string().nullable(),
   send_brochure_agreement: boolean(),
-  send_brochure_cyclic_agreement: boolean(),
   status: marketingStatus
 })
 
