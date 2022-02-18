@@ -10,7 +10,7 @@ import {
 
 export const CATALOGUE_TITLE: Record<Language, string> = {
   pl: 'Katalog produktów' as const,
-  en: 'Products Catalogue' as const
+  en: 'Product Catalogue' as const
 }
 
 export const CATALOGUE_SUBTITLE: Record<Language, string> = {
