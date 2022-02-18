@@ -13,5 +13,5 @@ export const BRATY_CATALOGUE_LINK: Record<Language, string> = {
 
 export const BRATY_CATALOGUE_COVER: Record<Language, string> = {
   pl: 'https://firebasestorage.googleapis.com/v0/b/zapalniczki-c7234.appspot.com/o/assets%2Fcatalogue_winter_2021_2022_cover.webp?alt=media&token=06326030-c010-499a-bff5-528806bf8a8b',
-  en: 'https://firebasestorage.googleapis.com/v0/b/zapalniczki-c7234.appspot.com/o/assets%2Fcatalogue_winter_2021_2022_cover.webp?alt=media&token=06326030-c010-499a-bff5-528806bf8a8b'
+  en: 'https://firebasestorage.googleapis.com/v0/b/zapalniczki-c7234.appspot.com/o/assets%2Fcatalogue_winter_2021_2022_cover_en.webp?alt=media&token=7c56b5ac-c5a6-43c3-a915-b2bece7962e4'
 } as const
