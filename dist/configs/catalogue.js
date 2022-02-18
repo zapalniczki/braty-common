@@ -5,7 +5,7 @@ var _1 = require(".");
 var __1 = require("..");
 exports.CATALOGUE_TITLE = {
     pl: 'Katalog produktów',
-    en: 'Products Catalogue'
+    en: 'Product Catalogue'
 };
 exports.CATALOGUE_SUBTITLE = {
     pl: 'Zima 2021 | 22',
