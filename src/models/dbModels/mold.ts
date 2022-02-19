@@ -1,13 +1,15 @@
+import { enum as zenum, TypeOf } from 'zod'
+import icon from './icon'
+import label from './label'
 import tableBase from './tableBase'
-import { string, enum as zenum, TypeOf } from 'zod'
 
 const status = zenum(['IN_PROGRESS', 'DONE', 'UNDONE'])
 export type MoldStatus = TypeOf<typeof status>
 
 const mold = tableBase.extend({
   status: status,
-  label_id: string(),
-  icon_id: string()
+  label_key: label.shape.key,
+  icon_key: icon.shape.key
 })
 
 export type Mold = TypeOf<typeof mold>

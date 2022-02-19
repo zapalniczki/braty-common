@@ -1,9 +1,10 @@
-import { object, string } from 'zod'
+import { string, TypeOf } from 'zod'
+import timestamps from './timestamps'
 
-const tableBase = object({
-  created_at: string(),
-  id: string().uuid(),
-  updated_at: string()
+const tableBase = timestamps.extend({
+  id: string().uuid()
 })
+
+export type TableBase = TypeOf<typeof tableBase>
 
 export default tableBase

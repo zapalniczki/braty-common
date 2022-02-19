@@ -1,19 +1,22 @@
 import tableBase from './tableBase'
 import price from './price'
-import { string, TypeOf, number, boolean } from 'zod'
+import { string, TypeOf, boolean } from 'zod'
+import collection from './collection'
+import icon from './icon'
+import label from './label'
 
 const product = tableBase.merge(price).extend({
-  mold_id: string(),
-  label_id: string(),
-  icon_id: string(),
-  description_pl: string(),
-  description_en: string(),
-  collection_id: string(),
   bestseller: boolean(),
-  visible: boolean(),
+  collection_key: collection.shape.key,
+  description_en: string(),
+  description_pl: string(),
   featured: boolean(),
+  icon_key: icon.shape.key,
+  label_key: label.shape.key,
+  mold_id: string(),
+  name_en: string(),
   name_pl: string(),
-  name_en: string()
+  visible: boolean()
 })
 
 export type Product = TypeOf<typeof product>

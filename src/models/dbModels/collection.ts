@@ -1,10 +1,11 @@
-import tableBase from './tableBase'
 import international from './international'
 import { boolean, string, TypeOf } from 'zod'
+import timestamps from './timestamps'
 
-const collection = tableBase.merge(international).extend({
+const collection = timestamps.merge(international).extend({
   visible: boolean(),
   is_featured: boolean(),
+  // TODO change it do enum
   key: string()
 })
 

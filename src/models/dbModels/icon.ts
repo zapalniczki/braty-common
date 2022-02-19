@@ -1,9 +1,9 @@
 import { boolean, TypeOf } from 'zod'
+import timestamps from './timestamps'
 import { iconKey } from '..'
 import international from './international'
-import tableBase from './tableBase'
 
-const icon = tableBase.merge(international).extend({
+const icon = timestamps.merge(international).extend({
   visible: boolean(),
   key: iconKey
 })

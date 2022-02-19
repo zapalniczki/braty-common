@@ -1,11 +1,11 @@
-import { array, TypeOf } from 'zod'
-import collection from './collection'
+import { array, string, TypeOf } from 'zod'
+import timestamps from './timestamps'
 import { iconKey } from '..'
-import international from './international'
-import tableBase from './tableBase'
+import collection from './collection'
 
-const label = tableBase.merge(international).extend({
+const label = timestamps.extend({
   collection_key: collection.shape.key,
+  key: string(),
   icons: array(iconKey)
 })
 
