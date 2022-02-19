@@ -2,11 +2,12 @@ import { TypeOf } from 'zod';
 declare const orderStatus: import("zod").ZodEnum<["OPEN", "CONFIRMED", "PAYMENT_RECEIVED", "PRODUCTION", "AWAITING_FOR_PICKUP", "IN_DELIVERY", "COMPLETED", "REJECTED"]>;
 export declare type OrderStatus = TypeOf<typeof orderStatus>;
 export declare const ORDER_STATUSES: ["OPEN", "CONFIRMED", "PAYMENT_RECEIVED", "PRODUCTION", "AWAITING_FOR_PICKUP", "IN_DELIVERY", "COMPLETED", "REJECTED"];
-declare const order: import("zod").ZodObject<import("zod").extendShape<{
+declare const order: import("zod").ZodObject<import("zod").extendShape<import("zod").extendShape<{
     created_at: import("zod").ZodString;
-    id: import("zod").ZodString;
     updated_at: import("zod").ZodString;
 }, {
+    id: import("zod").ZodString;
+}>, {
     delivery_type: import("zod").ZodString;
     payment_type: import("zod").ZodString;
     shipping_id: import("zod").ZodNullable<import("zod").ZodString>;
@@ -27,9 +28,9 @@ declare const order: import("zod").ZodObject<import("zod").extendShape<{
     is_test: import("zod").ZodBoolean;
 }>, "strip", import("zod").ZodTypeAny, {
     created_at: string;
-    id: string;
     updated_at: string;
     status: "OPEN" | "CONFIRMED" | "PAYMENT_RECEIVED" | "PRODUCTION" | "AWAITING_FOR_PICKUP" | "IN_DELIVERY" | "COMPLETED" | "REJECTED";
+    id: string;
     delivery_type: string;
     payment_type: string;
     shipping_id: string | null;
@@ -49,9 +50,9 @@ declare const order: import("zod").ZodObject<import("zod").extendShape<{
     is_test: boolean;
 }, {
     created_at: string;
-    id: string;
     updated_at: string;
     status: "OPEN" | "CONFIRMED" | "PAYMENT_RECEIVED" | "PRODUCTION" | "AWAITING_FOR_PICKUP" | "IN_DELIVERY" | "COMPLETED" | "REJECTED";
+    id: string;
     delivery_type: string;
     payment_type: string;
     shipping_id: string | null;

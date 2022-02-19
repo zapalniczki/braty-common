@@ -1,11 +1,12 @@
 import { TypeOf } from 'zod';
 export declare const marketingStatus: import("zod").ZodEnum<["TODO", "UNANSWERED", "INTERESTED", "REJECTED"]>;
 export declare type MarketingStatus = TypeOf<typeof marketingStatus>;
-declare const marketing: import("zod").ZodObject<import("zod").extendShape<{
+declare const marketing: import("zod").ZodObject<import("zod").extendShape<import("zod").extendShape<{
     created_at: import("zod").ZodString;
-    id: import("zod").ZodString;
     updated_at: import("zod").ZodString;
 }, {
+    id: import("zod").ZodString;
+}>, {
     email: import("zod").ZodNullable<import("zod").ZodString>;
     is_test: import("zod").ZodBoolean;
     name: import("zod").ZodNullable<import("zod").ZodString>;
@@ -16,9 +17,9 @@ declare const marketing: import("zod").ZodObject<import("zod").extendShape<{
     status: import("zod").ZodEnum<["TODO", "UNANSWERED", "INTERESTED", "REJECTED"]>;
 }>, "strip", import("zod").ZodTypeAny, {
     created_at: string;
-    id: string;
     updated_at: string;
     status: "REJECTED" | "TODO" | "UNANSWERED" | "INTERESTED";
+    id: string;
     is_test: boolean;
     name: string | null;
     email: string | null;
@@ -28,9 +29,9 @@ declare const marketing: import("zod").ZodObject<import("zod").extendShape<{
     send_brochure_agreement: boolean;
 }, {
     created_at: string;
-    id: string;
     updated_at: string;
     status: "REJECTED" | "TODO" | "UNANSWERED" | "INTERESTED";
+    id: string;
     is_test: boolean;
     name: string | null;
     email: string | null;

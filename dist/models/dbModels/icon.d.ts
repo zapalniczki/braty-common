@@ -1,7 +1,6 @@
 import { TypeOf } from 'zod';
 declare const icon: import("zod").ZodObject<import("zod").extendShape<import("zod").extendShape<{
     created_at: import("zod").ZodString;
-    id: import("zod").ZodString;
     updated_at: import("zod").ZodString;
 }, {
     label_pl: import("zod").ZodString;
@@ -13,7 +12,6 @@ declare const icon: import("zod").ZodObject<import("zod").extendShape<import("zo
     label_pl: string;
     label_en: string;
     created_at: string;
-    id: string;
     updated_at: string;
     visible: boolean;
     key: "PKiN" | "HEART_2022" | "DOUBLE_HEART" | "ARROW_BELOW" | "CHRISTMAS_TREE_STRIPES" | "CHRISTMAS_TREE_STAR" | "CHRISTMAS_TREE_PATTERN" | "BALLOONS" | "FIREWORKS" | "SANTA_FACE" | "CHRISTMAS_TREE" | "SHIP" | "WARSAW_MERMAID" | "BOAT" | "HEART";
@@ -21,7 +19,6 @@ declare const icon: import("zod").ZodObject<import("zod").extendShape<import("zo
     label_pl: string;
     label_en: string;
     created_at: string;
-    id: string;
     updated_at: string;
     visible: boolean;
     key: "PKiN" | "HEART_2022" | "DOUBLE_HEART" | "ARROW_BELOW" | "CHRISTMAS_TREE_STRIPES" | "CHRISTMAS_TREE_STAR" | "CHRISTMAS_TREE_PATTERN" | "BALLOONS" | "FIREWORKS" | "SANTA_FACE" | "CHRISTMAS_TREE" | "SHIP" | "WARSAW_MERMAID" | "BOAT" | "HEART";

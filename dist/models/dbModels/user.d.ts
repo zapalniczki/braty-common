@@ -1,9 +1,10 @@
 import { TypeOf } from 'zod';
-declare const user: import("zod").ZodObject<import("zod").extendShape<{
+declare const user: import("zod").ZodObject<import("zod").extendShape<import("zod").extendShape<{
     created_at: import("zod").ZodString;
-    id: import("zod").ZodString;
     updated_at: import("zod").ZodString;
 }, {
+    id: import("zod").ZodString;
+}>, {
     address_id: import("zod").ZodString;
     email: import("zod").ZodString;
     full_name: import("zod").ZodString;
@@ -15,8 +16,8 @@ declare const user: import("zod").ZodObject<import("zod").extendShape<{
     is_test: import("zod").ZodBoolean;
 }>, "strip", import("zod").ZodTypeAny, {
     created_at: string;
-    id: string;
     updated_at: string;
+    id: string;
     shipping_id: string | null;
     is_test: boolean;
     email: string;
@@ -28,8 +29,8 @@ declare const user: import("zod").ZodObject<import("zod").extendShape<{
     preferred_payment: string;
 }, {
     created_at: string;
-    id: string;
     updated_at: string;
+    id: string;
     shipping_id: string | null;
     is_test: boolean;
     email: string;

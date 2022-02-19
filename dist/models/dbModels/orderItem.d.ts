@@ -1,9 +1,10 @@
 import { TypeOf } from 'zod';
-declare const orderItem: import("zod").ZodObject<import("zod").extendShape<import("zod").extendShape<{
+declare const orderItem: import("zod").ZodObject<import("zod").extendShape<import("zod").extendShape<import("zod").extendShape<{
     created_at: import("zod").ZodString;
-    id: import("zod").ZodString;
     updated_at: import("zod").ZodString;
 }, {
+    id: import("zod").ZodString;
+}>, {
     price_pl: import("zod").ZodNumber;
     price_en: import("zod").ZodNumber;
 }>, {
@@ -13,8 +14,8 @@ declare const orderItem: import("zod").ZodObject<import("zod").extendShape<impor
     is_test: import("zod").ZodBoolean;
 }>, "strip", import("zod").ZodTypeAny, {
     created_at: string;
-    id: string;
     updated_at: string;
+    id: string;
     price_pl: number;
     price_en: number;
     is_test: boolean;
@@ -23,8 +24,8 @@ declare const orderItem: import("zod").ZodObject<import("zod").extendShape<impor
     quantity: number;
 }, {
     created_at: string;
-    id: string;
     updated_at: string;
+    id: string;
     price_pl: number;
     price_en: number;
     is_test: boolean;

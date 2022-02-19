@@ -1,7 +1,6 @@
 import { TypeOf } from 'zod';
 declare const collection: import("zod").ZodObject<import("zod").extendShape<import("zod").extendShape<{
     created_at: import("zod").ZodString;
-    id: import("zod").ZodString;
     updated_at: import("zod").ZodString;
 }, {
     label_pl: import("zod").ZodString;
@@ -14,7 +13,6 @@ declare const collection: import("zod").ZodObject<import("zod").extendShape<impo
     label_pl: string;
     label_en: string;
     created_at: string;
-    id: string;
     updated_at: string;
     visible: boolean;
     is_featured: boolean;
@@ -23,7 +21,6 @@ declare const collection: import("zod").ZodObject<import("zod").extendShape<impo
     label_pl: string;
     label_en: string;
     created_at: string;
-    id: string;
     updated_at: string;
     visible: boolean;
     is_featured: boolean;
