@@ -3,12 +3,12 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.ORDER_STATUSES = void 0;
+exports.ORDER_STATUSES = exports.orderStatus = void 0;
 var tableBase_1 = __importDefault(require("./tableBase"));
 var zod_1 = require("zod");
 var voucher_1 = __importDefault(require("./voucher"));
 var parcel_1 = __importDefault(require("./parcel"));
-var orderStatus = (0, zod_1.enum)([
+exports.orderStatus = (0, zod_1.enum)([
     'OPEN',
     'CONFIRMED',
     'PAYMENT_RECEIVED',
@@ -18,12 +18,12 @@ var orderStatus = (0, zod_1.enum)([
     'COMPLETED',
     'REJECTED'
 ]);
-exports.ORDER_STATUSES = orderStatus.options;
+exports.ORDER_STATUSES = exports.orderStatus.options;
 var order = tableBase_1.default.extend({
     delivery_type: (0, zod_1.string)().uuid(),
     payment_type: (0, zod_1.string)().uuid(),
     shipping_id: (0, zod_1.string)().uuid().nullable(),
-    status: orderStatus,
+    status: exports.orderStatus,
     total_pl: (0, zod_1.number)(),
     total_en: (0, zod_1.number)(),
     products_price_pl: (0, zod_1.number)(),
