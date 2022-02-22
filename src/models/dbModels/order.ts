@@ -3,7 +3,7 @@ import { boolean, string, TypeOf, enum as zenum, number } from 'zod'
 import voucher from './voucher'
 import parcel from './parcel'
 
-const orderStatus = zenum([
+export const orderStatus = zenum([
   'OPEN',
   'CONFIRMED',
   'PAYMENT_RECEIVED',
