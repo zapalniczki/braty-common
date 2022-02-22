@@ -1,21 +1,8 @@
-import tableBase from './tableBase'
-import { boolean, string, TypeOf, enum as zenum, number } from 'zod'
-import voucher from './voucher'
+import { boolean, number, string, TypeOf } from 'zod'
+import { orderStatus } from '..'
 import parcel from './parcel'
-
-export const orderStatus = zenum([
-  'OPEN',
-  'CONFIRMED',
-  'PAYMENT_RECEIVED',
-  'PRODUCTION',
-  'AWAITING_FOR_PICKUP',
-  'IN_DELIVERY',
-  'COMPLETED',
-  'REJECTED'
-])
-
-export type OrderStatus = TypeOf<typeof orderStatus>
-export const ORDER_STATUSES = orderStatus.options
+import tableBase from './tableBase'
+import voucher from './voucher'
 
 const order = tableBase.extend({
   delivery_type: string().uuid(),
