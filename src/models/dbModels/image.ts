@@ -1,21 +1,12 @@
+import { string, TypeOf } from 'zod'
+import product from './product'
+import { imageSize } from '../dbEnums'
 import tableBase from './tableBase'
-import { string, TypeOf, enum as zenum } from 'zod'
-
-export const imageSize = zenum([
-  'TILE',
-  'LARGE',
-  'TILE_REVERSE',
-  'THUMBNAIL',
-  'BASKET',
-  'LONG'
-])
-export type ImageSize = TypeOf<typeof imageSize>
 
 const image = tableBase.extend({
   src: string(),
   size: imageSize,
-  // TODO import from Product model
-  product_id: string().uuid()
+  product_id: product.shape.id
 })
 
 export type Image = TypeOf<typeof image>
