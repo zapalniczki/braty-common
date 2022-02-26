@@ -1,6 +1,8 @@
 export * from './country'
 export * from './iconKey'
+export * from './marketingStatus'
 export * from './orderStatus'
 export { default as country } from './country'
 export { default as iconKey } from './iconKey'
+export { default as marketingStatus } from './marketingStatus'
 export { default as orderStatus } from './orderStatus'

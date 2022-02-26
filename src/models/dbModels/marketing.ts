@@ -1,14 +1,6 @@
 import { boolean, string, TypeOf, enum as zenum } from 'zod'
+import { marketingStatus } from '../dbEnums'
 import tableBase from './tableBase'
-
-export const marketingStatus = zenum([
-  'TODO',
-  'UNANSWERED',
-  'INTERESTED',
-  'REJECTED'
-])
-
-export type MarketingStatus = TypeOf<typeof marketingStatus>
 
 const marketing = tableBase.extend({
   email: string().nullable(),
