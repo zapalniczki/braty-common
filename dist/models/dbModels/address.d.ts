@@ -1,6 +1,4 @@
 import { TypeOf } from 'zod';
-declare const country: import("zod").ZodEnum<["POLAND", "UNITED KINGDOM", "GERMANY"]>;
-export declare type Country = TypeOf<typeof country>;
 declare const address: import("zod").ZodObject<import("zod").extendShape<import("zod").extendShape<{
     created_at: import("zod").ZodString;
     updated_at: import("zod").ZodString;
