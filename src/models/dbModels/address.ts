@@ -1,8 +1,6 @@
+import { string, TypeOf } from 'zod'
+import { country } from '../dbEnums'
 import tableBase from './tableBase'
-import { string, TypeOf, enum as zenum } from 'zod'
-
-const country = zenum(['POLAND', 'UNITED KINGDOM', 'GERMANY'])
-export type Country = TypeOf<typeof country>
 
 const address = tableBase.extend({
   city: string(),
