@@ -17,6 +17,7 @@ const ROUTES = {
 
   COMPANY_OFFER: '/company_offer' as const,
   CONTACT: '/contact' as const,
+  CUSTOMER: '/customer' as const,
   DELIVERY_AND_PAYMENTS: '/delivery_and_payments' as const,
   DOCUMENTS: '/documents' as const,
   HOME: '/' as const,
@@ -28,7 +29,6 @@ const ROUTES = {
   SIGN_IN: '/sign_in' as const,
   SIGNED_OUT: '/signed_out' as const,
   SIGN_UP: '/sign_up' as const,
-  USER: '/user' as const,
 
   EUROPE: '/europe' as const,
   CHRISTMAS_2021: '/christmas2021' as const,
