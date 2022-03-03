@@ -15,6 +15,7 @@ declare const ROUTES: {
     CART: "/cart";
     COMPANY_OFFER: "/company_offer";
     CONTACT: "/contact";
+    CUSTOMER: "/customer";
     DELIVERY_AND_PAYMENTS: "/delivery_and_payments";
     DOCUMENTS: "/documents";
     HOME: "/";
@@ -26,7 +27,6 @@ declare const ROUTES: {
     SIGN_IN: "/sign_in";
     SIGNED_OUT: "/signed_out";
     SIGN_UP: "/sign_up";
-    USER: "/user";
     EUROPE: "/europe";
     CHRISTMAS_2021: "/christmas2021";
     VALENTINES_DAY: "/valentines_day";
