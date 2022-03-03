@@ -2,6 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var zod_1 = require("zod");
 var remoteConfig = (0, zod_1.object)({
+    // ROUTES
     _404: (0, zod_1.boolean)(),
     adminCallbacks: (0, zod_1.boolean)(),
     adminDeliveryTypes: (0, zod_1.boolean)(),
@@ -33,6 +34,10 @@ var remoteConfig = (0, zod_1.object)({
     signedOut: (0, zod_1.boolean)(),
     valentinesDay: (0, zod_1.boolean)(),
     viewProduct: (0, zod_1.boolean)(),
+    // CUSTOMER
+    customerRecentOrder: (0, zod_1.boolean)(),
+    customerContactDetails: (0, zod_1.boolean)(),
+    customerInvoices: (0, zod_1.boolean)(),
     // HOME
     homeFeaturedCount: (0, zod_1.number)(),
     homeBestsellersDisplay: (0, zod_1.boolean)(),
@@ -42,12 +47,24 @@ var remoteConfig = (0, zod_1.object)({
     homeFeaturedOrder: (0, zod_1.number)(),
     homeCatalogueOrder: (0, zod_1.number)(),
     homeBestsellersOrder: (0, zod_1.number)(),
+    // ORDER
+    orderId: (0, zod_1.boolean)(),
+    orderStatus: (0, zod_1.boolean)(),
+    orderBilling: (0, zod_1.boolean)(),
+    orderPayment: (0, zod_1.boolean)(),
+    orderProducts: (0, zod_1.boolean)(),
+    orderInvoice: (0, zod_1.boolean)(),
+    orderVoucher: (0, zod_1.boolean)(),
+    orderShipping: (0, zod_1.boolean)(),
+    orderActions: (0, zod_1.boolean)(),
+    orderDetails: (0, zod_1.boolean)(),
+    orderContactDetails: (0, zod_1.boolean)(),
     // DATA
     catalogue_cover_pl: (0, zod_1.string)(),
     catalogue_link_pl: (0, zod_1.string)(),
     catalogue_cover_en: (0, zod_1.string)(),
     catalogue_link_en: (0, zod_1.string)(),
-    // REST
+    // CONFIG
     snow: (0, zod_1.boolean)(),
     i18n: (0, zod_1.boolean)(),
     vouchers: (0, zod_1.boolean)()
