@@ -35,7 +35,7 @@ const remoteConfig = object({
   viewProduct: boolean(),
 
   // CUSTOMER
-  customerRecentOrder: boolean(),
+  customerRecentOrders: boolean(),
   customerContactDetails: boolean(),
   customerInvoices: boolean(),
 
