@@ -1,14 +1,14 @@
 import { object, enum as zenum, boolean, TypeOf, union } from 'zod'
 import { language } from '..'
-import { order, user, voucher } from '../dbModels'
+import { order, customer, voucher } from '../dbModels'
 
 const newOrder = object({
   key: zenum(['NEW_ORDER']),
   content: object({
     is_long: boolean().optional(),
-    name: user.shape.full_name,
+    name: customer.shape.full_name,
     order_id: order.shape.id,
-    phone: user.shape.phone
+    phone: customer.shape.phone
   })
 })
 
@@ -22,7 +22,7 @@ const newsletterSignUp = object({
 const orderStatusChange = object({
   key: zenum(['ORDER_STATUS_CHANGE']),
   content: object({
-    name: user.shape.full_name,
+    name: customer.shape.full_name,
     order_id: order.shape.id,
     order_status: order.shape.status
   })
@@ -31,12 +31,12 @@ const orderStatusChange = object({
 const marketingOffer = object({
   key: zenum(['MARKETING_OFFER']),
   content: object({
-    name: user.shape.full_name.optional()
+    name: customer.shape.full_name.optional()
   })
 })
 
 const emailEvent = object({
-  to: user.shape.email,
+  to: customer.shape.email,
   language,
   type: union([newOrder, newsletterSignUp, orderStatusChange, marketingOffer])
 })

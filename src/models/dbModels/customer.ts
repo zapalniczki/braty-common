@@ -1,7 +1,7 @@
 import tableBase from './tableBase'
 import { boolean, string, TypeOf } from 'zod'
 
-const user = tableBase.extend({
+const customer = tableBase.extend({
   address_id: string().uuid(),
   email: string(),
   full_name: string(),
@@ -13,6 +13,6 @@ const user = tableBase.extend({
   is_test: boolean()
 })
 
-export type User = TypeOf<typeof user>
+export type Customer = TypeOf<typeof customer>
 
-export default user
+export default customer
