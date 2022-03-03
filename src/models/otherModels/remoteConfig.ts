@@ -1,6 +1,7 @@
 import { string, boolean, number, object, TypeOf } from 'zod'
 
 const remoteConfig = object({
+  // ROUTES
   _404: boolean(),
   adminCallbacks: boolean(),
   adminDeliveryTypes: boolean(),
@@ -32,6 +33,12 @@ const remoteConfig = object({
   signedOut: boolean(),
   valentinesDay: boolean(),
   viewProduct: boolean(),
+
+  // CUSTOMER
+  customerRecentOrder: boolean(),
+  customerContactDetails: boolean(),
+  customerInvoices: boolean(),
+
   // HOME
   homeFeaturedCount: number(),
   homeBestsellersDisplay: boolean(),
@@ -41,12 +48,27 @@ const remoteConfig = object({
   homeFeaturedOrder: number(),
   homeCatalogueOrder: number(),
   homeBestsellersOrder: number(),
+
+  // ORDER
+  orderId: boolean(),
+  orderStatus: boolean(),
+  orderBilling: boolean(),
+  orderPayment: boolean(),
+  orderProducts: boolean(),
+  orderInvoice: boolean(),
+  orderVoucher: boolean(),
+  orderShipping: boolean(),
+  orderActions: boolean(),
+  orderDetails: boolean(),
+  orderContactDetails: boolean(),
+
   // DATA
   catalogue_cover_pl: string(),
   catalogue_link_pl: string(),
   catalogue_cover_en: string(),
   catalogue_link_en: string(),
-  // REST
+
+  // CONFIG
   snow: boolean(),
   i18n: boolean(),
   vouchers: boolean()
