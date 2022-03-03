@@ -23,7 +23,7 @@ var order = tableBase_1.default.extend({
     payment_price_en: (0, zod_1.number)(),
     discount_pl: (0, zod_1.number)(),
     discount_en: (0, zod_1.number)(),
-    user_id: (0, zod_1.string)().uuid(),
+    customer_id: (0, zod_1.string)().uuid(),
     voucher_id: voucher_1.default.shape.id.nullable(),
     parcel_id: parcel_1.default.shape.id.nullable(),
     is_test: (0, zod_1.boolean)()

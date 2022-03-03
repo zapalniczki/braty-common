@@ -19,7 +19,7 @@ declare const order: import("zod").ZodObject<import("zod").extendShape<import("z
     payment_price_en: import("zod").ZodNumber;
     discount_pl: import("zod").ZodNumber;
     discount_en: import("zod").ZodNumber;
-    user_id: import("zod").ZodString;
+    customer_id: import("zod").ZodString;
     voucher_id: import("zod").ZodNullable<import("zod").ZodString>;
     parcel_id: import("zod").ZodNullable<import("zod").ZodString>;
     is_test: import("zod").ZodBoolean;
@@ -41,7 +41,7 @@ declare const order: import("zod").ZodObject<import("zod").extendShape<import("z
     payment_price_en: number;
     discount_pl: number;
     discount_en: number;
-    user_id: string;
+    customer_id: string;
     voucher_id: string | null;
     parcel_id: string | null;
     is_test: boolean;
@@ -63,7 +63,7 @@ declare const order: import("zod").ZodObject<import("zod").extendShape<import("z
     payment_price_en: number;
     discount_pl: number;
     discount_en: number;
-    user_id: string;
+    customer_id: string;
     voucher_id: string | null;
     parcel_id: string | null;
     is_test: boolean;
