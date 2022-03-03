@@ -2,6 +2,7 @@ declare const DB_TABLES: {
     ADDRESSES: "addresses";
     CALLBACK: "callbacks";
     COLLECTIONS: "collections";
+    CUSTOMERS: "customers";
     DELIVERY_TYPES: "delivery_types";
     ICONS: "icons";
     IMAGES: "images";
@@ -15,7 +16,6 @@ declare const DB_TABLES: {
     PARCELS: "parcels";
     PAYMENT_TYPE: "payment_types";
     PRODUCTS: "products";
-    USERS: "users";
     VOUCHERS: "vouchers";
 };
 export default DB_TABLES;
