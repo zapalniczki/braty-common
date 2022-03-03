@@ -35,7 +35,7 @@ var remoteConfig = (0, zod_1.object)({
     valentinesDay: (0, zod_1.boolean)(),
     viewProduct: (0, zod_1.boolean)(),
     // CUSTOMER
-    customerRecentOrder: (0, zod_1.boolean)(),
+    customerRecentOrders: (0, zod_1.boolean)(),
     customerContactDetails: (0, zod_1.boolean)(),
     customerInvoices: (0, zod_1.boolean)(),
     // HOME

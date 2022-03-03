@@ -31,7 +31,7 @@ declare const remoteConfig: import("zod").ZodObject<{
     signedOut: import("zod").ZodBoolean;
     valentinesDay: import("zod").ZodBoolean;
     viewProduct: import("zod").ZodBoolean;
-    customerRecentOrder: import("zod").ZodBoolean;
+    customerRecentOrders: import("zod").ZodBoolean;
     customerContactDetails: import("zod").ZodBoolean;
     customerInvoices: import("zod").ZodBoolean;
     homeFeaturedCount: import("zod").ZodNumber;
@@ -93,7 +93,7 @@ declare const remoteConfig: import("zod").ZodObject<{
     signedOut: boolean;
     valentinesDay: boolean;
     viewProduct: boolean;
-    customerRecentOrder: boolean;
+    customerRecentOrders: boolean;
     customerContactDetails: boolean;
     customerInvoices: boolean;
     homeFeaturedCount: number;
@@ -154,7 +154,7 @@ declare const remoteConfig: import("zod").ZodObject<{
     signedOut: boolean;
     valentinesDay: boolean;
     viewProduct: boolean;
-    customerRecentOrder: boolean;
+    customerRecentOrders: boolean;
     customerContactDetails: boolean;
     customerInvoices: boolean;
     homeFeaturedCount: number;
