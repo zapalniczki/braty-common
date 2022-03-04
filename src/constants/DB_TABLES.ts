@@ -16,6 +16,7 @@ const DB_TABLES = {
   PARCELS: 'parcels' as const,
   PAYMENT_TYPE: 'payment_types' as const,
   PRODUCTS: 'products' as const,
+  USERS: 'users' as const,
   VOUCHERS: 'vouchers' as const
 }
 
