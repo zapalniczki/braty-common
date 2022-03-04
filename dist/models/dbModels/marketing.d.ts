@@ -21,8 +21,8 @@ declare const marketing: import("zod").ZodObject<import("zod").extendShape<impor
     is_test: boolean;
     name: string | null;
     email: string | null;
-    notes: string | null;
     phone: string | null;
+    notes: string | null;
     plus_code: string | null;
     send_brochure_agreement: boolean;
 }, {
@@ -33,8 +33,8 @@ declare const marketing: import("zod").ZodObject<import("zod").extendShape<impor
     is_test: boolean;
     name: string | null;
     email: string | null;
-    notes: string | null;
     phone: string | null;
+    notes: string | null;
     plus_code: string | null;
     send_brochure_agreement: boolean;
 }>;

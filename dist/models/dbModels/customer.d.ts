@@ -21,11 +21,11 @@ declare const customer: import("zod").ZodObject<import("zod").extendShape<import
     id: string;
     shipping_id: string | null;
     is_test: boolean;
-    email: string;
-    phone: string;
     address_id: string;
+    email: string;
     full_name: string;
     nip: string | null;
+    phone: string;
     preferred_delivery: string;
     preferred_payment: string;
     user_id: string;
@@ -35,11 +35,11 @@ declare const customer: import("zod").ZodObject<import("zod").extendShape<import
     id: string;
     shipping_id: string | null;
     is_test: boolean;
-    email: string;
-    phone: string;
     address_id: string;
+    email: string;
     full_name: string;
     nip: string | null;
+    phone: string;
     preferred_delivery: string;
     preferred_payment: string;
     user_id: string;

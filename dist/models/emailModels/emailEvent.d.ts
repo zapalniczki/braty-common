@@ -12,29 +12,29 @@ declare const emailEvent: import("zod").ZodObject<{
         }, "strip", import("zod").ZodTypeAny, {
             is_long?: boolean | undefined;
             name: string;
-            order_id: string;
             phone: string;
+            order_id: string;
         }, {
             is_long?: boolean | undefined;
             name: string;
-            order_id: string;
             phone: string;
+            order_id: string;
         }>;
     }, "strip", import("zod").ZodTypeAny, {
         key: "NEW_ORDER";
         content: {
             is_long?: boolean | undefined;
             name: string;
-            order_id: string;
             phone: string;
+            order_id: string;
         };
     }, {
         key: "NEW_ORDER";
         content: {
             is_long?: boolean | undefined;
             name: string;
-            order_id: string;
             phone: string;
+            order_id: string;
         };
     }>, import("zod").ZodObject<{
         key: import("zod").ZodEnum<["NEWSLETTER_SIGNUP"]>;
@@ -110,8 +110,8 @@ declare const emailEvent: import("zod").ZodObject<{
         content: {
             is_long?: boolean | undefined;
             name: string;
-            order_id: string;
             phone: string;
+            order_id: string;
         };
     } | {
         key: "NEWSLETTER_SIGNUP";
@@ -139,8 +139,8 @@ declare const emailEvent: import("zod").ZodObject<{
         content: {
             is_long?: boolean | undefined;
             name: string;
-            order_id: string;
             phone: string;
+            order_id: string;
         };
     } | {
         key: "NEWSLETTER_SIGNUP";
