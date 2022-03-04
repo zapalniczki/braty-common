@@ -18,6 +18,7 @@ var DB_TABLES = {
     PARCELS: 'parcels',
     PAYMENT_TYPE: 'payment_types',
     PRODUCTS: 'products',
+    USERS: 'users',
     VOUCHERS: 'vouchers'
 };
 exports.default = DB_TABLES;

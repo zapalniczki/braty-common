@@ -16,6 +16,7 @@ declare const DB_TABLES: {
     PARCELS: "parcels";
     PAYMENT_TYPE: "payment_types";
     PRODUCTS: "products";
+    USERS: "users";
     VOUCHERS: "vouchers";
 };
 export default DB_TABLES;
