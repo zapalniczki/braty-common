@@ -10,6 +10,7 @@ const customer = tableBase.extend({
   preferred_delivery: string().uuid(),
   preferred_payment: string().uuid(),
   shipping_id: string().uuid().nullable(),
+  user_id: string().uuid(),
   is_test: boolean()
 })
 
