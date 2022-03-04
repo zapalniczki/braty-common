@@ -14,6 +14,7 @@ var customer = tableBase_1.default.extend({
     preferred_delivery: (0, zod_1.string)().uuid(),
     preferred_payment: (0, zod_1.string)().uuid(),
     shipping_id: (0, zod_1.string)().uuid().nullable(),
+    user_id: (0, zod_1.string)().uuid(),
     is_test: (0, zod_1.boolean)()
 });
 exports.default = customer;

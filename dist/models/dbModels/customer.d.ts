@@ -13,6 +13,7 @@ declare const customer: import("zod").ZodObject<import("zod").extendShape<import
     preferred_delivery: import("zod").ZodString;
     preferred_payment: import("zod").ZodString;
     shipping_id: import("zod").ZodNullable<import("zod").ZodString>;
+    user_id: import("zod").ZodString;
     is_test: import("zod").ZodBoolean;
 }>, "strip", import("zod").ZodTypeAny, {
     created_at: string;
@@ -27,6 +28,7 @@ declare const customer: import("zod").ZodObject<import("zod").extendShape<import
     nip: string | null;
     preferred_delivery: string;
     preferred_payment: string;
+    user_id: string;
 }, {
     created_at: string;
     updated_at: string;
@@ -40,6 +42,7 @@ declare const customer: import("zod").ZodObject<import("zod").extendShape<import
     nip: string | null;
     preferred_delivery: string;
     preferred_payment: string;
+    user_id: string;
 }>;
 export declare type Customer = TypeOf<typeof customer>;
 export default customer;
